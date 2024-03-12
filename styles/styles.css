@@ -51,6 +51,8 @@ aside img {
 
 aside h2 {
     position: absolute;
+    top: 65px;
+    left: 150px;
 }
 main img {
     width: 150px;
