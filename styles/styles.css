@@ -34,7 +34,7 @@ p{
 }
 
 aside {
-    width: 20em;
+    width: 20rem;
     text-align: center;
     position: relative;
 }
@@ -46,11 +46,11 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 47px;
+    top: 67px;
     left: 150px;
 }
 main img {
-    width: 150px;
+    width: 160px;
     height: auto;
 }
 p { padding: 0;}
