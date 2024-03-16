@@ -47,3 +47,8 @@ article img {
   float: right;
   margin-left: 20px;
 }
+
+footer img {
+  height: 20px; /* Set the height to your desired size */
+  margin: 0 5px;
+}
