@@ -1,82 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Your+Selected+Font');
 
-/* Define CSS Variables */
 :root {
-  --primary-color: #007bff; /* Replace with your primary color */
-  --secondary-color: #7952b3; /* Replace with your secondary color */
-  --text-color: #333; /* Replace with your text color */
-  --background-color: #f5f5f5; /* Replace with your background color */
+    --main-color: #333; /* Your main color */
+    --secondary-color: #999; /* Your secondary color */
 }
 
-/* Headings and Paragraphs */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  color: var(--text-color);
-  margin-bottom: 15px;
-}
-
-p {
-  font-family: 'Lato', sans-serif;
-  color: var(--text-color);
-  line-height: 1.5;
-}
-
-/* Social Media Links */
-.sociallinks a {
-  text-decoration: none;
-  color: var(--text-color);
-  margin: 0 5px;
-}
-
-/* Limit Page Width */
 body {
-  max-width: 1000px;
-  margin: 0 auto; /* Centers the content horizontally */
+    font-family: 'Your Selected Font', sans-serif;
+    color: var(--main-color);
+    margin: 0;
+    padding: 0;
 }
 
-/* Hero Container */
+header {
+    background-color: #f9f9f9; /* Light background color for header */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px; /* Adjust height as needed */
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
 .hero {
-  position: relative;
-  height: 500px; /* Adjust height as needed */
+    position: relative;
 }
 
 .hero img {
-  display: block;
-  width: 100%;
-  height: auto;
+    width: 100%;
+    display: block;
 }
 
-/* Hero Content */
 .hero h1 {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-size: 3em; /* Adjust font size as desired */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Text color on top of hero image */
 }
 
-.hero article {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as desired */
-  color: white;
+article {
+    margin-top: 20px;
 }
 
-.hero article p {
-  margin-bottom: 10px;
+article img {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    max-width: 40%;
 }
 
-.hero article img {
-  float: right;
-  width: 200px; /* Adjust image width as desired */
-  margin-left: 20px;
+section {
+    margin-top: 20px;
 }
 
+section h2 {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 5px;
+}
 
+footer {
+    background-color: #f9f9f9; /* Light background color for footer */
+    padding: 20px;
+    text-align: center;
+}
 
+footer p {
+    margin: 0;
+}
 
+footer img {
+    height: 30px; /* Adjust height as needed */
+    margin: 0 5px;
+}
+
+/* Additional styling for links */
+a {
+    text-decoration: none;
+}
+
+/* Remove underlines from social media links */
+footer a {
+    text-decoration: none;
+}
