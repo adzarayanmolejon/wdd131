@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 body {
-  max-width: 1200px; /* Adjust the value as needed */
+  max-width: 1000px; /* Adjust the value as needed */
   margin: 0 auto; /* Center the content horizontally */
 }
 .hero {
