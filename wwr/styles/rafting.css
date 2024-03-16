@@ -4,6 +4,85 @@
   height: auto;
 }
 
+/* Import Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* Define CSS Variables */
+:root {
+  --primary-color: #007bff; /* Replace with your primary color */
+  --secondary-color: #7952b3; /* Replace with your secondary color */
+  --text-color: #333; /* Replace with your text color */
+  --background-color: #f5f5f5; /* Replace with your background color */
+}
+
+/* Headings and Paragraphs */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+/* Social Media Links */
+.sociallinks a {
+  text-decoration: none;
+  color: var(--text-color);
+  margin: 0 5px;
+}
+
+/* Limit Page Width */
+body {
+  max-width: 1000px;
+  margin: 0 auto; /* Centers the content horizontally */
+}
+
+/* Hero Container */
+.hero {
+  position: relative;
+  height: 500px; /* Adjust height as needed */
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Hero Content */
+.hero h1 {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 3em; /* Adjust font size as desired */
+}
+
+.hero article {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as desired */
+  color: white;
+}
+
+.hero article p {
+  margin-bottom: 10px;
+}
+
+.hero article img {
+  float: right;
+  width: 200px; /* Adjust image width as desired */
+  margin-left: 20px;
+}
 
 
 
