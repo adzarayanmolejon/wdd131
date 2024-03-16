@@ -52,3 +52,9 @@ footer img {
   height: 20px; /* Set the height to your desired size */
   margin: 0 5px;
 }
+section img {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
