@@ -58,3 +58,24 @@ section img {
   width: 80%;
   height: auto;
 }
+section {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.content img {
+  max-width: 50%;
+  margin-left: 20px; /* Adjust margin as needed */
+}
+
+.content p {
+  max-width: 50%;
+  text-align: left;
+  margin-right: 20px; /* Adjust margin as needed */
+}
