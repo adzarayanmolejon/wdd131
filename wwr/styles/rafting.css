@@ -76,22 +76,22 @@ section img {
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  z-index: 1; /* Ensure content is above the image */
-  width: 80%; /* Adjust the width as needed */
+  z-index: 1; 
+  width: 80%; 
 }
 
 .content h1 {
-  margin-bottom: 20px; /* Space between title and article */
+  margin-bottom: 20px; 
 }
 
 article {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  margin-top: 20px; /* Space between article and image */
+  margin-top: 20px; 
 }
 
 article img {
   max-width: 100%;
   height: auto;
-  margin: 0 auto; /* Center the image horizontally */
+  margin: 0 auto; 
 }
