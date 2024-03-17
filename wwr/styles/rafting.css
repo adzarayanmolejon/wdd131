@@ -58,24 +58,25 @@ section img {
   width: 80%;
   height: auto;
 }
-.hero {
+article {
   position: relative;
-  text-align: center; /* Center the title horizontally */
 }
 
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-h1 {
+article h2 {
   position: absolute;
-  top: 10px; /* Adjust the distance from the top */
-  left: 50%;
-  transform: translateX(-50%); /* Center the title horizontally */
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   color: white;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
-  padding: 10px 20px; /* Padding around the title */
-  margin: 0; /* Remove default margin */
+  padding: 10px;
+  margin: 0;
+  width: 100%; /* Full width of the container */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+article img {
+  display: block;
+  margin-top: 40px; /* Space between the title and the image */
+  max-width: 100%;
+  height: auto;
 }
