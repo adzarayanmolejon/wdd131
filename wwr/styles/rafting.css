@@ -33,7 +33,6 @@ body {
   transform: translate(-50%, -50%); /* More precise centering */
   color: white;  /* Set text color (adjust for contrast with image) */
   font-size: 24px; /* Adjust text size as needed */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background (optional) */
   padding: 10px;  /* Add padding around text (optional) */
 }
 
