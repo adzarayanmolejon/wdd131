@@ -27,13 +27,13 @@ body {
 }
 
 .hero h1 {
-  position: absolute; /* Make text positionable within container */
-  top: 50%;   /* Center vertically (halfway down the image) */
-  left: 50%;   /* Center horizontally (halfway across the image) */
-  transform: translate(-50%, -50%); /* More precise centering */
-  color: white;  /* Set text color (adjust for contrast with image) */
-  font-size: 24px; /* Adjust text size as needed */
-  padding: 10px;  /* Add padding around text (optional) */
+  position: absolute; 
+  top: 50%;   
+  left: 50%;   
+  transform: translate(-50%, -50%); 
+  color: white;
+  font-size: 24px; 
+  padding: 10px;  
 }
 
 article {
