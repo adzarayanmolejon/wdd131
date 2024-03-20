@@ -5,123 +5,103 @@
 }
 
 nav {
-    background-color: steelblue;
-    padding: 10px;
-}
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-}
-main { 
-    max-width: 640px;
+  background-color: steelblue;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-h1{
-    color: steelblue;
+nav a {
+  color: white;
+  display: block;
+  padding: 20px;
 }
-img{
-    width: 150px;
-    height:auto;
-    border:1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    float: right;
-    margin: 0 0 1rem 1rem;
+
+main {
+  max-width: 640px;
+  grid-column: 2/3; /* Positions main element in the 2nd and 3rd column */
+  margin: 1rem;
 }
-p{ 
-    padding: 10px;
+
+h1 {
+  color: steelblue;
+}
+
+img {
+  width: 150px;
+  height: auto;
+  border: 1px solid steelblue;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+  /* Removed float: right; */
+  margin: 0 0 1rem 1rem;
+}
+
+p {
+  padding: 10px;
 }
 
 aside {
-    width: 20rem;
-    text-align: center;
-    position: relative;
+  width: 20rem;
+  text-align: center;
+  position: relative;
+  grid-column: 1/2; /* Positions aside element in the 1st column */
+  grid-row: 1/2; /* Positions aside element spanning both rows */
 }
-aside img { 
-    width: 200px;
-    height: auto;
 
+aside img {
+  width: 200px;
+  height: auto;
 }
 
 aside h2 {
-    position: absolute;
-    top: 67px;
-    left: 150px;
+  position: absolute;
+  top: 67px;
+  left: 150px;
 }
-main img {
-    width: 160px;
-    height: auto;
+
+/* Responsive Design (optional) */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* Stack elements on top of each other for smaller screens */
+  }
+
+  aside, main {
+    grid-column: 1; /* Both elements occupy the entire grid column on smaller screens */
+  }
 }
-p { padding: 0;}
+
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
 }
 
 /* Class Selectors */
 .box {
   margin: 1rem;
-  border: 1px solid rgba(0,0,0,.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1rem;
   background-color: #ddd;
   color: #000;
 }
 
-header, footer {
+header,
+footer {
   max-width: 840px;
   margin: 0 auto;
-}
-
-nav {
-  background-color: steelblue;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-nav {
-  background-color: steelblue;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 .grid {
   display: grid;
   align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-main {
-  grid-column: 2/3;
-  margin: 1rem;
+header,
+.grid,
+footer {
+  padding: 1rem;
 }
-
-aside {
-  width: 20rem;
-  position: relative;
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-.grid {
-    display: grid;
-    align-items: center;
-    max-width: 1000px; 
-    margin: 0 auto; 
-  }
-  
-  header, .grid, footer {
-    padding: 1rem;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: 20rem 1fr;
-    align-items: center; 
-    max-width: 1000px;  
-    margin: 0 auto;  
-    padding: 1rem;   
-  }
