@@ -27,6 +27,7 @@ main {
 h1 {
   color: steelblue;
   text-align: center;
+  text-decoration: underline;
 }
 
 img {
