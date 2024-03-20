@@ -105,3 +105,23 @@ aside {
   grid-column: 1/2;
   grid-row: 1/2;
 }
+
+.grid {
+    display: grid;
+    align-items: center;
+    max-width: 1000px; 
+    margin: 0 auto; 
+  }
+  
+  header, .grid, footer {
+    padding: 1rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    align-items: center; 
+    max-width: 1000px;  
+    margin: 0 auto;  
+    padding: 1rem;   
+  }
