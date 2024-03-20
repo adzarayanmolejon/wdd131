@@ -21,7 +21,6 @@ nav a {
 main {
   max-width: 840px;
   grid-column: 2; 
-  margin: 1rem;
 }
 
 h1 {
@@ -57,8 +56,8 @@ aside img {
 
 aside h2 {
   position: absolute;
-  top: 67px;
-  left: 150px;
+  top: 85px;
+  left: 125px;
 }
 
 @media (max-width: 768px) {
@@ -86,7 +85,7 @@ footer {
   color: #000;
 }
 
-header,
+header, .grid
 footer {
   max-width: 840px;
   margin: 0 auto;
@@ -95,8 +94,6 @@ footer {
 .grid {
   display: grid;
   align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 header,
