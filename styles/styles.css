@@ -68,3 +68,8 @@ footer {
   background-color: #ddd;
   color: #000;
 }
+
+header, footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
