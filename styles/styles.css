@@ -19,15 +19,14 @@ nav a {
 }
 
 main {
-  max-width: 640px;
-  grid-column: 2/3; /* Positions main element in the 2nd and 3rd column */
+  max-width: 840px;
+  grid-column: 2/3; 
   margin: 1rem;
 }
 
 h1 {
   color: steelblue;
   text-align: center;
-  text-decoration: underline;
 }
 
 img {
@@ -48,8 +47,8 @@ aside {
   width: 20rem;
   text-align: center;
   position: relative;
-  grid-column: 1/2; /* Positions aside element in the 1st column */
-  grid-row: 1/2; /* Positions aside element spanning both rows */
+  grid-column: 1/2;
+  grid-row: 1/2; 
 }
 
 aside img {
@@ -63,14 +62,13 @@ aside h2 {
   left: 150px;
 }
 
-/* Responsive Design (optional) */
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: 1fr; /* Stack elements on top of each other for smaller screens */
+    grid-template-columns: 1fr; 
   }
 
   aside, main {
-    grid-column: 1; /* Both elements occupy the entire grid column on smaller screens */
+    grid-column: 1;
   }
 }
 
