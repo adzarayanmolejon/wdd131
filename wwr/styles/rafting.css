@@ -25,6 +25,11 @@ header {
 	height: auto;
 }
 
+h1 {
+	font-size: 2rem;
+	font-family: Acme, Arial, sans-serif;
+}
+
 nav {
 	text-align: right;
 }
@@ -40,14 +45,14 @@ nav {
 
 .navigation a {
 	display: block;
-	color:inherit;
+	color: navy;
 	padding: 20px;
 	text-decoration: none;
 }
 
 .navigation a:hover {
-	color:ivory;
-	font-weight: 800;
+	color: tomato;
+	font-weight: 700;
 	text-decoration: underline;
 }
 
