@@ -32,11 +32,11 @@ h1 {
 
 nav {
 	text-align: right;
+  justify-content: flex-end;
 }
 
 .navigation {
 	display: flex;
-  justify-content: flex-end;
 	list-style: none;
 }
 
