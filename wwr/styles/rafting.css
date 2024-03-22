@@ -32,7 +32,6 @@ nav {
 .navigation {
 	display: flex;
 	list-style: none;
-  justify-content: right;
 }
 
 .navigation li {
