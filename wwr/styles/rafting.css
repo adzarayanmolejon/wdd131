@@ -25,14 +25,9 @@ header {
 	height: auto;
 }
 
-h1 {
-	font-size: 2rem;
-	font-family: Acme, Arial, sans-serif;
-}
-
 nav {
 	text-align: right;
-  justify-content: flex-end;
+  justify-content: right;
 }
 
 .navigation {
