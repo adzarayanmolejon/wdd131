@@ -59,23 +59,29 @@ body {
   margin: 0 auto; 
 }
 /* Set the background image for the hero section */
+/* Style the hero section */
 .hero {
-  background-image: url('images/snake-rapid2.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 200px; /* Adjust the height as needed */
   position: relative;
+  height: 300px; /* Adjust the height as needed */
+  overflow: hidden;
 }
 
-/* Style the heading in the hero section */
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .hero h1 {
-  color: white;
-  font-size: 2em;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5em;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 10px 20px;
 }
@@ -83,20 +89,59 @@ body {
 /* Style the article section */
 article {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  margin-top: 20px;
 }
 
-/* Style the text content in the article */
-article p {
-  flex: 1;
-  margin-right: 20px; /* Space between text and image */
-}
-
-/* Style the image in the article */
 article img {
-  max-width: 30%; /* Adjust the image size as needed */
+  max-width: 40%;
+  margin-right: 20px;
+}
+
+/* Style the History and Adventure sections */
+section {
+  margin-top: 40px;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+section p {
+  line-height: 1.6;
+}
+
+/* Style the images in the Adventure section */
+section figure {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section figure img {
+  max-width: 100%;
+}
+
+section figure figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  color: #777;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  margin-left: 10px;
 }
 
 
