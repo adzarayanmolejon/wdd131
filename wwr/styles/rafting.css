@@ -58,59 +58,46 @@ body {
   max-width: 1000px;
   margin: 0 auto; 
 }
+
 /* Style the main element */
-/* Style the main element (assuming hero and article are child elements) */
 main {
-  display: flex; /* Allow hero and article sections to arrange side-by-side */
+  display: grid; /* Arrange content in a grid layout */
+  grid-template-columns: 1fr 2fr; /* Define grid columns: first column takes 1 fraction of space, second takes 2 fractions */
+  grid-gap: 2rem; /* Add some gap between grid items */
+  padding: 2rem; /* Add some padding around the main content */
 }
 
-/* Style the hero section */
+/* Style the hero image section */
 .hero {
-  flex: 1; /* Occupy remaining space within the main element */
-  position: relative; /* Allow positioning elements on top of the background image */
-  background-image: url("images/snake-rapid2.jpg"); /* Assuming image path is correct */
-  background-size: cover; /* Crop image to fit the hero section */
-  background-position: center; /* Center the image within the hero section */
-  color: white; /* Assuming white text */
-  padding: 2rem; /* Add some padding around the content */
+  grid-row: 1 / span 2; /* Span the hero image across two rows */
 }
 
-/* Style the hero image */
 .hero img {
   width: 100%; /* Make image fill the width of the hero section */
   height: auto; /* Maintain image aspect ratio */
   object-fit: cover; /* Crop image if necessary to fit */
-  opacity: 0.7; /* Add some transparency to the image (optional) */
-  position: absolute; /* Position the image at the back, behind the content */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; /* Stretch the image to cover the entire hero section */
-  z-index: -1; /* Set the image to a lower layer to ensure content appears on top */
 }
 
-/* Style the hero title (assuming it's inside the hero section) */
-.hero h1 {
-  font-size: 3rem; /* Set heading size */
-  margin: 0; /* Remove default margin */
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Add slight drop shadow (optional) */
-  position: absolute; /* Position the title on top of the image */
-  top: 2rem; /* Add some top margin from the edge */
-}
-
-/* Style the article section */
+/* Style the text content section */
 article {
-  flex: 1; /* Occupy remaining space within the main element */
-  display: flex; /* Allow horizontal arrangement of title and image within the article */
-  align-items: center; /* Align content vertically within the article */
-  justify-content: flex-end; /* Align content at the right side of the article */
-  padding: 2rem; /* Add some padding around the content */
+  display: flex; /* Allow text and image to arrange horizontally within the article section */
+  flex-direction: column; /* Stack text content on top of the image */
+  justify-content: space-between; /* Distribute content with some space at top and bottom */
+  padding: 1rem; /* Add some padding around the article content */
+}
+
+/* Style the article text content */
+article p {
+  font-size: 1rem; /* Set font size for the text content */
+  line-height: 1.5; /* Adjust line spacing for better readability */
+  margin-bottom: 1rem; /* Add some margin below the text */
 }
 
 /* Style the article image */
 article img {
-  width: 50%; /* Set image width to half of the article section */
+  width: 100%; /* Make image fill the width of the article section */
   height: auto; /* Maintain image aspect ratio */
+  object-fit: cover; /* Crop image if necessary to fit */
 }
 
 
