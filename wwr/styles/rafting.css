@@ -85,6 +85,7 @@ body {
 .hero-content p {
   flex: 1;
   text-align: left;
+  color: black;
 }
 
 .hero-content img {
