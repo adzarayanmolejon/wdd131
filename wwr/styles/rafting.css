@@ -113,17 +113,32 @@ section p {
 }
 
 /* Style the images in the Adventure section */
-section figure {
-  margin-bottom: 20px;
-  text-align: center;
+.adventures-section {
+  margin-top: 40px;
 }
 
-section figure img {
+.adventures-grid {
+  display: flex;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Snap images into view */
+}
+
+figure {
+  margin-right: 10px; /* Space between images */
+  scroll-snap-align: start; /* Snap images to the start of the container */
+}
+
+figure:last-child {
+  margin-right: 0; /* Remove margin from last image */
+}
+
+figure img {
   max-width: 100%;
+  height: auto;
 }
 
-section figure figcaption {
-  margin-top: 10px;
+figcaption {
+  text-align: center;
   font-style: italic;
   color: #777;
 }
