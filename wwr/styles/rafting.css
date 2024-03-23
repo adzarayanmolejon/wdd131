@@ -60,7 +60,7 @@ body {
 }
 /* Set the background image for the hero section */
 .hero {
-  background-image: url('images/snake-rapid2.jpg');
+  background-image: url('../images/snake-rapid2.jpg');
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -69,6 +69,7 @@ body {
 
 .hero h1 {
   margin: 0;
+  color: white;
 }
 
 .hero-content {
