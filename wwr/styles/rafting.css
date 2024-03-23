@@ -98,7 +98,7 @@ article img {
   margin-right: 20px;
 }
 
-/* Style the History and Adventure sections */
+/* Style the History Section */
 .history-section {
   text-align: center;
   margin-top: 40px;
@@ -112,7 +112,7 @@ article img {
 .history-content {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
@@ -122,6 +122,12 @@ article img {
   max-width: 100%;
   height: auto;
   margin-right: 20px; /* Add some space between image and text */
+}
+
+.history-content p {
+  flex: 1;
+  text-align: justify;
+  line-height: 1.6;
 }
 
 .history-content p {
