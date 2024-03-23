@@ -124,6 +124,7 @@ body {
   flex: 1; /* Allow the paragraph to grow to fill the remaining space */
   text-align: justify;
   line-height: 1.6;
+  color: black;
 }
 
 /* Style the images in the Adventure section */
