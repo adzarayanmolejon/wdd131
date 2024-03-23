@@ -59,31 +59,60 @@ body {
   margin: 0 auto; 
 }
 /* Style the main element */
+/* Style the main element (assuming hero and article are child elements) */
 main {
-  display: flex; /* Allow sections to stack vertically */
-  min-height: 100vh; /* Set minimum height for viewport coverage */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  display: flex; /* Allow hero and article sections to arrange side-by-side */
 }
 
 /* Style the hero section */
 .hero {
   flex: 1; /* Occupy remaining space within the main element */
-  background-image: url("images/hero-background.jpg"); /* Assuming image path is correct */
+  position: relative; /* Allow positioning elements on top of the background image */
+  background-image: url("images/snake-rapid2.jpg"); /* Assuming image path is correct */
   background-size: cover; /* Crop image to fit the hero section */
   background-position: center; /* Center the image within the hero section */
-  display: flex; /* Allow elements to stack vertically within the hero */
-  justify-content: center; /* Center content horizontally within the hero section */
-  align-items: flex-end; /* Align content at the bottom of the hero section */
+  color: white; /* Assuming white text */
+  padding: 2rem; /* Add some padding around the content */
 }
 
-/* Style the logo/title */
+/* Style the hero image */
+.hero img {
+  width: 100%; /* Make image fill the width of the hero section */
+  height: auto; /* Maintain image aspect ratio */
+  object-fit: cover; /* Crop image if necessary to fit */
+  opacity: 0.7; /* Add some transparency to the image (optional) */
+  position: absolute; /* Position the image at the back, behind the content */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Stretch the image to cover the entire hero section */
+  z-index: -1; /* Set the image to a lower layer to ensure content appears on top */
+}
+
+/* Style the hero title (assuming it's inside the hero section) */
 .hero h1 {
   font-size: 3rem; /* Set heading size */
-  margin: 0 0 1rem 0; /* Add some margin below the heading */
-  color: white; /* Assuming white text */
+  margin: 0; /* Remove default margin */
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Add slight drop shadow (optional) */
+  position: absolute; /* Position the title on top of the image */
+  top: 2rem; /* Add some top margin from the edge */
 }
+
+/* Style the article section */
+article {
+  flex: 1; /* Occupy remaining space within the main element */
+  display: flex; /* Allow horizontal arrangement of title and image within the article */
+  align-items: center; /* Align content vertically within the article */
+  justify-content: flex-end; /* Align content at the right side of the article */
+  padding: 2rem; /* Add some padding around the content */
+}
+
+/* Style the article image */
+article img {
+  width: 50%; /* Set image width to half of the article section */
+  height: auto; /* Maintain image aspect ratio */
+}
+
 
 article {
   position: absolute;
