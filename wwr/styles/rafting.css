@@ -115,17 +115,21 @@ section p {
 /* Style the images in the Adventure section */
 .adventures-section {
   margin-top: 40px;
+  text-align: center;
+}
+
+.adventures-heading {
+  margin-bottom: 20px;
 }
 
 .adventures-grid {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 figure {
   width: 18%; /* Adjust the width of each image */
-  margin-bottom: 20px;
+  margin: 0 5px; /* Add a small margin between images */
   text-align: center;
 }
 
@@ -144,6 +148,7 @@ figcaption {
       width: 40%; /* Adjust the width for smaller screens */
   }
 }
+
 
 figure img {
   max-width: 100%;
