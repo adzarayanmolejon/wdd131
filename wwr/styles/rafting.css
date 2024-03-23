@@ -119,7 +119,7 @@ article img {
 }
 
 .history-content img {
-  max-width: 100%;
+  max-width: 50%; /* Adjust the image width */
   height: auto;
   margin-right: 20px; /* Add some space between image and text */
 }
@@ -130,11 +130,17 @@ article img {
   line-height: 1.6;
 }
 
-.history-content p {
-  flex: 1;
-  text-align: justify;
-  line-height: 1.6;
-  max-width: 50%; /* Limit text width */
+@media (max-width: 768px) {
+  .history-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .history-content img {
+      max-width: 100%;
+      margin-right: 0; /* Remove margin for image on smaller screens */
+      margin-bottom: 20px; /* Add margin between image and text on smaller screens */
+  }
 }
 
 /* Style the images in the Adventure section */
