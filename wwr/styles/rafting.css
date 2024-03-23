@@ -58,46 +58,45 @@ body {
   max-width: 1000px;
   margin: 0 auto; 
 }
-
-/* Style the main element */
-main {
-  display: grid; /* Arrange content in a grid layout */
-  grid-template-columns: 1fr 2fr; /* Define grid columns: first column takes 1 fraction of space, second takes 2 fractions */
-  grid-gap: 2rem; /* Add some gap between grid items */
-  padding: 2rem; /* Add some padding around the main content */
-}
-
-/* Style the hero image section */
+/* Set the background image for the hero section */
 .hero {
-  grid-row: 1 / span 2; /* Span the hero image across two rows */
+  background-image: url('images/snake-rapid2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Adjust the height as needed */
+  position: relative;
 }
 
-.hero img {
-  width: 100%; /* Make image fill the width of the hero section */
-  height: auto; /* Maintain image aspect ratio */
-  object-fit: cover; /* Crop image if necessary to fit */
+/* Style the heading in the hero section */
+.hero h1 {
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px 20px;
 }
 
-/* Style the text content section */
+/* Style the article section */
 article {
-  display: flex; /* Allow text and image to arrange horizontally within the article section */
-  flex-direction: column; /* Stack text content on top of the image */
-  justify-content: space-between; /* Distribute content with some space at top and bottom */
-  padding: 1rem; /* Add some padding around the article content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-/* Style the article text content */
+/* Style the text content in the article */
 article p {
-  font-size: 1rem; /* Set font size for the text content */
-  line-height: 1.5; /* Adjust line spacing for better readability */
-  margin-bottom: 1rem; /* Add some margin below the text */
+  flex: 1;
+  margin-right: 20px; /* Space between text and image */
 }
 
-/* Style the article image */
+/* Style the image in the article */
 article img {
-  width: 100%; /* Make image fill the width of the article section */
-  height: auto; /* Maintain image aspect ratio */
-  object-fit: cover; /* Crop image if necessary to fit */
+  max-width: 40%; /* Adjust the image size as needed */
 }
 
 
