@@ -59,43 +59,23 @@ body {
   margin: 0 auto; 
 }
 /* Set the background image for the hero section */
-/* Style the hero section */
-.hero {
-  position: relative;
-  height: 300px; /* Adjust the height as needed */
-  overflow: hidden;
-}
-
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 2.5em;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  padding: 10px 20px;
-}
-
-/* Style the article section */
-article {
+.hero-article {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   margin-top: 20px;
 }
 
-article img {
-  max-width: 40%;
-  margin-right: 20px;
+.content img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Style the History Section */
