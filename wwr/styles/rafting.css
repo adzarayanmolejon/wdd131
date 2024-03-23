@@ -85,18 +85,6 @@ main {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Add slight drop shadow (optional) */
 }
 
-/* Style the navigation bar (optional) */
-.hero nav {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-  padding: 1rem;
-}
-
-.hero nav a {
-  color: white; /* Assuming white text for navigation links */
-  text-decoration: none; /* Remove underline from links */
-  padding: 0.5rem 1rem; /* Add some padding to navigation links */
-}
-
 article {
   position: absolute;
   top: 50%;
