@@ -119,17 +119,24 @@ section p {
 
 .adventures-grid {
   display: flex;
-  overflow-x: auto; /* Allow horizontal scrolling */
-  scroll-snap-type: x mandatory; /* Snap images into view */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 figure {
-  margin-right: 10px; /* Space between images */
-  scroll-snap-align: start; /* Snap images to the start of the container */
+  width: 18%; /* Adjust the width of each image */
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-figure:last-child {
-  margin-right: 0; /* Remove margin from last image */
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-style: italic;
+  color: #777;
 }
 
 figure img {
