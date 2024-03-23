@@ -59,22 +59,35 @@ body {
   margin: 0 auto; 
 }
 /* Set the background image for the hero section */
-.hero-article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.hero {
+  background-image: url('images/snake-rapid2.jpg');
+  background-size: cover;
+  background-position: center;
   text-align: center;
+  padding: 50px 0; /* Adjust padding as needed */
 }
 
-.content {
+.hero h1 {
+  margin: 0;
+}
+
+.hero-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust the background color and opacity */
 }
 
-.content img {
-  max-width: 100%;
+.hero-content p {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-content img {
+  max-width: 40%; /* Adjust the width of the image */
   height: auto;
 }
 
