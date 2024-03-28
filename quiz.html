@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & CSS Quiz</title>
+  <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+  <h1>Test Your HTML & CSS Knowledge!</h1>
+  <form action="" method="post" id="quiz-form">
+    <label for="q1">What is the correct HTML tag for creating a heading?</label><br>
+    <input type="text" id="q1" name="q1" required><br><br>
+    
+    <label for="q2">What is the difference between an `<id>` and a `<class>` attribute in CSS?</label><br>
+    <textarea id="q2" name="q2" rows="5" cols="30" required></textarea><br><br>
+
+    <label for="q3">How do you center text horizontally using CSS?</label><br>
+    <select id="q3" name="q3" required>
+      <option value="" selected disabled>Choose One...</option>
+      <option value="text-align: center;">text-align: center;</option>
+      <option value="align: center;">align: center; (incorrect)</option>
+      <option value="center-align: text;">center-align: text; (incorrect)</option>
+    </select><br><br>
+
+    <label for="q4">What is the minimum number of HTML elements required to create a basic web page?</label><br>
+    <input type="number" id="q4" name="q4" min="1" required><br><br>
+
+    <button type="submit">Submit Quiz</button>
+  </form>
+</body>
+</html>
