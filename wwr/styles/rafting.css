@@ -287,11 +287,11 @@ article img {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5); 
-  color: black; 
+  color: white; 
   margin: 0; 
 }
 
-.company-info {
-  color: black; /* Text color */
+.company-info p {
+  color: black;
 }
 
