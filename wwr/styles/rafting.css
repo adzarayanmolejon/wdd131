@@ -299,8 +299,9 @@ article img {
   all: unset;
 }
 
-.recent-adventure h3,
-.drills h3 {
-  color: black !important;
+section.recent-adventure h3,
+section.drills h3 {
+  color: black;
 }
+
 
