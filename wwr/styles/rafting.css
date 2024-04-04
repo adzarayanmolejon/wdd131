@@ -308,5 +308,96 @@ p {
   color: black;
 }
 
+/* Basic Styles */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header & Footer Styles---home page */
+
+header, footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+/* Hero Section Styles */
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Content Section Styles */
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+}
+
+.column h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* Newsletter Section Styles */
+
+.newsletter {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter input[type
 
 
