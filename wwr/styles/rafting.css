@@ -402,3 +402,63 @@ header, footer {
 .newsletter input[type="email"] {
   /* Your styles here */
 }
+
+.hero {
+  position: relative;
+  height: 100vh; /* Set the height of the hero section to full viewport height */
+  background-image: url('images/hero-image.jpg');
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  color: white; /* Text color for contrast */
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding-right: 20px; /* Adjust as needed */
+  text-align: right;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content .btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #333333;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.logo {
+  flex: 1; /* Grow to fill available space */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0; /* Remove margin from first child */
+}
+
