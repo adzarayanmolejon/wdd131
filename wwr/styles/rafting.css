@@ -398,6 +398,7 @@ header, footer {
   gap: 10px;
 }
 
-.newsletter input[type
-
-
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  /* Your styles here */
+}
