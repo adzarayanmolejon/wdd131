@@ -417,3 +417,7 @@ body.home .hero img {
 }
 
 /* Rest of your hero section styles for elements within the .hero section */
+.social-icon {
+  width: 30px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+}
