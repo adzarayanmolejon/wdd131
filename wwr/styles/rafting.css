@@ -416,6 +416,6 @@ body.home .hero img {
 }
 
 .social-icon {
-  width: 15px !important; /* Adjust the width as needed */
-  height: 15px !important; /* Adjust the height as needed */
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
 }
