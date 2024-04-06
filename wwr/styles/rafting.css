@@ -403,3 +403,17 @@ header, footer {
   /* Your styles here */
 }
 
+/* Hero Section Styling */
+
+body.home .hero {
+  background-image: url("images/rafting-hero.jpg"); /* Replace with path to your image */
+  /* Rest of your hero section styles */
+}
+
+/* Hide the actual image element, since we're using background-image */
+
+body.home .hero img {
+  display: none;
+}
+
+/* Rest of your hero section styles for elements within the .hero section */
