@@ -7,13 +7,11 @@
   --secondary-color: #999;
 }
 @font-face {
-  font-family: 'CircularXXWeb';
-  src: url('path/to/CircularXXWeb-Book.woff2') format('woff2'),
-       url('path/to/CircularXXWeb-Bold.woff2') format('woff2');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
+  font-family: 'Circular';
+  src: url('path/to/CircularXXWeb-Book.woff2') format('woff2');
 }
-
 
 /* Apply colors to heading elements */
 h1, h2, h3, h4, h5, h6 {
