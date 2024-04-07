@@ -410,9 +410,18 @@ footer {
 
 .hero {
   text-align: center;
+  position: relative;
 }
 
 .hero img {
   max-width: 100%;
   height: auto;
+}
+
+.footer {
+  clear: both;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
 }
