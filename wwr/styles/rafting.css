@@ -436,3 +436,21 @@ footer img {
   height: 20px; /* Size definition 2 */
   margin: 0 5px;
 }
+/* Footer Styles */
+footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Align items at the start and end of the flex container */
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons .social-icon {
+  width: 30px; /* Adjust size as needed */
+  height: 30px;
+  margin-left: 10px; /* Adjust spacing between icons */
+}
