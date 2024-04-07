@@ -333,96 +333,39 @@ body {
   padding: 20px;
 }
 
-/* Header & Footer Styles---home page */
-body.home header, body.home footer {
-  background-color: #f0f0f0;
-  padding: 10px;
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
-/* Hero Section Styles */
-body.home .hero {
+.logo {
+  width: 150px; /* Adjust as needed */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.team-image {
   position: relative;
-  text-align: center;
 }
 
-body.home .hero img {
-  width: 100%;
-  height: auto;
-}
-
-body.home .hero-text {
+.team-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-}
-
-body.home .hero h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-
-body.home .hero .btn {
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Content Section Styles */
-body.home .content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-body.home .column {
-  flex: 1;
-}
-
-body.home .column img {
-  width: 100%;
-  height: auto;
-}
-
-body.home .column h2 {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-/* Newsletter Section Styles */
-body.home .newsletter {
   text-align: center;
-  margin-top: 40px;
-}
-
-body.home .newsletter form {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-body.home .newsletter input[type="text"],
-body.home .newsletter input[type="email"] {
-    width: 200px;
-    padding: 5px;
-    border: 1px solid #ccc;
-}
-
-/* Hero Section Styling */
-body.home .hero {
-  background-image: url("images/team.jpg"); /* Replace with path to your image */
-  /* Rest of your hero section styles */
-}
-
-body.home .hero img {
-  display: none;
-}
-
-header .logo img {
-  max-width: 100%;
-  height: auto;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
 }
