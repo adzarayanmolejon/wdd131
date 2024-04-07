@@ -332,34 +332,33 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
-
-.logo-nav {
+body.homepage .logo-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
 }
 
-.logo {
+body.homepage .logo {
   width: 150px; /* Adjust as needed */
 }
 
-nav ul {
+body.homepage nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-nav ul li {
+body.homepage nav ul li {
   display: inline-block;
   margin-right: 20px;
 }
 
-.team-image {
+body.homepage .team-image {
   position: relative;
 }
 
-.team-text {
+body.homepage .team-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -369,23 +368,24 @@ nav ul li {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
 }
-footer {
+
+body.homepage footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 20px 0;
 }
 
-.social-icons {
+body.homepage .social-icons {
   margin-top: 20px;
 }
 
-.social-icons a {
+body.homepage .social-icons a {
   display: inline-block;
   margin-right: 10px;
 }
 
-.social-icon {
+body.homepage .social-icon {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -393,32 +393,33 @@ footer {
   padding: 5px;
 }
 
-.social-icon img {
+body.homepage .social-icon img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.content {
+
+body.homepage .content {
   text-align: center;
   padding: 50px 0;
 }
 
-.column {
+body.homepage .column {
   max-width: 800px;
   margin: 0 auto;
 }
 
-.hero {
+body.homepage .hero {
   text-align: center;
   position: relative;
 }
 
-.hero img {
+body.homepage .hero img {
   max-width: 100%;
   height: auto;
 }
 
-.footer {
+body.homepage .footer {
   clear: both;
   text-align: center;
   background-color: #333;
