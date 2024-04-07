@@ -6,6 +6,14 @@
   --main-color: #333; 
   --secondary-color: #999;
 }
+@font-face {
+  font-family: 'CircularXXWeb';
+  src: url('path/to/CircularXXWeb-Book.woff2') format('woff2'),
+       url('path/to/CircularXXWeb-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 /* Apply colors to heading elements */
 h1, h2, h3, h4, h5, h6 {
@@ -422,56 +430,3 @@ body.home .hero img {
   display: none;
 }
 
-.footer img {
-  width: 30px; /* Adjust to your preferred size */
-  height: 30px; /* Adjust to your preferred size */
-  margin-left: 10px;
-}
-.footer img {
-  width: 30px; /* Size definition 1 */
-  margin-left: 10px;
-}
-
-footer img {
-  height: 20px; /* Size definition 2 */
-  margin: 0 5px;
-}
-/* Footer Styles */
-footer {
-  background-color: #f0f0f0;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between; /* Align items at the start and end of the flex container */
-  align-items: center;
-}
-
-.social-icons {
-  display: flex;
-}
-
-/* Header Styles */
-.homepage-navigation {
-  display: flex;
-  justify-content: flex-end; /* Align navigation links to the right side */
-}
-
-.homepage-navigation ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.homepage-navigation li {
-  margin-left: 20px; /* Adjust spacing between navigation links */
-}
-
-.homepage-navigation a {
-  color: olive;
-  text-decoration: none;
-}
-
-.homepage-navigation a:hover {
-  color: orange;
-  font-weight: 700;
-  text-decoration: underline;
-}
