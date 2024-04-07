@@ -400,6 +400,9 @@ header, footer {
 
 .newsletter input[type="text"],
 .newsletter input[type="email"] {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
 }
 
 /* Hero Section Styling */
