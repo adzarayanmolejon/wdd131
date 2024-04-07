@@ -417,7 +417,7 @@ body.home .hero img {
   display: none;
 }
 
-.social-icon {
-  width: 20px; /* Adjust the width as needed */
-  height: 20px; /* Adjust the height as needed */
+.social-media-icon {
+  width: 30px; /* Adjust to your preferred size */
+  height: 30px; /* Adjust to your preferred size */
 }
