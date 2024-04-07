@@ -422,3 +422,12 @@ body.home .hero img {
   height: 30px; /* Adjust to your preferred size */
   margin-left: 10px;
 }
+.footer img {
+  width: 30px; /* Size definition 1 */
+  margin-left: 10px;
+}
+
+footer img {
+  height: 20px; /* Size definition 2 */
+  margin: 0 5px;
+}
