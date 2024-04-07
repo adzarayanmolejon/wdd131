@@ -1,8 +1,13 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+/* Define CSS variables */
 :root {
   --main-color: #333; 
   --secondary-color: #999;
 }
+
+/* Apply colors to heading elements */
 h1, h2, h3, h4, h5, h6 {
   color: var(--main-color);
 }
