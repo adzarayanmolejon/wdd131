@@ -421,3 +421,8 @@ body.home .hero {
 body.home .hero img {
   display: none;
 }
+
+header .logo img {
+  max-width: 100%;
+  height: auto;
+}
