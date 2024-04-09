@@ -330,6 +330,13 @@ p {
 }
 /*trips code only*/
 
+/* Trip Container Styles */
+.featured-trips {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem; /* Add some space between the "Featured Trips" and the other trips */
+}
+
 /* Trip Card Styles */
 .trip-card {
   flex-basis: calc(50% - 1rem);
