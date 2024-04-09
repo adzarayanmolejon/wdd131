@@ -331,33 +331,24 @@ p {
 /*trips code only*/
 
 /* Trip Container Styles */
-.trips-container {
+.featured-trips {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  margin: 0 auto;
+  justify-content: space-between; /* Distribute items evenly */
 }
 
 /* Trip Card Styles */
 .trip-card {
+  flex-basis: calc(50% - 1rem); /* Each trip card takes up 50% of the container width with margin */
   margin-bottom: 1rem;
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 5px;
-  text-align: center;
-  flex: 1; /* Each trip card takes up equal space */
 }
 
-/* Custom layout for specific trip cards */
-#trip1,
-#trip2 {
-  flex-basis: calc(50% - 0.5rem); /* Each takes up half the container width with margin */
-  margin-right: 1rem; /* Spacing between trip cards */
-}
-
-#trip3,
-#trip4 {
-  flex-basis: calc(50% - 0.5rem); /* Each takes up half the container width with margin */
+/* Remove margin-right for the last trip card in a row */
+.trip-card:nth-child(2n) {
+  margin-right: 0;
 }
 /* Basic Styles-homepage */
 
