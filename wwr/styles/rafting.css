@@ -468,7 +468,6 @@ p {
 }
 
 /* Header Styles for Homepage Only */
-/* Header Styles for Homepage Only */
 .homepage-header {
   background-color: #f9f9f9;
   padding: 1rem;
@@ -511,4 +510,31 @@ p {
 
 .homepage-header nav ul li.active a {
   font-weight: bold;
+}
+
+.homepage-hero {
+  /* Your styles for the hero section on the homepage */
+  position: relative;
+  text-align: center;
+}
+
+.homepage-hero h1 {
+  position: absolute;
+  top: 20px; /* Adjust this value to place the heading where you want */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  z-index: 1;
+}
+
+.homepage-hero .btn {
+  position: absolute;
+  bottom: 20px; /* Adjust this value to place the button where you want */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
 }
