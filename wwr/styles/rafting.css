@@ -6,6 +6,17 @@
   --main-color: #333; 
   --secondary-color: #999;
 }
+/* Your other styles */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Other styles using fonts */
+h1 {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 2em;
+}
+
 
 @font-face {
   font-weight: 400;
