@@ -469,35 +469,25 @@ p {
 
 /* Header Styles for Homepage Only */
 /* Header Styles */
-.homepage header {
-  background-color: #f9f9f9;
-  padding: 1rem;
+/* Navigation Styles */
+nav {
+  margin-left: auto; /* Pushes the navigation to the right */
 }
 
-.homepage .logo-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.homepage .logo {
-  flex: 1;
-}
-
-.homepage nav ul {
+nav ul {
   display: flex;
   list-style-type: none;
 }
 
-.homepage nav ul li {
-  margin-right: 1rem;
+nav ul li {
+  margin-left: 1rem; /* Add space between navigation items */
 }
 
-.homepage nav ul li a {
+nav ul li a {
   text-decoration: none;
   color: #333;
 }
 
-.homepage nav ul li.active a {
+nav ul li.active a {
   font-weight: bold;
 }
