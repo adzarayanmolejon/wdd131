@@ -328,8 +328,26 @@ section.drills h3 {
 p {
   color: black;
 }
+/*trips code only*/
 
-/* Basic Styles */
+.trips-container {    /* Instead of just .container */
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.trips-page .column.left {  /* Add a page-specific class */
+  flex: 70%;
+  padding: 1rem;
+}
+
+.trips-page .column.right {
+  flex: 30%;
+  padding: 1rem;
+}
+
+/* Basic Styles-homepage */
 
 body {
   font-family: sans-serif;
