@@ -6,6 +6,22 @@
   --main-color: #333; 
   --secondary-color: #999;
 }
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Circular';
+  src: url('fonts/CircularXXWeb-Book.woff2') format('woff2'); /* Assuming fonts are in a "fonts" folder */
+}
+
+/* Your other styles using 'Circular' or fallback font family */
+
+
+/* Define CSS variables */
+:root {
+  --main-color: #333; 
+  --secondary-color: #999;
+}
 @font-face {
   font-weight: 400;
   font-style: normal;
