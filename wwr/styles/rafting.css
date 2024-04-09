@@ -468,35 +468,36 @@ p {
 }
 
 /* Header Styles for Homepage Only */
-.homepage-header {
+/* Header Styles */
+.homepage header {
   background-color: #f9f9f9;
   padding: 1rem;
 }
 
-.homepage-header .logo-nav {
+.homepage .logo-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.homepage-header .logo {
+.homepage .logo {
   flex: 1;
 }
 
-.homepage-header nav ul {
+.homepage nav ul {
   display: flex;
   list-style-type: none;
 }
 
-.homepage-header nav ul li {
+.homepage nav ul li {
   margin-right: 1rem;
 }
 
-.homepage-header nav ul li a {
+.homepage nav ul li a {
   text-decoration: none;
   color: #333;
 }
 
-.homepage-header nav ul li.active a {
+.homepage nav ul li.active a {
   font-weight: bold;
 }
