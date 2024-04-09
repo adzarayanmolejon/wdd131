@@ -334,7 +334,6 @@ p {
 .trip-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 /* Trip Card Styles */
@@ -344,22 +343,13 @@ p {
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 5px;
-}
-
-/* Force the first two trips to be on the same row */
-.trip-cards > .trip-card:nth-child(-n+2) {
-  flex-basis: 48%; /* Adjusted to accommodate the margin */
-}
-
-/* Force the last two trips to be on the same row */
-.trip-cards > .trip-card:nth-child(n+3) {
-  flex-basis: 48%; /* Adjusted to accommodate the margin */
+  box-sizing: border-box; /* Ensure padding and border are included in the width calculation */
 }
 
 /* Image Styles */
 .trip-card img {
-  width: 100%; /* Ensures the image fills the container */
-  height: auto; /* Maintains the aspect ratio */
+  width: 100%;
+  height: auto;
 }
 /* Basic Styles-homepage */
 
