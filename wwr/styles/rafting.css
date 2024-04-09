@@ -332,10 +332,10 @@ p {
 
 /* Trip Container Styles */
 .trips-container {
-  display: flex; /* Enables two child elements to sit side-by-side */
-  flex-wrap: wrap; /* Allows elements to wrap to the next line if needed */
-  width: 100%; /* Stretches container to 100% width */
-  margin: 0 auto; /* Centers the container horizontally */
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* Trip Card Styles */
@@ -345,12 +345,19 @@ p {
   border: 1px solid #ddd;
   border-radius: 5px;
   text-align: center;
-  flex: 1; /* Makes each trip card take up half the available space */
+  flex: 1; /* Each trip card takes up equal space */
 }
 
-.trip-card a {
-  text-decoration: none;
-  color: #000;
+/* Custom layout for specific trip cards */
+#trip1,
+#trip2 {
+  flex-basis: calc(50% - 0.5rem); /* Each takes up half the container width with margin */
+  margin-right: 1rem; /* Spacing between trip cards */
+}
+
+#trip3,
+#trip4 {
+  flex-basis: calc(50% - 0.5rem); /* Each takes up half the container width with margin */
 }
 /* Basic Styles-homepage */
 
