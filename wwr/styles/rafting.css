@@ -526,6 +526,7 @@ p {
 }
 
 .feature {
+  color: white;
   text-align: center;
   flex: 1;
   margin: 0 10px; /* Adjust spacing between features */
@@ -536,3 +537,15 @@ p {
   height: auto;
   margin-top: 10px;
 }
+
+.hero-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.hero-buttons a {
+  flex: 1;
+  margin: 0 10px;
+}
+
