@@ -347,9 +347,19 @@ p {
 }
 
 /* Force the first two trips to be on the same row */
-.trip-card:nth-of-type(1),
-.trip-card:nth-of-type(2) {
-  flex-basis: calc(50% - 1rem);
+.trip-cards > .trip-card:nth-child(-n+2) {
+  flex-basis: 48%; /* Adjusted to accommodate the margin */
+}
+
+/* Force the last two trips to be on the same row */
+.trip-cards > .trip-card:nth-child(n+3) {
+  flex-basis: 48%; /* Adjusted to accommodate the margin */
+}
+
+/* Image Styles */
+.trip-card img {
+  width: 100%; /* Ensures the image fills the container */
+  height: auto; /* Maintains the aspect ratio */
 }
 /* Basic Styles-homepage */
 
