@@ -434,35 +434,35 @@ p {
 .trips-hero .btn:hover {
   background-color: #0056b3;
 }
-/* Basic Styles-homepage */
+/* Basic Styles-homepage-footer */
+
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: #f9f9f9;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-.social-icons {
-  display: flex;
-}
-
-.social-icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 0.5rem;
-}
-
-.footer-left {
-  order: -1; /* Moves this div to the left */
-}
-
-.footer-center {
+  position: relative;
   text-align: center;
-  flex-grow: 1; /* Allows this div to grow and take up remaining space */
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
 }
 
+.footer .social-icons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+}
 
+.footer .all-rights-reserved {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+}
+
+.footer .site-map,
+.footer .contact-us {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 10px;
+}
