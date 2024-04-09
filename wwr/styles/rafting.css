@@ -536,8 +536,3 @@ p {
   height: auto;
   margin-top: 10px;
 }
-.hero img {
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  max-width: 800px; /* Limit maximum width */
-}
