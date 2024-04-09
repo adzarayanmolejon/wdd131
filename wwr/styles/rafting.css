@@ -512,29 +512,42 @@ p {
   font-weight: bold;
 }
 
-.homepage-hero {
-  /* Your styles for the hero section on the homepage */
+/* Grid layout for the sections */
+main {
+  display: grid;
+  grid-template-rows: auto auto 1fr; /* Three rows: auto for header, auto for content, 1fr for hero */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Styles for the hero section */
+.hero {
+  grid-row: 3; /* Place the hero section in the third row */
   position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Styles for the content section */
+.content {
+  grid-row: 2; /* Place the content section in the second row */
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 20px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.homepage-hero h1 {
-  position: absolute;
-  top: 20px; /* Adjust this value to place the heading where you want */
-  left: 50%;
-  transform: translateX(-50%);
+/* Styles for the homepage hero section */
+.homepage-hero {
+  grid-row: 1; /* Place the homepage hero section in the first row */
+  background-color: #007bff; /* Blue background color */
   color: #fff;
-  z-index: 1;
-}
-
-.homepage-hero .btn {
-  position: absolute;
-  bottom: 20px; /* Adjust this value to place the button where you want */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
+  text-align: center;
+  padding: 20px;
 }
