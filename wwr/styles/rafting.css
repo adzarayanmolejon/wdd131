@@ -392,5 +392,35 @@ p {
 .call-to-action a:hover {
   background-color: #0056b3;
 }
+
+/* Trip Hero Section Styles */
+.trips-hero {
+  text-align: center; /* Centers content within the hero section */
+  margin-bottom: 2rem; /* Adds some space below the hero section */
+  background-image: url('images/wild-water.jpg');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the background image */
+  color: white; /* Sets text color to white for better contrast */
+  padding: 2rem 0; /* Adds padding to the top and bottom of the hero section */
+}
+
+.trips-hero h1,
+.trips-hero p {
+  margin-bottom: 1rem; /* Adds some space below the heading and paragraph */
+}
+
+.trips-hero .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.trips-hero .btn:hover {
+  background-color: #0056b3;
+}
+
 /* Basic Styles-homepage */
 
