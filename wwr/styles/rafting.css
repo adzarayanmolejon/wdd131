@@ -341,7 +341,7 @@ p {
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 5px;
-  box-sizing: border-box; /* Ensure padding and border are included in the width calculation */
+  box-sizing: border-box; 
 }
 
 /* Image Styles */
@@ -395,31 +395,31 @@ p {
 
 /* Trip Hero Section Styles */
 .trips-hero {
-  position: relative; /* Ensure positioning context for absolutely positioned elements */
-  text-align: center; /* Centers content within the hero section */
-  margin-bottom: 2rem; /* Adds some space below the hero section */
+  position: relative; 
+  text-align: center; 
+  margin-bottom: 2rem; 
 }
 
 .trips-hero img {
-  width: 100%; /* Make the image fill the entire width of the hero section */
-  height: auto; /* Maintain the image's aspect ratio */
+  width: 100%; 
+  height: auto; 
 }
 
 .trips-hero-content {
-  position: absolute; /* Position the content absolutely */
-  bottom: 0; /* Position the content at the bottom of the hero section */
-  left: 50%; /* Position the content horizontally centered */
-  transform: translateX(-50%); /* Center the content horizontally */
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
-  color: white; /* Text color */
-  padding: 1rem; /* Padding for the content */
-  border-radius: 5px; /* Rounded corners */
-  max-width: 80%; /* Limit the width of the content */
+  position: absolute; 
+  bottom: 0;
+  left: 50%; 
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);  
+  color: white; 
+  padding: 1rem; 
+  border-radius: 5px; 
+  max-width: 80%;
 }
 
 .trips-hero h1,
 .trips-hero p {
-  margin: 0; /* Remove default margin */
+  margin: 0; 
 }
 
 .trips-hero .btn {
