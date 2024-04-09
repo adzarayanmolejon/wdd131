@@ -330,23 +330,28 @@ p {
 }
 /*trips code only*/
 
-.trips-container {    /* Instead of just .container */
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0 auto;
+/* Trip Container Styles */
+.trips-container {
+  display: flex; /* Enables two child elements to sit side-by-side */
+  flex-wrap: wrap; /* Allows elements to wrap to the next line if needed */
+  width: 100%; /* Stretches container to 100% width */
+  margin: 0 auto; /* Centers the container horizontally */
 }
 
-.trips-page .column.left {  /* Add a page-specific class */
-  flex: 70%;
+/* Trip Card Styles */
+.trip-card {
+  margin-bottom: 1rem;
   padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1; /* Makes each trip card take up half the available space */
 }
 
-.trips-page .column.right {
-  flex: 30%;
-  padding: 1rem;
+.trip-card a {
+  text-decoration: none;
+  color: #000;
 }
-
 /* Basic Styles-homepage */
 
 body {
