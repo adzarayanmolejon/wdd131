@@ -11,7 +11,7 @@
   font-weight: 400;
   font-style: normal;
   font-family: 'Circular';
-  src: url('fonts/CircularXXWeb-Book.woff2') format('woff2'); /* Assuming fonts are in a "fonts" folder */
+  src: url(path/to/CircularXXWeb-Book.woff2) /* Assuming fonts are in a "fonts" folder */
 }
 
 /* Apply colors to heading elements */
