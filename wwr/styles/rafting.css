@@ -491,3 +491,7 @@ nav ul li a {
 nav ul li.active a {
   font-weight: bold;
 }
+nav {
+  flex: 1;
+  text-align: right;
+}
