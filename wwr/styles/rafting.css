@@ -547,3 +547,29 @@ p {
   text-align: center;
   padding: 20px;
 }
+.homepage .nav-bar {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.homepage .nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.homepage .nav-bar li {
+  display: inline-block;
+  margin-left: 20px; /* Adjust spacing between items if needed */
+}
+
+.homepage .nav-bar a {
+  text-decoration: none;
+  color: #333; /* Adjust link color */
+  font-weight: bold;
+}
+
+/* Style for the active page link */
+.homepage .nav-bar .active {
+  color: #007bff; /* Change to the active link color */
+}
