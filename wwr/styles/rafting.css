@@ -395,18 +395,28 @@ p {
 
 /* Trip Hero Section Styles */
 .trips-hero {
+  position: relative; /* Ensure positioning context for absolutely positioned elements */
   text-align: center; /* Centers content within the hero section */
   margin-bottom: 2rem; /* Adds some space below the hero section */
-  background-image: url('images/wild-water.jpg');
-  background-size: cover; /* Ensures the image covers the entire background */
-  background-position: center; /* Centers the background image */
-  color: white; /* Sets text color to white for better contrast */
-  padding: 2rem 0; /* Adds padding to the top and bottom of the hero section */
+  height: 400px; /* Set a fixed height for the hero section */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.trips-hero img {
+  position: absolute; /* Position the image absolutely */
+  top: 0; /* Position the image at the top of the hero section */
+  left: 0; /* Position the image at the left of the hero section */
+  width: 100%; /* Make the image fill the entire width of the hero section */
+  height: 100%; /* Make the image fill the entire height of the hero section */
+  object-fit: cover; /* Ensure the image covers the entire space without stretching */
+  object-position: center; /* Center the image within the hero section */
 }
 
 .trips-hero h1,
 .trips-hero p {
-  margin-bottom: 1rem; /* Adds some space below the heading and paragraph */
+  position: relative; /* Make the text content positioned relative to the hero section */
+  color: white; /* Set text color to white for better contrast */
+  z-index: 1; /* Ensure text content is above the image */
 }
 
 .trips-hero .btn {
@@ -416,11 +426,11 @@ p {
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  z-index: 1; /* Ensure button is above the image */
 }
 
 .trips-hero .btn:hover {
   background-color: #0056b3;
 }
-
 /* Basic Styles-homepage */
 
