@@ -469,32 +469,26 @@ p {
 
 /* Header Styles for Homepage Only */
 /* Header Styles */
-header {
-  background-color: #f9f9f9;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
+/* Logo Styles */
 .logo {
   flex: 1;
 }
 
-nav ul {
+/* Navigation Styles */
+nav {
   display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
   list-style-type: none;
+  padding: 0;
 }
 
 nav ul li {
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-}
-
-nav ul li.active a {
-  font-weight: bold;
+nav ul li:first-child {
+  margin-left: 0;
 }
