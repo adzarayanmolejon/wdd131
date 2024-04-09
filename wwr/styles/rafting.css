@@ -328,8 +328,6 @@ section.drills h3 {
 p {
   color: black;
 }
-/*trips code only*/
-
 /* Trip Container Styles */
 .trip-cards {
   display: flex;
@@ -352,7 +350,7 @@ p {
   height: auto;
 }
 
-  /* Trip Comparison Table Styles */
+/* Trip Comparison Table Styles */
 .trip-comparison {
   margin-top: 2rem;
   padding: 1rem;
@@ -394,6 +392,5 @@ p {
 .call-to-action a:hover {
   background-color: #0056b3;
 }
-
 /* Basic Styles-homepage */
 
