@@ -350,6 +350,50 @@ p {
 .trip-card img {
   width: 100%;
   height: auto;
+
+  /* Trip Comparison Table Styles */
+.trip-comparison {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.trip-comparison table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trip-comparison th, .trip-comparison td {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+/* Call to Action Styles */
+.call-to-action {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.call-to-action a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.call-to-action a:hover {
+  background-color: #0056b3;
+}
+
 }
 /* Basic Styles-homepage */
 
