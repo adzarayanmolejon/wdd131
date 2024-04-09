@@ -526,7 +526,7 @@ p {
 }
 
 .feature {
-  color: white;
+  color: white!important;
   text-align: center;
   flex: 1;
   margin: 0 10px; /* Adjust spacing between features */
