@@ -350,6 +350,7 @@ p {
 .trip-card img {
   width: 100%;
   height: auto;
+}
 
   /* Trip Comparison Table Styles */
 .trip-comparison {
@@ -394,6 +395,5 @@ p {
   background-color: #0056b3;
 }
 
-}
 /* Basic Styles-homepage */
 
