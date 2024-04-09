@@ -467,36 +467,36 @@ p {
   margin: 10px;
 }
 
-/* Header Styles */
-header {
+/* Header Styles for Homepage Only */
+.homepage-header {
   background-color: #f9f9f9;
   padding: 1rem;
 }
 
-.logo-nav {
+.homepage-header .logo-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
+.homepage-header .logo {
   flex: 1;
 }
 
-nav ul {
+.homepage-header nav ul {
   display: flex;
   list-style-type: none;
 }
 
-nav ul li {
+.homepage-header nav ul li {
   margin-right: 1rem;
 }
 
-nav ul li a {
+.homepage-header nav ul li a {
   text-decoration: none;
   color: #333;
 }
 
-nav ul li.active a {
+.homepage-header nav ul li.active a {
   font-weight: bold;
 }
