@@ -468,6 +468,7 @@ p {
 }
 
 /* Header Styles for Homepage Only */
+/* Header Styles for Homepage Only */
 .homepage-header {
   background-color: #f9f9f9;
   padding: 1rem;
@@ -484,14 +485,15 @@ p {
 }
 
 .homepage-header nav {
-  flex: 1; /* Add this to make the nav take up the remaining space */
   display: flex;
-  justify-content: flex-end; /* Align the nav to the right */
+  justify-content: flex-end;
+  flex: 1; /* Add this to make the nav take up the remaining space */
 }
 
 .homepage-header nav ul {
   display: flex;
   list-style-type: none;
+  padding: 0; /* Remove default padding */
 }
 
 .homepage-header nav ul li {
