@@ -398,25 +398,28 @@ p {
   position: relative; /* Ensure positioning context for absolutely positioned elements */
   text-align: center; /* Centers content within the hero section */
   margin-bottom: 2rem; /* Adds some space below the hero section */
-  height: 400px; /* Set a fixed height for the hero section */
-  overflow: hidden; /* Hide overflowing content */
 }
 
 .trips-hero img {
-  position: absolute; /* Position the image absolutely */
-  top: 0; /* Position the image at the top of the hero section */
-  left: 0; /* Position the image at the left of the hero section */
   width: 100%; /* Make the image fill the entire width of the hero section */
-  height: 100%; /* Make the image fill the entire height of the hero section */
-  object-fit: cover; /* Ensure the image covers the entire space without stretching */
-  object-position: center; /* Center the image within the hero section */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+.trips-hero-content {
+  position: absolute; /* Position the content absolutely */
+  bottom: 0; /* Position the content at the bottom of the hero section */
+  left: 50%; /* Position the content horizontally centered */
+  transform: translateX(-50%); /* Center the content horizontally */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+  color: white; /* Text color */
+  padding: 1rem; /* Padding for the content */
+  border-radius: 5px; /* Rounded corners */
+  max-width: 80%; /* Limit the width of the content */
 }
 
 .trips-hero h1,
 .trips-hero p {
-  position: relative; /* Make the text content positioned relative to the hero section */
-  color: white; /* Set text color to white for better contrast */
-  z-index: 1; /* Ensure text content is above the image */
+  margin: 0; /* Remove default margin */
 }
 
 .trips-hero .btn {
@@ -426,7 +429,6 @@ p {
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  z-index: 1; /* Ensure button is above the image */
 }
 
 .trips-hero .btn:hover {
