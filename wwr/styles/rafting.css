@@ -522,18 +522,13 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  margin-top: 20px; /* Add space between team image and features */
 }
 
 .feature {
   text-align: center;
   flex: 1;
-  margin: 20px; /* Adjust spacing between features */
+  margin: 0 10px; /* Adjust spacing between features */
 }
 
 .feature img {
