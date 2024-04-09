@@ -1,21 +1,25 @@
+/* Import Google Fonts (at the top) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+/* Define CSS variables */
 :root {
   --main-color: #333; 
   --secondary-color: #999;
 }
+
+/* Your other styles */
 body {
   font-family: 'Roboto', Arial, sans-serif;
 }
+
+/* Other styles using fonts */
 h1 {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 2em;
 }
-@font-face {
-  font-weight: 400;
-  font-style: normal;
-  font-family: 'Circular';
-  src: url('fonts/CircularXXWeb-Book.woff2') format('woff2');/* Assuming fonts are in a "fonts" folder */
-}
+
+/* Removed @font-face rules (if not using CircularXXWeb) */
+
 /* Apply colors to heading elements */
 h1, h2, h3, h4, h5, h6 {
   color: var(--main-color);
