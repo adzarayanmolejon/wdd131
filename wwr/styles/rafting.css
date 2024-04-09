@@ -468,27 +468,36 @@ p {
 }
 
 /* Header Styles for Homepage Only */
-/* Header Styles */
-/* Logo Styles */
-.logo {
+/* Header Styles for Homepage Only */
+.homepage-header {
+  background-color: #f9f9f9;
+  padding: 1rem;
+}
+
+.homepage-header .logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homepage-header .logo {
   flex: 1;
 }
 
-/* Navigation Styles */
-nav {
+.homepage-header nav ul {
   display: flex;
-  justify-content: flex-end;
-}
-
-nav ul {
   list-style-type: none;
-  padding: 0;
 }
 
-nav ul li {
-  margin-left: 1rem;
+.homepage-header nav ul li {
+  margin-right: 1rem;
 }
 
-nav ul li:first-child {
-  margin-left: 0;
+.homepage-header nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.homepage-header nav ul li.active a {
+  font-weight: bold;
 }
