@@ -512,38 +512,30 @@ p {
   font-weight: bold;
 }
 
-.homepage {
-  display: grid;
-  grid-template-rows: auto auto 1fr; /* Three rows: auto for header, auto for content, 1fr for hero */
-  height: 100vh; /* Full viewport height */
-}
-
-.homepage .hero {
-  grid-row: 3; /* Place the hero section in the third row */
+.homepage-hero {
   position: relative;
-  overflow: hidden;
-}
-
-.homepage .hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.homepage .content {
-  grid-row: 2; /* Place the content section in the second row */
-  background-color: #f8f9fa; /* Light gray background */
-  padding: 20px;
   text-align: center;
+}
+
+.features {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
 }
 
-.homepage .homepage-hero {
-  grid-row: 1; /* Place the homepage hero section in the first row */
-  background-color: #007bff; /* Blue background color */
-  color: #fff;
+.feature {
   text-align: center;
-  padding: 20px;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.feature img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
 }
