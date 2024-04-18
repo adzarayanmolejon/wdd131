@@ -24,3 +24,8 @@ function updateQueueNumber(queueType, number) {
 updateQueueNumber('single', singleQueueNumber);
 updateQueueNumber('multiple', multipleQueueNumber);
 updateQueueNumber('priority', priorityQueueNumber);
+
+function playAudio(queueType) {
+    const audioElement = document.getElementById(`${queueType}Audio`);
+    audioElement.play();
+}
