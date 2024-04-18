@@ -29,3 +29,26 @@ function playAudio(queueType) {
     const audioElement = document.getElementById(`${queueType}Audio`);
     audioElement.play();
 }
+function nextNumber(queueType) {
+    console.log('Next button clicked for queue type:', queueType);
+    // Your code here
+}
+function nextNumber(queueType) {
+    let newQueueNumber = 0;
+    newQueueNumber++;
+    console.log('New queue number for', queueType, 'is:', newQueueNumber);
+    // Your code here
+}
+function nextNumber(queueType) {
+    if (queueType === 'single') {
+        console.log('Incrementing single queue number');
+    } else {
+        console.log('Incrementing', queueType, 'queue number');
+    }
+    // Your code here
+}
+function nextNumber(queueType) {
+    let queue = { type: queueType, number: 1 };
+    console.log('Current queue:', queue);
+    // Your code here
+}
