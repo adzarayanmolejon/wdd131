@@ -85,3 +85,17 @@ function nextNumber(queueType) {
 // nextNumber('single');
 // nextNumber('multiple');
 // nextNumber('priority');
+function nextNumber(queueType) {
+    // Get the current queue number element
+    const queueNumberElement = document.getElementById(queueType + 'QueueNumber');
+  
+    // Parse the current number to integer (assuming it starts at 1)
+    let currentNumber = parseInt(queueNumberElement.innerHTML);
+  
+    // Increment the number
+    currentNumber++;
+  
+    // Update the queue number element with the new number
+    queueNumberElement.innerHTML = currentNumber;
+  }
+  
