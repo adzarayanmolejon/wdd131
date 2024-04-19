@@ -5,29 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Queuing System</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="queue">
-        <h1>Single Transaction Queue</h1>
-        <img src="images/single.jpg" alt="Single Transaction" width="200">
-        <p id="singleQueueNumber">1</p>
-        <button onclick="nextNumber('single')">Next</button>
-    </div>
-    <div class="queue">
-        <h1>Multiple Transaction Queue</h1>
-        <img src="images/mutliple.jpg" alt="Multiple Transaction" width="200">
-        <p id="multipleQueueNumber">1</p>
-        <button onclick="nextNumber('multiple')">Next</button>
-    </div>
-    <div class="queue">
-        <h1>Priority Queue</h1>
-        <img src="images/Pregnant_woman_giving_basket_to_cashier.jpg" alt="Priority Transaction" width="200">
-        <img src="images/pwd.jpg" alt="Priority Transaction" width="200">
-        <img src="images/priority-1.jpg" alt="Priority Transaction" width="200">
-        <p id="priorityQueueNumber">1</p>
-        <button onclick="nextNumber('priority')">Next</button>
-    </div>
+    <h1>Virtual Queuing System</h1>
+    <h2>Single Queue</h2>
+    <p>Queue Number: <span id="singleQueueNumber">0</span></p>
+    <button onclick="nextNumber('single')">Next Number</button>
+
+    <h2>Multiple Queue</h2>
+    <p>Queue Number: <span id="multipleQueueNumber">0</span></p>
+    <button onclick="nextNumber('multiple')">Next Number</button>
+
+    <h2>Priority Queue</h2>
+    <p>Queue Number: <span id="priorityQueueNumber">0</span></p>
+    <button onclick="nextNumber('priority')">Next Number</button>
+
     <script src="script.js"></script>
 </body>
 </html>
