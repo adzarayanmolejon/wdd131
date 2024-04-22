@@ -30,3 +30,17 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!-- Add a form for user input -->
+<form id="queueForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <button type="submit">Join Queue</button>
+</form>
+
+<!-- Display the called number visually -->
+<div id="visualCallout"></div>
+
+<!-- Add reset buttons for each queue type -->
+<button onclick="resetQueue('single')">Reset Single Queue</button>
+<button onclick="resetQueue('multiple')">Reset Multiple Queue</button>
+<button onclick="resetQueue('priority')">Reset Priority Queue</button>
