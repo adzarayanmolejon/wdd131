@@ -49,3 +49,18 @@ function resetQueue(queueType) {
             return;
     }
 }
+function callNumber(queueType) {
+    let queueNumbers = printedNumbers[queueType];
+    if (queueNumbers.length > 0) {
+        let nextNumber = queueNumbers.shift();
+        alert(`Calling ${queueType} queue number: ${nextNumber}`);
+        playAudio(); // Call the playAudio function
+    } else {
+        alert(`No more numbers to call for ${queueType} queue`);
+    }
+}
+
+function playAudio() {
+    let audio = document.getElementById('audio');
+    audio.play();
+}
