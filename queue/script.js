@@ -49,6 +49,7 @@ function resetQueue(queueType) {
             return;
     }
 }
+
 function callNumber(queueType) {
     let queueNumbers = printedNumbers[queueType];
     if (queueNumbers.length > 0) {
