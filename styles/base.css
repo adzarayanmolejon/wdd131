@@ -13,7 +13,7 @@ nav {
     text-align: center; /* Center align the text */
     padding: 10px; /* Add padding */
     margin: 0 auto; /* Center the nav horizontally */
-    max-width: 1000px; /* Limit the maximum width of the nav */
+    max-width: 1200px; /* Limit the maximum width of the nav */
     border: 1px solid #333; /* Add a border */
     border-radius: 5px; /* Add rounded corners */
     font-size: 24px; /* Set the font size to match the h1 */
