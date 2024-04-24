@@ -12,7 +12,7 @@ nav {
     background-color: #333; /* Dark background color */
     text-align: center; /* Center align the text */
     padding: 10px; /* Add padding */
-    margin: 10px auto; /* Add margin and auto to center the nav horizontally */
+    margin: 0 auto 10px; /* Add margin at the bottom and auto to center the nav horizontally */
     max-width: 600px; /* Limit the maximum width of the nav */
     border: 1px solid #333; /* Add a border */
     border-radius: 5px; /* Add rounded corners */
