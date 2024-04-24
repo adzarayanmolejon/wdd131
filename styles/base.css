@@ -50,3 +50,13 @@ main {
 .resources {
     flex: 1;
 }
+
+footer.footer {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
