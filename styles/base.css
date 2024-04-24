@@ -12,8 +12,9 @@ nav {
     background-color: #333; /* Dark background color */
     text-align: center; /* Center align the text */
     padding: 10px; /* Add padding */
-    margin-top: 20px; /* Add margin at the top */
-    display: inline-block; /* Display the nav as inline-block to center it */
+    margin: 20px auto; /* Add margin and auto to center the nav horizontally */
+    max-width: 600px; /* Limit the maximum width of the nav */
+    border: 1px solid #333; /* Add a border */
     border-radius: 5px; /* Add rounded corners */
 }
 
@@ -22,4 +23,5 @@ nav a {
     text-decoration: none; /* Remove underline from links */
     margin: 0 10px; /* Add spacing between links */
 }
+
 /**nav design**/
