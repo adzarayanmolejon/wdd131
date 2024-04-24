@@ -27,3 +27,26 @@ nav a {
     text-decoration: none; /* Remove underline from links */
     margin: 0 80px; /* Add spacing between links */
 }
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.card {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 45%;
+}
+
+.about-me {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.resources {
+    flex: 1;
+}
