@@ -1,9 +1,9 @@
 h1 {
-    background-color: #f8f8f8; /* Light gray background color */
-    border: 1px solid #333; /* Black border */
+    background-color: navy; /* Light gray background color */
+    border: 1px solid black; /* Black border */
     padding: 10px;
     font-family: "Arial", sans-serif; /* Specify the font family */
-    color: #333; /* Text color */
+    color:white; /* Text color */
     text-align: center; /* Center align the text */
     margin: 0; /* Remove default margin */
 }
@@ -25,5 +25,5 @@ nav {
 nav a {
     color: white; /* Text color */
     text-decoration: none; /* Remove underline from links */
-    margin: 0 20px; /* Add spacing between links */
+    margin: 0 40px; /* Add spacing between links */
 }
