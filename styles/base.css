@@ -1,9 +1,10 @@
 body h1 {
-    background-color: #f8f8f8; /* Light gray background color */
+    background-color:blue ; 
     border: 1px solid #333; /* Black border */
     padding: 10px;
-    font-family: "Arial", sans-serif; /* Specify the font family */
-    color: #333; /* Text color */
+    font-family: "Arial", sans-serif;
+    color: #333;
+    text-align: center;
 }
 
 /**h1**/
