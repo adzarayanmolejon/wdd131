@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const footer = document.querySelector("footer");
-    const paragraphs = footer.querySelectorAll("p");
-    const currentYear = new Date().getFullYear();
-    const lastModified = new Date(document.lastModified);
+    const currentYearSpan = document.getElementById("currentyear");
+    const lastModifiedParagraph = document.getElementById("lastModified");
 
-    paragraphs[0].textContent = `© ${currentYear} All Rights Reserved`;
-    paragraphs[1].textContent = `Last modified: ${lastModified.toLocaleString()}`;
+    const currentYear = new Date().getFullYear();
+    const lastModifiedDate = new Date(document.lastModified);
+
+    currentYearSpan.textContent = currentYear;
+    lastModifiedParagraph.textContent += lastModifiedDate.toLocaleString();
 });
