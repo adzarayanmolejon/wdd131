@@ -22,5 +22,5 @@ nav {
 nav a {
     color: white; /* Text color */
     text-decoration: none; /* Remove underline from links */
-    margin: 0 10px; /* Add spacing between links */
+    margin: 0 30px; /* Add spacing between links */
 }
