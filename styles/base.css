@@ -18,6 +18,8 @@ nav {
     border-radius: 5px; /* Add rounded corners */
     font-size: 24px; /* Set the font size to match the h1 */
     width: fit-content; /* Set width to fit content */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the items horizontally */
 }
 
 nav a {
