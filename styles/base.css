@@ -12,15 +12,16 @@ nav {
     background-color: #333; /* Dark background color */
     text-align: center; /* Center align the text */
     padding: 10px; /* Add padding */
-    margin: 0 auto 10px; /* Add margin at the bottom and auto to center the nav horizontally */
-    max-width: 600px; /* Limit the maximum width of the nav */
+    margin: 0 auto; /* Add margin at the bottom and auto to center the nav horizontally */
+    width: fit-content; /* Set width to fit content */
     border: 1px solid #333; /* Add a border */
     border-radius: 5px; /* Add rounded corners */
     font-size: 24px; /* Set the font size to match the h1 */
+    display: inline-block; /* Display as inline-block */
 }
 
 nav a {
     color: white; /* Text color */
     text-decoration: none; /* Remove underline from links */
-    margin: 0 30px; /* Add spacing between links */
+    margin: 0 10px; /* Add spacing between links */
 }
