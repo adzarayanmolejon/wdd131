@@ -56,8 +56,7 @@ footer.footer {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
-    width: 100%;
     text-align: center;
     margin-top: 20px;
-    box-sizing: border-box; /* Ensure padding is included in the width */
+    clear: both; /* Ensure footer clears any floated elements */
 }
