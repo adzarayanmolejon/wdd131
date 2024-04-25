@@ -117,7 +117,7 @@ main {
 
 footer {
   text-align: center;
-  background-color: navy; /* Light gray background color */
+  background-color: lightblue; /* Light gray background color */
   padding: 10px; /* Add some padding around the content */
   margin-top: 20px; /* Add space between the footer and the rest of the content */
   color:white;/**text color**/
