@@ -127,6 +127,5 @@ footer p {
 }
 
 footer #currentyear {
-  font-size: 16px; /* Set a larger font size for the year */
+  font-size: 16px !important; /* Set a larger font size for the year */
 }
-
