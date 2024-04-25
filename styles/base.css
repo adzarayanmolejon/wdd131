@@ -122,3 +122,11 @@ footer {
   margin-top: 20px; /* Add space between the footer and the rest of the content */
   color:white;/**text color**/
 }
+footer p {
+  font-size: 14px; /* Set the font size for the entire paragraph */
+}
+
+footer #currentyear {
+  font-size: 16px; /* Set a larger font size for the year */
+}
+
