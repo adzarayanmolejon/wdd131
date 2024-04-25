@@ -118,3 +118,8 @@ main {
     margin-top: 20px;
     clear: both; /* Ensure footer clears any floated elements */
 }
+.footer {
+    text-align: center; /* Center the content */
+    padding: 20px; /* Add some padding for spacing */
+  }
+  
