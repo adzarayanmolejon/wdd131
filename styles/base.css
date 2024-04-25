@@ -27,7 +27,8 @@ nav a {
     text-decoration: none; /* Remove underline from links */
     margin: 0 80px; /* Add spacing between links */
 }
-.main {
+
+main {
     display: flex;
     justify-content: space-around;
     margin: 20px;
@@ -42,34 +43,18 @@ nav a {
 }
 
 .about-me {
-    background-color: #f9f9f9;
+    flex: 1;
+    margin-right: 20px;
 }
 
 .resources {
+    flex: 1;
+}
+.about-me {
     background-color: #f9f9f9;
-}
-
-footer.footer {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 5px;
     padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-    clear: both; /* Ensure footer clears any floated elements */
-}
-.section-box {
     border: 1px solid #ccc;
     border-radius: 5px;
-    overflow: hidden; /* Ensure border doesn't wrap around floated elements */
-  }
-  
-  .card {
-    padding: 20px;
-  }
-  
-  .about-me {
-    margin-bottom: 20px; /* Space between sections */
   }
   
   .about-me-content {
@@ -124,8 +109,12 @@ footer.footer {
     line-height: 1.6;
   }
   
-  .web-dev-resources {
-    border-top: 1px solid #ccc; /* Add border at the top */
-    padding-top: 20px; /* Space between border and content */
-  }
-  
+footer.footer {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    clear: both; /* Ensure footer clears any floated elements */
+}
