@@ -59,12 +59,16 @@ footer.footer {
     clear: both; /* Ensure footer clears any floated elements */
 }
 .section-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Equal space between columns */
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden; /* Ensure border doesn't wrap around floated elements */
   }
   
   .card {
+    flex: 1; /* Each section takes up equal space */
     padding: 20px;
   }
   
@@ -72,60 +76,24 @@ footer.footer {
     margin-bottom: 20px; /* Space between sections */
   }
   
-  .about-me-content {
-    display: flex;
-    flex-direction: row-reverse; /* Image on the right, text on the left */
-    align-items: center; /* Center vertically */
-  }
-  
-  .about-me-text {
-    flex: 1; /* Take up remaining space */
-    padding-right: 20px; /* Space between text and image */
-  }
-  
-  .about-me h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .about-me p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  .about-me-image {
-    flex-shrink: 0; /* Do not shrink image */
-  }
-  
-  .country-info {
-    margin-top: 20px; /* Space between sections */
-  }
-  
-  .country-info h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .flag {
-    float: left; /* Align flag to the left */
-    margin-right: 20px; /* Space between flag and text */
-  }
-  
-  .flag img {
-    max-width: 100%; /* Ensure flag does not exceed container width */
-  }
-  
-  .country-text {
-    overflow: hidden; /* Prevent text from wrapping around the flag */
-  }
-  
-  .country-text p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
   .web-dev-resources {
     border-top: 1px solid #ccc; /* Add border at the top */
     padding-top: 20px; /* Space between border and content */
+  }
+  
+  @media (min-width: 768px) {
+    .section-box {
+      display: flex;
+      justify-content: space-between; /* Equal space between columns */
+    }
+    
+    .about-me {
+      width: 45%; /* About Me section takes up 45% of the width */
+      margin-right: 10px; /* Space between sections */
+    }
+    
+    .web-dev-resources {
+      width: 45%; /* Web Dev Resources section takes up 45% of the width */
+    }
   }
   
