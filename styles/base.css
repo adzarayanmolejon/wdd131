@@ -123,3 +123,8 @@ main {
     padding: 20px; /* Add some padding for spacing */
   }
   
+  .card.resources {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
