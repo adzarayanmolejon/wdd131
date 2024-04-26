@@ -32,6 +32,18 @@ nav a {
     margin: 0 80px; /**design-nav**/
 }
 
+nav a {
+  color: white; 
+  text-decoration: none; 
+  margin: 0 80px; /**design-nav**/
+  transition: color 0.3s; /* Add a smooth transition for color change */
+}
+
+nav a:hover {
+  color: red; /* Change the text color to red on hover */
+}
+
+
 main {
   display: flex;
   justify-content: space-around;
