@@ -89,16 +89,20 @@ main {
   font-size: 24px;
   margin-bottom: 10px;
 }
-
 .flag {
-  float: left; /* Align flag to the left */
-  margin-right: 20px; /* Space between flag and text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.flag img {
-  max-width: 100%; /* Ensure flag does not exceed container width */
+.flag-image {
+  margin-bottom: 10px; /* Space between flag and label */
 }
 
+.flag-label {
+  text-align: center;
+  font-style: italic;
+}
 .country-text {
   overflow: hidden; /* Prevent text from wrapping around the flag */
   text-align: justify; /* Justify text */
