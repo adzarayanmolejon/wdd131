@@ -1,6 +1,6 @@
 body {
   margin: 0 auto; /* 0 top/bottom margin, auto left/right margin */
-  max-width: 800px; /* Adjust the value to your desired maximum width */
+  max-width: 1000px; /* Adjust the value to your desired maximum width */
   padding: 0 20px; /* Optional: add padding to the left and right sides */
 }
 h1 {
