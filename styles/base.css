@@ -122,7 +122,10 @@ main {
   .about-me-text p {
     text-align: justify;
   }
-    
+  .country-text {
+    text-align: justify;
+  }
+  
 
 
 footer {
