@@ -1,41 +1,41 @@
 body {
-  margin: 0 auto; /* 0 top/bottom margin, auto left/right margin */
-  max-width: 1300px; /* Adjust the value to your desired maximum width */
-  padding: 0 20px; /* Optional: add padding to the left and right sides */
+  margin: 0 auto; 
+  max-width: 1300px; 
+  padding: 0 20px; /** design-body**/
 }
 h1 {
-    background-color: navy; /* navy background color */
-    border: 1px solid black; /* Black border */
+    background-color: navy; 
+    border: 1px solid black; 
     padding: 10px;
-    font-family: "Arial", sans-serif; /* Specify the font family */
-    color:white; /* Text color */
-    text-align: center; /* Center align the text */
-    margin: 0; /* Remove default margin */
-}
+    font-family: "Arial", sans-serif;
+    color:white; 
+    text-align: center; 
+    margin: 0; /**design-h1**/
+  }
 nav:hover {
-    background-color: #333; /* Dark background color */
-    text-align: center; /* Center align the text */
-    padding: 10px; /* Add padding */
-    margin: 0 auto; /* Center the nav horizontally */
-    max-width: 1200px; /* Limit the maximum width of the nav */
-    border: 1px solid #333; /* Add a border */
-    border-radius: 5px; /* Add rounded corners */
-    font-size: 24px; /* Set the font size to match the h1 */
-    width: 100%; /* Expand the nav to full width */
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center the items horizontally */
+    background-color: #333; 
+    text-align: center; 
+    padding: 10px;
+    margin: 0 auto; 
+    max-width: 1200px; 
+    border: 1px solid #333; 
+    border-radius: 5px; 
+    font-size: 24px; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
 }
 
 nav a:hover {
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline from links */
-    margin: 0 80px; /* Add spacing between links */
+    color: white; 
+    text-decoration: none; 
+    margin: 0 80px; /**design-nav**/
 }
 
 main {
   display: flex;
   justify-content: space-around;
-  margin: 20px;
+  margin: 20px;/**design-main**/
 }
 
 .card {
@@ -77,8 +77,8 @@ main {
 }
 
 .about-me-image {
-  flex-shrink: 0; /* Do not shrink image */
-  margin-left: 20px; /* Add some space between the image and text */
+  flex-shrink: 0; 
+  margin-left: 20px;
 }
 
 .country-info {
@@ -87,9 +87,9 @@ main {
 
 .flag-and-text {
   display: flex;
-  flex-direction: row; /* Display items in a row */
-  align-items: flex-start; /* Align items at the start */
-  justify-content: center; /* Center the items horizontally */
+  flex-direction: row; 
+  align-items: flex-start; 
+  justify-content: center; 
 }
 
 .flag {
@@ -97,7 +97,7 @@ main {
 }
 
 .flag-image {
-  margin-bottom: 10px; /* Space between flag and label */
+  margin-bottom: 10px;
 }
 
 .flag-label {
@@ -139,7 +139,7 @@ main {
   
 footer {
   text-align: center;
-  background-color: navy; /* Light gray background color */
+  background-color: navy;
   padding: 10px; /* Add some padding around the content */
   margin-top: 20px; /* Add space between the footer and the rest of the content */
   color:white;/**text color**/
