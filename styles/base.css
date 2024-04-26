@@ -33,115 +33,82 @@ nav a {
 }
 
 main {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
 }
 
 .card {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    width: 45%;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  width: 45%;
+  margin-bottom: 20px; /* Add margin bottom for spacing between cards */
 }
 
 .about-me {
-    flex: 1;
-    margin-right: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.resources {
-    flex: 1;
+.about-me-content {
+  display: flex;
+  flex-direction: row-reverse; /* Image on the right, text on the left */
+  align-items: center; /* Center vertically */
 }
-.about-me {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .about-me-content {
-    display: flex;
-    flex-direction: row-reverse; /* Image on the right, text on the left */
-    align-items: center; /* Center vertically */
-  }
-  
-  .about-me-text {
-    flex: 1; /* Take up remaining space */
-    padding-right: 20px; /* Space between text and image */
-  }
-  
-  .about-me h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .about-me p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  .about-me-image {
-    flex-shrink: 0; /* Do not shrink image */
-  }
-  
-  .country-info {
-    margin-top: 20px; /* Space between sections */
-  }
-  
-  .country-info h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .flag {
-    float: left; /* Align flag to the left */
-    margin-right: 20px; /* Space between flag and text */
-  }
-  
-  .flag img {
-    max-width: 100%; /* Ensure flag does not exceed container width */
-  }
-  
-  .country-text {
-    overflow: hidden; /* Prevent text from wrapping around the flag */
-  }
-  
-  .country-text p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  .card.resources {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /**design the resources**/
-  }
 
-  .about-me-text p {
-    text-align: justify;
-  }
-  .country-text {
-    text-align: justify;
-  }
-  .about-me-content {
-    display: flex;
-    flex-direction: row-reverse; /* Reverse the order of the items */
-  }
-  
-  .about-me-text {
-    flex: 1; /* Allow the text to grow and take up remaining space */
-  }
-  
-  .about-me-image {
-    flex: 0 0 auto; /* Disable growing and shrinking; maintain image size */
-    margin-left: 20px; /* Add some space between the image and text */
-  }
-  
-  
+.about-me-text {
+  flex: 1; /* Take up remaining space */
+  padding-right: 20px; /* Space between text and image */
+}
 
+.about-me h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
 
+.about-me p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify; /* Justify text */
+}
+
+.about-me-image {
+  flex-shrink: 0; /* Do not shrink image */
+  margin-left: 20px; /* Add some space between the image and text */
+}
+
+.country-info {
+  margin-top: 20px; /* Space between sections */
+}
+
+.country-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.flag {
+  float: left; /* Align flag to the left */
+  margin-right: 20px; /* Space between flag and text */
+}
+
+.flag img {
+  max-width: 100%; /* Ensure flag does not exceed container width */
+}
+
+.country-text {
+  overflow: hidden; /* Prevent text from wrapping around the flag */
+  text-align: justify; /* Justify text */
+}
+
+.card.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /**design the resources**/
+}
 footer {
   text-align: center;
   background-color: navy; /* Light gray background color */
