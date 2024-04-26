@@ -114,6 +114,25 @@ main {
   flex-direction: column;
   align-items: flex-start; /**design the resources**/
 }
+.section-with-border {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px; /* Add margin bottom for spacing */
+}
+
+.card {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px; /* Add margin bottom for spacing */
+}
+
+.about-me,
+.resources {
+  margin-bottom: 20px; /* Add margin bottom for spacing */
+}
+
 footer {
   text-align: center;
   background-color: navy; /* Light gray background color */
