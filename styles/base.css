@@ -26,7 +26,7 @@ nav {
     justify-content: center;
 }
 
-nav a:hover {
+nav a {
     color: white; 
     text-decoration: none; 
     margin: 0 80px; /**design-nav**/
