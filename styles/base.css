@@ -12,7 +12,7 @@ h1 {
     text-align: center; 
     margin: 0; /**design-h1**/
   }
-nav:hover {
+nav {
     background-color: #333; 
     text-align: center; 
     padding: 10px;
