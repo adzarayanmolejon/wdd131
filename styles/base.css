@@ -82,17 +82,18 @@ main {
 }
 
 .country-info {
-  margin-top: 20px; /* Space between sections */
+  text-align: center; /* Center the content */
 }
 
-.country-info h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-.flag {
+.flag-and-text {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row; /* Display items in a row */
+  align-items: flex-start; /* Align items at the start */
+  justify-content: center; /* Center the items horizontally */
+}
+
+.flag {
+  margin-right: 20px; /* Space between flag and text */
 }
 
 .flag-image {
@@ -103,9 +104,9 @@ main {
   text-align: center;
   font-style: italic;
 }
+
 .country-text {
-  overflow: hidden; /* Prevent text from wrapping around the flag */
-  text-align: justify; /* Justify text */
+  flex: 1; /* Take up remaining space */
 }
 
 .card.resources {
