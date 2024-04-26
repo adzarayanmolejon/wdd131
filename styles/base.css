@@ -125,6 +125,20 @@ main {
   .country-text {
     text-align: justify;
   }
+  .about-me-content {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order of the items */
+  }
+  
+  .about-me-text {
+    flex: 1; /* Allow the text to grow and take up remaining space */
+  }
+  
+  .about-me-image {
+    flex: 0 0 auto; /* Disable growing and shrinking; maintain image size */
+    margin-left: 20px; /* Add some space between the image and text */
+  }
+  
   
 
 
