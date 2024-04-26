@@ -131,8 +131,8 @@ main {
 .about-me,
 .resources {
   margin-bottom: 20px; /* Add margin bottom for spacing */
-
-.top-section {
+}
+top-section {
   display: grid;
   grid-template-columns: 2fr 1fr; /* About Me section takes 2/3 of the width, Web Dev Resources section takes 1/3 */
   grid-column-gap: 20px; /* Gap between columns */
@@ -142,13 +142,11 @@ main {
   margin-bottom: 20px; /* Margin below the container */
   }
   
-  .card {
-    background-color: #f8f8f8;
-    padding: 20px;
-  }
-  
+.card {
+  background-color: #f8f8f8;
+  padding: 20px;
 }
-
+  
 footer {
   text-align: center;
   background-color: navy; /* Light gray background color */
