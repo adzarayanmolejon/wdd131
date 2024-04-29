@@ -19,9 +19,9 @@
     </nav>
   </header>
   <main>
-    <section class="card about-me">
+    <section class="card first-aid">
       <div class="about-me-content">
-        <div class="about-me-text">
+        <div class="first-aid">
           <h2>What is First Aid?</h2>
           <p>First aid refers to medical attention that is usually administered immediately after the injury occurs and at the location where it occurred. It often consists of a one-time, short-term treatment and requires little technology or training to administer. First aid can include cleaning minor cuts, scrapes, or scratches; treating a minor burn; applying bandages and dressings; the use of non-prescription medicine; draining blisters; removing debris from the eyes; massage; and drinking fluids to relieve heat stress.</div>
         <div class="about-me-image">
