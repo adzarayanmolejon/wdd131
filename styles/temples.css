@@ -59,7 +59,7 @@ figure img {
 /* mobile view */
 @media (max-width: 768px) {
     main {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: 1fr;
     }
 }
 
