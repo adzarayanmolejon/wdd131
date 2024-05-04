@@ -1,9 +1,36 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
 main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 footer {
@@ -12,3 +39,4 @@ footer {
     color: #fff;
     padding: 10px;
 }
+
