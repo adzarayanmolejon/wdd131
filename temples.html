@@ -40,7 +40,7 @@
         document.getElementById("currentyear").innerHTML = new Date().getFullYear();
     
         var lastModifiedDate = new Date(document.lastModified);
-        var formattedDate = lastModifiedDate.toLocaleDateString(); // Optional formatting
+        var formattedDate = lastModifiedDate.toLocaleDateString();
     
         document.getElementById("lastModified").innerHTML += formattedDate ? formattedDate : "Unknown";
     </script>
