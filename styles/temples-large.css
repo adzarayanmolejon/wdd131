@@ -61,14 +61,12 @@ figure img {
         grid-template-columns: 1fr;
     }
 }
-
 /* larger view */
 @media (min-width: 769px) {
     main {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
 /* temple grid */
 .temple-grid {
     display: grid;
@@ -78,9 +76,8 @@ figure img {
 
 .temple-grid figure {
     text-align: center;
-    grid-column: span 3; /* Makes the figure span 3 columns */
+    grid-column: span 1;
 }
-
 .temple-grid img {
     max-width: 100%;
     height: auto;
