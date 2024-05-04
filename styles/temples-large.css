@@ -76,7 +76,7 @@ figure img {
 
 .temple-grid figure {
     text-align: center;
-    grid-column: span 1;
+    grid-column: span 1; /* Makes the figure span 1 column */
 }
 .temple-grid img {
     max-width: 100%;
