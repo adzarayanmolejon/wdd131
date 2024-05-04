@@ -43,7 +43,7 @@ footer {
 main {
     display: grid;
     grid-gap: 20px;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -61,21 +61,21 @@ figure img {
     border-radius: 10px;
 }
 
-/* Media query for mobile view */
+/* mobile view */
 @media (max-width: 768px) {
     main {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
 
-/* Media query for larger view */
+/* larger view */
 @media (min-width: 769px) {
     main {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* Styles for temple grid */
+/* temple grid */
 .temple-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
