@@ -55,10 +55,11 @@ figure {
 }
 
 figure img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    max-width: 100%; /* Ensures the image scales with its container */
+    height: auto;    /* Ensures the image maintains its aspect ratio */
+    /* Additional styling */
+    max-height: 200px; /* Sets a maximum height for the image */
+    width: auto;       /* Allows the image to adjust its width accordingly */
 }
 
 /* mobile view */
