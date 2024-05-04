@@ -52,3 +52,9 @@ figure {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
