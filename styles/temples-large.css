@@ -27,12 +27,6 @@ nav a:hover {
     background-color: #555;
 }
 
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 footer {
     text-align: center;
     background-color: #333;
