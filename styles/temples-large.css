@@ -56,7 +56,7 @@ figure img {
 }
 
 /* mobile view */
-@media (max-width: 400px) {
+@media (max-width: 150px) {
     main {
         grid-template-columns: 1fr;
     }

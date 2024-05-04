@@ -57,7 +57,7 @@ figure img {
 }
 
 /* mobile view */
-@media (max-width: 200px) {
+@media (max-width: 150px) {
     main {
         grid-template-columns: 1fr;
     }
@@ -69,6 +69,7 @@ figure img {
         grid-template-columns: none;
     }
 }
+
 /* temple grid */
 .temple-grid {
     display: grid;
