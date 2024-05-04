@@ -58,3 +58,17 @@ figure img {
     height: auto;
     border-radius: 10px;
 }
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px; /* Set a maximum width for each figure */
+    margin: 0 auto;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the entire figure */
+    border-radius: 10px;
+}
