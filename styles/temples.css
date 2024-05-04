@@ -62,14 +62,14 @@ figure img {
 }
 
 /* mobile view */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     main {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
 
 /* larger view */
-@media (min-width: 769px) {
+@media (min-width: 850px) {
     main {
         grid-template-columns: repeat(3, 1fr);
     }
