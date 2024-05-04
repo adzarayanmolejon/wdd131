@@ -41,20 +41,20 @@ footer {
 }
 figure {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-    figure {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 figure img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    figure {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
