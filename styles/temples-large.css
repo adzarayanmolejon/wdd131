@@ -64,10 +64,24 @@ figure img {
 /* larger view */
 @media (min-width: 769px) {
     main {
-        grid-auto-flow: column;
-        grid-template-columns: none;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .temple-grid figure {
+        text-align: center;
+    }
+
+    .temple-grid img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
     }
 }
+
 
 /* temple grid */
 .temple-grid {
