@@ -42,8 +42,7 @@
         var lastModifiedDate = new Date(document.lastModified);
         var formattedDate = lastModifiedDate.toLocaleDateString(); // Optional formatting
     
-        document.getElementById("lastModified").innerHTML += formattedDate ? formattedDate : lastModifiedDate.toDateString(); // Corrected line
+        document.getElementById("lastModified").innerHTML += formattedDate ? formattedDate : "Unknown";
     </script>
-    
 </body>
 </html>
