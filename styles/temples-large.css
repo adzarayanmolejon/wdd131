@@ -64,7 +64,8 @@ figure img {
 /* larger view */
 @media (min-width: 769px) {
     main {
-        grid-template-columns: repeat(3, 1fr);
+        grid-auto-flow: column;
+        grid-template-columns: none;
     }
 }
 
