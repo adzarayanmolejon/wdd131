@@ -67,6 +67,7 @@ figure img {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
 /* temple grid */
 .temple-grid {
     display: grid;

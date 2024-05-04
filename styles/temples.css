@@ -66,9 +66,8 @@ figure img {
 @media (min-width: 769px) {
     main {
         grid-template-columns: repeat(3, 1fr);
-    }    
+    }
 }
-
 /* temple grid */
 .temple-grid {
     display: grid;
