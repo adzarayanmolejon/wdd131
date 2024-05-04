@@ -57,7 +57,7 @@ figure img {
 }
 
 /* mobile view */
-@media (max-width: 400px) {
+@media (max-width: 200px) {
     main {
         grid-template-columns: 1fr;
     }
@@ -78,10 +78,12 @@ figure img {
 
 .temple-grid figure {
     text-align: center;
-    grid-column: span 1; /* Makes the figure span 1 column */
+    grid-column: span 3; /* Makes the figure span 3 columns */
 }
+
 .temple-grid img {
     max-width: 100%;
-    height: auto;
+    max-height: 50vh; /* Set max height relative to viewport height */
+    object-fit: contain; /* Ensures the entire image fits without cropping */
     border-radius: 10px;
 }
