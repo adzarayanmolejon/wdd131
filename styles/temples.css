@@ -89,11 +89,11 @@ figure img {
 /* Initially hide the menu items */
 nav ul {
     display: none;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Show the menu items when the menu button is clicked */
 nav ul.show {
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
