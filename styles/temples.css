@@ -89,8 +89,8 @@ figure img {
 /* Initially hide the menu items */
 nav ul {
     display: none;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: right;
 }
 
 /* Show the menu items when the menu button is clicked */
