@@ -85,3 +85,14 @@ figure img {
     height: auto;
     border-radius: 10px;
 }
+/* Initially hide the menu items */
+nav ul {
+    display: none;
+}
+
+/* Show the menu items when the menu button is clicked */
+nav ul.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
