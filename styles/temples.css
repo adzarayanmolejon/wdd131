@@ -90,7 +90,7 @@ figure img {
 nav ul {
     display: none;
     flex-direction: row;
-    align-items: right;
+    align-items: flex-end;
 }
 
 /* Show the menu items when the menu button is clicked */
