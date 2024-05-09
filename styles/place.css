@@ -1,0 +1,22 @@
+/* Default styles for wider view */
+.wider-view {
+    display: block;
+}
+
+/* Default styles for smaller view */
+.smaller-view {
+    display: none;
+}
+
+/* Media query for smaller view */
+@media screen and (max-width: 768px) {
+    /* Hide wider view content */
+    .wider-view {
+        display: none;
+    }
+
+    /* Display smaller view content */
+    .smaller-view {
+        display: block;
+    }
+}
