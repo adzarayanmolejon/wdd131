@@ -14,7 +14,7 @@
     .wider-view {
         display: none;
     }
-
+}
     /* Display smaller view content */
     .smaller-view {
         display: block;
