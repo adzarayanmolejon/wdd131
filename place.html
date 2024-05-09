@@ -10,3 +10,30 @@
     <meta name="author" content="Adz A. Molejon">
     <link rel="stylesheet" type="text/css" href="styles/place.css">
 </head>
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <p>&copy; <span id="currentyear"></span>🍁 Adz A. Molejon 🍁 Davao City, Philippines</p>
+    <p id="lastModified">Document Last Modified: </p>
+</footer>
+<script src="scripts/place.js" defer></script>
+<script>
+    document.getElementById("currentyear").innerHTML = new Date().getFullYear();
+
+    var lastModifiedDate = new Date(document.lastModified);
+    var formattedDate = lastModifiedDate.toLocaleDateString();
+
+    document.getElementById("lastModified").innerHTML += formattedDate ? formattedDate : "Unknown";
+</script>
+</body>
+</html>
+
