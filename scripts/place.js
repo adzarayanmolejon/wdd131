@@ -36,3 +36,18 @@ document.getElementById("menu-toggle").addEventListener("click", function() {
     document.querySelector("nav ul").classList.toggle("show");
 });
 
+
+// Function to calculate wind chill factor
+function calculateWindChill(temp, windSpeed) {
+    return (13.12 + (0.6215 * temp) - (11.37 * Math.pow(windSpeed, 0.16)) + (0.3965 * temp * Math.pow(windSpeed, 0.16))).toFixed(1);
+}
+
+// Display wind chill factor in the Weather section of the page
+document.addEventListener("DOMContentLoaded", function() {
+    if (temp <= 10 && windSpeed > 4.8) {
+        let windChill = calculateWindChill(temp, windSpeed);
+        document.getElementById("weather").textContent = `Weather: ${temp}°C, ${windSpeed} km/h wind, Wind Chill Factor: ${windChill} °C`;
+    } else {
+        document.getElementById("weather").textContent = `Weather: ${temp}°C, ${windSpeed} km/h wind, Wind Chill Factor: N/A`;
+    }
+});
