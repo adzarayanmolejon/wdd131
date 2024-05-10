@@ -39,16 +39,17 @@ function calculateWindChill(temp, windSpeed) {
     return (13.12 + (0.6215 * temp) - (11.37 * Math.pow(windSpeed, 0.16)) + (0.3965 * temp * Math.pow(windSpeed, 0.16))).toFixed(1);
 }
 
-let temp = 5; // Example temperature in Celsius
-let windSpeed = 10; // Example wind speed in km/h
-let windChill; // Declare windChill outside of the if block
-
-if (temp < 10 && windSpeed > 4.8) {
-    windChill = calculateWindChill(temp, windSpeed);
-    console.log(`Wind Chill Factor: ${windChill} °C`);
-} else {
-    windChill = "N/A"; // Set windChill to "N/A" if conditions are not met
-    console.log("Wind Chill Factor: N/A °C");
+function calculateWindChill(temp, windSpeed) {
+    return (13.12 + (0.6215 * temp) - (11.37 * Math.pow(windSpeed, 0.16)) + (0.3965 * temp * Math.pow(windSpeed, 0.16))).toFixed(1);
 }
 
+let temp = 5; // Example temperature in Celsius
+let windSpeed = 10; // Example wind speed in km/h
+
+if (temp < 10 && windSpeed > 4.8) {
+    let windChill = calculateWindChill(temp, windSpeed);
+    console.log(`Wind Chill Factor: ${windChill} °C`);
+} else {
+    console.log("Wind Chill Factor: N/A °C");
+}
 document.getElementById("windChill").textContent = `${windChill} °C`;
