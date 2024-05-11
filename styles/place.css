@@ -52,13 +52,27 @@ footer {
     padding: 1rem 0;
 }
 
-/* Media query for hiding SVG image in wider view */
+/* Display the weather and emoticon in a row in wider view */
 @media (min-width: 769px) {
-    .weather picture {
-        display: none; /* Hide the SVG weather icon */
+    .weather {
+        display: flex;
+        align-items: center; /* Center vertically */
+        gap: 10px; /* Add some spacing between the icon and the text */
     }
+
+    /* Adjust the size of the emoticon */
+    .weather::after {
+        font-size: 30px; /* Adjust the size as needed */
+    }
+
+    /* Hide the SVG weather icon */
+    .weather picture {
+        display: none;
+    }
+
+    /* Show the JPEG weather icon */
     .weather img.wider-view {
-        display: inline-block; /* Display the JPEG weather icon */
+        display: inline-block;
         /* Add any additional styling as needed */
     }
 }
