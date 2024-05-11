@@ -36,15 +36,6 @@ main {
     border-radius: 5px;
 }
 
-/* Weather icon in large view */
-.weather::after {
-    content: "⛅"; /* Emoticon for weather icon */
-    font-size: var(--weather-icon-size); /* Variable for consistent sizing */
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
 /* Media query for responsive design */
 @media (max-width: 768px) {
     /* Adjust styles for smaller screens */
