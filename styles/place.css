@@ -99,3 +99,16 @@ body {
 }
 
 /* Other CSS rules */
+/* Hide the SVG image in the mobile view */
+@media (max-width: 768px) {
+    .mobile-view {
+        display: none;
+    }
+}
+
+/* Show the JPEG image in the wider view */
+@media (min-width: 769px) {
+    .wider-view {
+        display: inline-block;
+    }
+}
