@@ -91,3 +91,61 @@
         height: 50px; /* Adjust the height as needed */
     }
 }
+/* Global CSS variables */
+:root {
+    --primary-color: #007bff;
+    --weather-icon-size: 50px;
+}
+
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Main content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Weather section */
+.weather {
+    margin-top: 1rem;
+    position: relative;
+}
+
+/* Weather icon in large view */
+.weather::after {
+    content: "⛅"; /* Emoticon for weather icon */
+    font-size: var(--weather-icon-size);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .weather::after {
+        display: none; /* Hide weather icon in mobile view */
+    }
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
