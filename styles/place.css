@@ -14,185 +14,81 @@
     .wider-view {
         display: none;
     }
-}
     /* Display smaller view content */
     .smaller-view {
         display: block;
     }
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    
-    header {
-        background-color: #333;
-        color: #fff;
-        padding: 10px 20px;
-        text-align: center;
-    }
-    
-    main {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr;
-        gap: 20px;
-        padding: 20px;
-    }
-    
-    .hero img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-    
-    .content {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .data {
-        background-color: #f9f9f9;
-        padding: 10px 20px;
-        border-radius: 5px;
-    }
-    
-    .weather {
-        background-color: #f9f9f9;
-        padding: 10px 20px;
-        border-radius: 5px;
-    }
-    
-    footer {
-        background-color: #333;
-        color: #fff;
-        padding: 10px 20px;
-        text-align: center;
-    }
-   /* styles/place.css */
+}
 
-/* Hide the SVG image in the mobile view */
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.data {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.weather {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Media query for hiding SVG image in mobile view */
 @media (max-width: 768px) {
     .weather img[src$=".svg"] {
         display: none;
     }
 }
 
-/* Show the JPEG image in the wider view */
+/* Media query for displaying JPEG image in wider view */
 @media (min-width: 769px) {
     .weather img[src$=".svg"] {
         display: none;
     }
     .weather img[src$=".png"] {
         display: inline-block;
-        width: 50px; /* Adjust the width as needed */
-        height: 50px; /* Adjust the height as needed */
-    }
-}
-/* Global CSS variables */
-:root {
-    --primary-color: #007bff;
-    --weather-icon-size: 50px;
-}
-
-/* Base styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Header */
-header {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-/* Main content */
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-/* Weather section */
-.weather {
-    margin-top: 1rem;
-    position: relative;
-}
-
-/* Weather icon in large view */
-.weather::after {
-    content: "⛅"; /* Emoticon for weather icon */
-    font-size: var(--weather-icon-size);
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-/* Media query for responsive design */
-@media (max-width: 768px) {
-    /* Adjust styles for smaller screens */
-    .weather::after {
-        display: none; /* Hide weather icon in mobile view */
-    }
-}
-
-/* Footer */
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-}
-body {
-    font-family: 'Roboto', sans-serif;
-}
-.my-text {
-    font-family: 'Roboto', sans-serif;
-}
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-/* Rest of your CSS styles */
-/* ... */
-
-/* Reset default margin and padding */
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-}
-
-/* Full-height hero image */
-.hero {
-    background-image: url('images/philippine-eagle-centre.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh; /* Viewport height */
-}
-
-/* Center and style the content */
-.content {
-    position: absolute;
-    top: 20px; /* Adjust as needed */
-    left: 20px; /* Adjust as needed */
-    max-width: 600px; /* Adjust as needed */
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-}
-
-/* Media query for smaller devices */
-@media (max-width: 768px) {
-    /* Adjust the top and left values to position the content differently */
-    .content {
-        top: 50px;
-        left: 50px;
-        max-width: calc(100% - 100px);
-        padding: 20px;
+        width: 50px; /* Adjust width as needed */
+        height: 50px; /* Adjust height as needed */
     }
 }
