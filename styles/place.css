@@ -161,13 +161,38 @@ body {
 /* Rest of your CSS styles */
 /* ... */
 
-/* styles/place.css */
+/* Reset default margin and padding */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Full-height hero image */
 .hero {
     background-image: url('images/philippine-eagle-centre.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* Viewport height */
+}
+
+/* Center and style the content */
+.content {
     position: absolute;
-    z-index: -1; /* Ensure the hero image is behind other content */
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    max-width: 600px; /* Adjust as needed */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    /* Adjust the top and left values to position the content differently */
+    .content {
+        top: 50px;
+        left: 50px;
+        max-width: calc(100% - 100px);
+        padding: 20px;
+    }
 }
