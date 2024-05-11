@@ -71,7 +71,7 @@
         padding: 10px 20px;
         text-align: center;
     }
-    /* styles/place.css */
+   /* styles/place.css */
 
 /* Define global variables using :root */
 :root {
@@ -91,7 +91,11 @@ body {
 
 /* CSS rules for the wider view */
 .wider-view {
-    font-size: 2em;
+    font-size: 2em; /* Adjust the font-size as needed */
+    display: inline-block; /* Ensure the emoticon behaves like an inline element */
+    width: 1em; /* Set the width to control the size */
+    height: 1em; /* Set the height to control the size */
+    overflow: hidden; /* Hide any overflow if the size exceeds the specified width and height */
 }
 
 /* Other CSS rules */
