@@ -155,3 +155,8 @@ body {
 .my-text {
     font-family: 'Roboto', sans-serif;
 }
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Rest of your CSS styles */
+/* ... */
