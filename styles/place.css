@@ -56,13 +56,8 @@ footer {
 @media (min-width: 769px) {
     .weather {
         display: flex;
-        align-items: center; /* Center vertically */
+        align-items: center; /* Align items vertically */
         gap: 10px; /* Add some spacing between the icon and the text */
-    }
-
-    /* Adjust the size of the emoticon */
-    .weather::after {
-        font-size: 30px; /* Adjust the size as needed */
     }
 
     /* Hide the SVG weather icon */
@@ -75,8 +70,12 @@ footer {
         display: inline-block;
         /* Add any additional styling as needed */
     }
-}
 
+    /* Adjust the size of the emoticon */
+    .weather::after {
+        font-size: 30px; /* Adjust the size as needed */
+    }
+}
 /* Select the maple leaf icon by its class or ID */
 .icon-class {
     /* Change the color to a lighter shade of red */
