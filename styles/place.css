@@ -71,17 +71,20 @@
         padding: 10px 20px;
         text-align: center;
     }
-    @media (max-width: 768px) {
-        .wider-view {
-            display: none;
-        }
+    /* Hide the emoticon in the mobile view */
+@media (max-width: 768px) {
+    .wider-view {
+        display: none;
     }
-    
-    @media (min-width: 769px) {
-        .wider-view {
-            display: inline;
-        }
+}
+
+/* Show the emoticon in the wider view */
+@media (min-width: 769px) {
+    .wider-view {
+        display: inline;
     }
+}
+
     .weather img {
         max-width: 50px; /* Set the maximum width */
         max-height: 50px; /* Set the maximum height */
