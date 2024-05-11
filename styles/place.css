@@ -160,3 +160,13 @@ body {
 
 /* Rest of your CSS styles */
 /* ... */
+
+/* styles/place.css */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-image: url('images/philippine-eagle-centre.jpg');
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Set the body height to the viewport height */
+}
