@@ -107,7 +107,6 @@ main {
 
 /* Weather icon in large view */
 .weather::after {
-    content: "⛅"; /* Emoticon for weather icon */
     font-size: var(--weather-icon-size);
     position: absolute;
     top: 0;
