@@ -52,30 +52,23 @@ footer {
     padding: 1rem 0;
 }
 
-/* Display the weather and emoticon in a row in wider view */
-@media (min-width: 769px) {
-    .weather {
-        display: flex;
-        align-items: center;
-        justify-content: center; /* Center items horizontally */
-    }
+/* Weather container */
+.weather {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Add spacing between icon and details */
+}
 
-    /* Hide the SVG weather icon */
-    .weather picture {
-        display: none;
-    }
+/* Weather icon */
+.weather img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+}
 
-    /* Show the JPEG weather icon */
-    .weather img.wider-view {
-        display: inline-block;
-        width: 50px; /* Adjust the width as needed */
-        height: 50px; /* Adjust the height as needed */
-    }
-
-    /* Adjust the size of the emoticon */
-    .weather::after {
-        font-size: 30px; /* Adjust the size as needed */
-    }
+/* Weather details */
+.weather-details {
+    display: flex;
+    flex-direction: column;
 }
 /* Hero Image */
 .hero {
