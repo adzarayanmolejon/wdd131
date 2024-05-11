@@ -40,7 +40,7 @@ main {
 @media (max-width: 768px) {
     /* Adjust styles for smaller screens */
     .weather::after {
-        font-size: 30px; /* Adjust the font size as needed */
+        font-size: 10px; /* Adjust the font size as needed */
     }
 }
 
