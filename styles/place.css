@@ -52,29 +52,22 @@ footer {
     padding: 1rem 0;
 }
 
+/* Styles for the weather and emoticon container */
 .weather {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f9f9f9;
-    padding: 10px 20px;
-    border-radius: 5px;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Add some spacing between items */
 }
 
-.weather .icons {
-    display: flex;
-    align-items: center;
+/* Styles for the weather details */
+.weather-details {
+    flex-grow: 1; /* Allow the details to grow and take up remaining space */
 }
 
-.weather .details {
-    flex-grow: 1; /* Allows the details to take up remaining space */
-    margin-left: 20px; /* Adds space between icons and details */
-}
-
+/* Adjust the size of the emoticon if needed */
 .emoticon {
-    font-size: 20px; /* Adjust the size as needed */
+    font-size: 1.5em; /* Example size, adjust as needed */
 }
-
 /* Hero Image */
 .hero {
     background-image: url('images/philippine-eagle-centre.jpg');
