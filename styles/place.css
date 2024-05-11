@@ -73,42 +73,21 @@
     }
    /* styles/place.css */
 
-/* Define global variables using :root */
-:root {
-    --main-color: #333;
-    --secondary-color: #666;
-}
-
-/* Example usage of global variables */
-body {
-    color: var(--main-color);
-}
-
-/* @media query for responsive design */
-@media (max-width: 768px) {
-    /* CSS rules for smaller screens */
-}
-
-/* CSS rules for the wider view */
-.wider-view {
-    font-size: 2em; /* Adjust the font-size as needed */
-    display: inline-block; /* Ensure the emoticon behaves like an inline element */
-    width: 1em; /* Set the width to control the size */
-    height: 1em; /* Set the height to control the size */
-    overflow: hidden; /* Hide any overflow if the size exceeds the specified width and height */
-}
-
-/* Other CSS rules */
 /* Hide the SVG image in the mobile view */
 @media (max-width: 768px) {
-    .mobile-view {
+    .weather img[src$=".svg"] {
         display: none;
     }
 }
 
 /* Show the JPEG image in the wider view */
 @media (min-width: 769px) {
-    .wider-view {
+    .weather img[src$=".svg"] {
+        display: none;
+    }
+    .weather img[src$=".png"] {
         display: inline-block;
+        width: 50px; /* Adjust the width as needed */
+        height: 50px; /* Adjust the height as needed */
     }
 }
