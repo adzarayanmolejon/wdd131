@@ -71,4 +71,15 @@
         padding: 10px 20px;
         text-align: center;
     }
+    @media (max-width: 768px) {
+        .wider-view {
+            display: none;
+        }
+    }
+    
+    @media (min-width: 769px) {
+        .wider-view {
+            display: inline;
+        }
+    }
     
