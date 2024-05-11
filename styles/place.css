@@ -56,8 +56,8 @@ footer {
 @media (min-width: 769px) {
     .weather {
         display: flex;
-        align-items: center; /* Align items vertically */
-        gap: 10px; /* Add some spacing between the icon and the text */
+        align-items: center;
+        justify-content: center; /* Center items horizontally */
     }
 
     /* Hide the SVG weather icon */
@@ -68,7 +68,8 @@ footer {
     /* Show the JPEG weather icon */
     .weather img.wider-view {
         display: inline-block;
-        /* Add any additional styling as needed */
+        width: 50px; /* Adjust the width as needed */
+        height: 50px; /* Adjust the height as needed */
     }
 
     /* Adjust the size of the emoticon */
@@ -76,12 +77,6 @@ footer {
         font-size: 30px; /* Adjust the size as needed */
     }
 }
-/* Select the maple leaf icon by its class or ID */
-.icon-class {
-    /* Change the color to a lighter shade of red */
-    color: #ff9999; /* Example color, adjust as needed */
-}
-
 /* Hero Image */
 .hero {
     background-image: url('images/philippine-eagle-centre.jpg');
