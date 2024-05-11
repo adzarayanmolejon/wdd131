@@ -92,43 +92,20 @@ footer {
         height: 50px; /* Adjust height as needed */
     }
 }
-/* For wider view */
-@media only screen and (min-width: 601px) {
-    header.hero {
-        background-image: url('images/philippine-eagle-centre.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 300px; /* Set the height of the header */
-        position: relative;
+@media (max-width: 768px) {
+    .hero {
+        height: auto; /* Auto height for mobile view */
+        padding-top: 100px; /* Add some top padding to make space for the header */
     }
-    header.hero h1 {
-        position: absolute;
-        top: 20px; /* Adjust the top position */
-        left: 20px; /* Adjust the left position */
-        color: white; /* Text color for better contrast */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+
+    .data, .weather {
+        position: static; /* Reset position for mobile view */
+        background-color: transparent; /* Reset background color */
+        padding: 0; /* Reset padding */
+        border-radius: 0; /* Reset border radius */
     }
-    section.content {
-        float: left;
-        width: 50%; /* Set the width of the content section */
+
+    .content {
+        padding: 20px; /* Add padding to content */
     }
-    .weather {
-        position: absolute;
-        bottom: 20px; /* Adjust the bottom position */
-        left: 20px; /* Adjust the left position */
-    }
-    footer {
-        clear: both; /* Clear the float */
-    }
-}
-/* For mobile devices */
-@media only screen and (max-width: 600px) {
-    /* Styles for mobile view */
-    main {
-        padding: 0 20px; /* Add padding to the main content */
-    }
-    header h1 {
-        font-size: 1.5em; /* Adjust font size for smaller screens */
-    }
-    /* Other mobile styles */
 }
