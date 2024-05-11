@@ -145,3 +145,16 @@ footer {
     display: inline-block;
     /* Add any additional styling as needed */
 }
+/* Media query for hiding SVG image in mobile view */
+@media (max-width: 768px) {
+    .wider-view {
+        display: none;
+    }
+}
+
+/* Media query for displaying JPEG image in wider view */
+@media (min-width: 769px) {
+    .smaller-view {
+        display: none;
+    }
+}
