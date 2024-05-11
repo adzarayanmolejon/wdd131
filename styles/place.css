@@ -71,22 +71,27 @@
         padding: 10px 20px;
         text-align: center;
     }
-    /* Hide the emoticon in the mobile view */
+    /* styles/place.css */
+
+/* Define global variables using :root */
+:root {
+    --main-color: #333;
+    --secondary-color: #666;
+}
+
+/* Example usage of global variables */
+body {
+    color: var(--main-color);
+}
+
+/* @media query for responsive design */
 @media (max-width: 768px) {
-    .wider-view {
-        display: none;
-    }
+    /* CSS rules for smaller screens */
 }
 
-/* Show the emoticon in the wider view */
-@media (min-width: 769px) {
-    .wider-view {
-        display: inline;
-    }
+/* CSS rules for the wider view */
+.wider-view {
+    font-size: 2em;
 }
 
-    .weather img {
-        max-width: 50px; /* Set the maximum width */
-        max-height: 50px; /* Set the maximum height */
-    }
-        
+/* Other CSS rules */
