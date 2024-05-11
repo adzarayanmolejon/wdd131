@@ -134,27 +134,13 @@ footer {
     padding: 1rem 0;
 }
 
-/* Hide the SVG and CSS images in the weather container */
-.weather img[src$=".svg"],
-.weather img[src$=".css"] {
-    display: none;
-}
-
-/* Show the JPEG image in the weather container */
-.weather img[src$=".jpeg"] {
-    display: inline-block;
-    /* Add any additional styling as needed */
-}
-/* Media query for hiding SVG image in mobile view */
-@media (max-width: 768px) {
-    .wider-view {
-        display: none;
-    }
-}
-
-/* Media query for displaying JPEG image in wider view */
+/* Media query for hiding SVG image in wider view */
 @media (min-width: 769px) {
-    .smaller-view {
-        display: none;
+    .weather picture {
+        display: none; /* Hide the SVG weather icon */
+    }
+    .weather img.wider-view {
+        display: inline-block; /* Display the JPEG weather icon */
+        /* Add any additional styling as needed */
     }
 }
