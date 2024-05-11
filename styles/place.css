@@ -38,7 +38,8 @@ main {
 
 /* Weather icon in large view */
 .weather::after {
-    font-size: var(--weather-icon-size);
+    content: "⛅"; /* Emoticon for weather icon */
+    font-size: var(--weather-icon-size); /* Variable for consistent sizing */
     position: absolute;
     top: 0;
     right: 0;
@@ -49,10 +50,6 @@ main {
     /* Adjust styles for smaller screens */
     .weather::after {
         font-size: 30px; /* Adjust the font size as needed */
-    }
-    /* Hide weather icon in mobile view */
-    .weather img[src$=".svg"] {
-        display: none;
     }
 }
 
