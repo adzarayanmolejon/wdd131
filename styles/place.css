@@ -145,6 +145,7 @@ main {
 
 /* Weather icon in large view */
 .weather::after {
+    content: "⛅"; /* Emoticon for weather icon */
     font-size: var(--weather-icon-size);
     position: absolute;
     top: 0;
@@ -155,7 +156,11 @@ main {
 @media (max-width: 768px) {
     /* Adjust styles for smaller screens */
     .weather::after {
-        display: none; /* Hide weather icon in mobile view */
+        font-size: 30px; /* Adjust the font size as needed */
+    }
+    /* Hide weather icon in mobile view */
+    .weather img[src$=".svg"] {
+        display: none;
     }
 }
 
