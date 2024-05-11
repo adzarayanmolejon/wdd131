@@ -171,3 +171,14 @@ footer {
     text-align: center;
     padding: 1rem 0;
 }
+/* Hide the SVG and CSS images in the weather container */
+.weather img[src$=".svg"],
+.weather img[src$=".css"] {
+    display: none;
+}
+
+/* Show the JPEG image in the weather container */
+.weather img[src$=".jpeg"] {
+    display: inline-block;
+    /* Add any additional styling as needed */
+}
