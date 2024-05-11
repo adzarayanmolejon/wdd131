@@ -143,3 +143,8 @@ footer {
         /* Add any additional styling as needed */
     }
 }
+/* Select the maple leaf icon by its class or ID */
+.icon-class {
+    /* Change the color to a lighter shade of red */
+    color: #ff9999; /* Example color, adjust as needed */
+}
