@@ -1,0 +1,107 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .hero {
+    /* Hero image styles */
+    background-image: url('images/philippine-eagle-centre.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 300px; /* Adjust height as needed */
+  }
+  
+  .hero img {
+    /* Ensure image displays within the hero section */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .data {
+    /* Data section styles */
+    padding: 10px 20px;
+  }
+  
+  .weather {
+    /* Weather section styles */
+    padding: 10px 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
+  /* Media query for responsive design (
+@media (max-width: 768px) {
+    /* Stack data and weather sections on top of each other in smaller screens */
+    .content-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .data,
+    .weather {
+        /* Adjust width for data and weather sections in wider views */
+        width: 40%; /* Adjust width as needed */
+    }
+    
+    @media (max-width: 768px) {
+        /* Reset width for data and weather sections in smaller views */
+        .data,
+        .weather {
+            width: 100%;
+        }
+    }
+    .content-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;  /* Two columns for data and weather */
+        gap: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+    }
+        
+    @media (max-width: 768px) {
+        /* Stack data and weather sections on top of each other in smaller screens */
+        .content-container {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+        }
+    
+        /* Adjust width for data and weather sections in smaller views  */
+        .data,
+        .weather {
+            width: 100%;
+        }
+    }
+    
