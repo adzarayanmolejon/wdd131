@@ -161,7 +161,7 @@ footer {
     color: #ff9999; /* Example color, adjust as needed */
 }
 .hero {
-    background-image: url('images/philippine-eagle-centre.jpg');
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tripadvisor.com%2FShowUserReviews-g298459-d320865-r752243282-Philippine_Eagle_Center-Davao_City_Davao_del_Sur_Province_Mindanao.html&psig=AOvVaw1u7GDZGHeHx59caIlxOgwj&ust=1715562349908000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCNDf5Pj1hoYDFQAAAAAdAAAAABAE');
     background-size: cover;
     background-position: center;
     width: 100vw; /* 100% of the viewport width */
@@ -170,13 +170,4 @@ footer {
     padding: 0; /* Remove any default padding */
 }
 
-.hero {
-    background-image: url('images/philippine-eagle-centre.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100vw; /* 100% of the viewport width */
-    height: 100vh; /* 100% of the viewport height */
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove any default padding */
-}
 
