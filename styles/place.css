@@ -99,7 +99,7 @@ main {
 }
 .data {
     width: 20%;
-    position: upper right;
+    position: static;
     top: 0;
     right: 0;
     padding: 20px;
@@ -121,14 +121,14 @@ main {
 
 /* Position weather in lower right */
 .weather {
-    position: lower right;
+    position: static;
     bottom: 0;
     right: 0;
 }
 /* Weather icon in large view */
 .weather::after {
     font-size: var(--weather-icon-size);
-    position: lower right;
+    position: static;
     top: 0;
     right: 0;
 }
