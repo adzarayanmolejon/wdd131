@@ -24,6 +24,8 @@ main {
     width: 100%;
     height: auto;
     object-fit: cover;
+    justify-self: center; /* Center horizontally */
+    align-self: center; /* Center vertically */
 }
 
 .content {
