@@ -98,13 +98,23 @@ main {
     justify-content: space-between;
 }
 .data {
-    transform: scale(0.5);
-    transform-origin: top left;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 .weather {
-    transform: scale(0.4);
-    transform-origin: lower left
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
+
+
 /* Content container */
 .content {
     flex: 1; /* Take up remaining space */
