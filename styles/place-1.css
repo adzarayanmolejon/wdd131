@@ -106,6 +106,39 @@ body {
       font-size: 30px; /* Adjust as needed */
     }
   
-    /* Hide weather
-  
+
+    .hero {
+  background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/09/ca/55/f4/philippine-eagle-centre.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100vw; /* Covers entire viewport width */
+  height: 100vh; /* Covers entire viewport height */
+    }
+    .content-container {
+        position: absolute; /* Absolute positioning within hero image */
+        top: 20px; /* Adjust top padding as needed */
+        left: 20px; /* Adjust left padding as needed */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+        background-color: rgba(249, 249, 249, 0.8); /* Semi-transparent background */
+        border-radius: 5px;
+      }
+      .content-container {
+        /* ... other styles */
+        grid-template-columns: 1fr; /* Single column for data and weather */
+      }
+      
+      .data {
+        /* ... other styles */
+        grid-row: 1; /* Place data in the first row */
+      }
+      
+      .weather {
+        /* ... other styles */
+        grid-row: 2; /* Place weather in the second row */
+        justify-self: flex-end; /* Align to the right edge */
+      }
+            
     
