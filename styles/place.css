@@ -99,7 +99,7 @@ main {
 }
 .data {
     width: 20%;
-    position: absolute;
+    position: upper right;
     top: 0;
     right: 0;
     padding: 20px;
