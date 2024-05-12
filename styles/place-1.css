@@ -5,6 +5,7 @@ body {
     padding: 0;
   }
   
+  /* Header styles */
   header {
     background-color: #333;
     color: #fff;
@@ -12,6 +13,7 @@ body {
     text-align: center;
   }
   
+  /* Main content styles */
   main {
     display: grid;
     grid-template-columns: 1fr;
@@ -20,8 +22,8 @@ body {
     padding: 20px;
   }
   
+  /* Hero image styles */
   .hero {
-    /* Hero image styles */
     background-image: url('images/philippine-eagle-centre.jpg');
     background-size: cover;
     background-position: center;
@@ -30,12 +32,12 @@ body {
   }
   
   .hero img {
-    /* Ensure image displays within the hero section */
     width: 100%;
     height: auto;
     object-fit: cover;
   }
   
+  /* Content container styles */
   .content-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -45,16 +47,17 @@ body {
     border-radius: 5px;
   }
   
+  /* Data section styles */
   .data {
-    /* Data section styles */
     padding: 10px 20px;
   }
   
+  /* Weather section styles */
   .weather {
-    /* Weather section styles */
     padding: 10px 20px;
   }
   
+  /* Footer styles */
   footer {
     background-color: #333;
     color: #fff;
@@ -62,92 +65,47 @@ body {
     padding: 10px 20px;
   }
   
-  /* Media query for responsive design (
-@media (max-width: 768px) {
-    /* Stack data and weather sections on top of each other in smaller screens */
-    .content-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
+  /* Media queries for responsive design */
+  
+  /* Wider view (min-width: 769px) */
+  @media (min-width: 769px) {
+    /* Show the JPEG image with class "wider-view" */
+    .weather .wider-view {
+      display: inline-block;
+      width: var(--weather-icon-size); /* Use the global variable */
+      height: var(--weather-icon-size);
     }
+  
+    /* Hide the SVG weather icon */
+    .weather img[src$=".svg"] {
+      display: none;
+    }
+  }
+  
+  /* Smaller view (max-width: 768px) */
+  @media (max-width: 768px) {
+    /* Stack data and weather sections on top of each other */
+    .content-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+    }
+}
+    /* Reset width for data and weather sections */
     .data,
     .weather {
-        /* Adjust width for data and weather sections in wider views */
-        width: 40%; /* Adjust width as needed */
+      width: 100%;
     }
-    
-    @media (max-width: 768px) {
-        /* Reset width for data and weather sections in smaller views */
-        .data,
-        .weather {
-            width: 100%;
-        }
+  
+    /* Order weather section to appear after data */
+    .weather {
+      order: 2;
     }
-    .content-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;  /* Two columns for data and weather */
-        gap: 20px;
-        padding: 20px;
-        background-color: #f9f9f9;
-        border-radius: 5px;
+  
+    /* Adjust font size for weather content (optional) */
+    .weather::after {
+      font-size: 30px; /* Adjust as needed */
     }
-        
-    @media (max-width: 768px) {
-        /* Stack data and weather sections on top of each other in smaller screens */
-        .content-container {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto auto;
-        }
-    
-        /* Adjust width for data and weather sections in smaller views  */
-        .data,
-        .weather {
-            width: 100%;
-        }
-    }
-
-    .data {
-        /* Remove width definition */
-        /* width: 20%; */
-        position: static;
-        top: 0;
-        right: 0;
-        padding: 20px;
-        box-sizing: border-box;
-        /* Add flexbox properties for positioning */
-        flex: 0 0 auto; /* Allow content to define width, don't grow/shrink */
-        align-self: flex-start; /* Align to the top of the main content */
-      }
-      .weather {
-        /* ... other styles */
-      }
-      
-      /* Media query for wider view */
-      @media (min-width: 769px) {
-        .weather img[src$=".svg"] {
-          display: none;
-        }
-        /* Show the JPEG image with class "wider-view" */
-        .weather .wider-view {
-          display: inline-block;
-          width: var(--weather-icon-size); /* Use the global variable */
-          height: var(--weather-icon-size);
-        }
-      }
-      
-      /* Media query for smaller view */
-      @media (max-width: 768px) {
-        /* Adjust styles for smaller screens */
-        .weather {
-          /* Order weather section to appear after data in mobile view */
-          order: 2;
-        }
-        .weather::after {
-          font-size: 30px; /* Adjust the font size as needed */
-        }
-        /* Hide weather icon in mobile view */
-        .weather img[src$=".svg"] {
-          display: none;
-        }
-      }
-            
+  
+    /* Hide weather
+  
     
