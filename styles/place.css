@@ -121,14 +121,14 @@ main {
 
 /* Position weather in lower right */
 .weather {
-    position: lower left;
+    position: lower right;
     bottom: 0;
     right: 0;
 }
 /* Weather icon in large view */
 .weather::after {
     font-size: var(--weather-icon-size);
-    position: absolute;
+    position: lower right;
     top: 0;
     right: 0;
 }
