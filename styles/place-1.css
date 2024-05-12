@@ -104,4 +104,50 @@ body {
             width: 100%;
         }
     }
+
+    .data {
+        /* Remove width definition */
+        /* width: 20%; */
+        position: static;
+        top: 0;
+        right: 0;
+        padding: 20px;
+        box-sizing: border-box;
+        /* Add flexbox properties for positioning */
+        flex: 0 0 auto; /* Allow content to define width, don't grow/shrink */
+        align-self: flex-start; /* Align to the top of the main content */
+      }
+      .weather {
+        /* ... other styles */
+      }
+      
+      /* Media query for wider view */
+      @media (min-width: 769px) {
+        .weather img[src$=".svg"] {
+          display: none;
+        }
+        /* Show the JPEG image with class "wider-view" */
+        .weather .wider-view {
+          display: inline-block;
+          width: var(--weather-icon-size); /* Use the global variable */
+          height: var(--weather-icon-size);
+        }
+      }
+      
+      /* Media query for smaller view */
+      @media (max-width: 768px) {
+        /* Adjust styles for smaller screens */
+        .weather {
+          /* Order weather section to appear after data in mobile view */
+          order: 2;
+        }
+        .weather::after {
+          font-size: 30px; /* Adjust the font size as needed */
+        }
+        /* Hide weather icon in mobile view */
+        .weather img[src$=".svg"] {
+          display: none;
+        }
+      }
+            
     
