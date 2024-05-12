@@ -155,14 +155,14 @@ footer {
 
 /* Media query for hiding SVG image in wider view */
 @media (min-width: 769px) {
-    .weather picture {
-        display: none; /* Hide the SVG weather icon */
+    .weather img[src$=".svg"] {
+      display: none;
     }
     .weather img.wider-view {
-        display: inline-block; /* Display the JPEG weather icon */
-        /* Add any additional styling as needed */
+      display: inline-block;
     }
-}
+  }
+  
 /* Select the maple leaf icon by its class or ID */
 .icon-class {
     /* Change the color to a lighter shade of red */
