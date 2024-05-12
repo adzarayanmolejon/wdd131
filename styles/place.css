@@ -118,6 +118,17 @@ main {
     padding: 20px;
     position: relative; /* Position relative for absolute positioning of child elements */
 }
+.weather {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
 
 /* Position weather in lower right */
 .weather {
