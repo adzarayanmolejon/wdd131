@@ -143,3 +143,16 @@ footer {
     /* Change the color to a lighter shade of red */
     color: #ff9999; /* Example color, adjust as needed */
 }
+@media (max-width: 768px) {
+    /* Stack data and weather sections on top of each other in smaller screens */
+    .content-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    /* Adjust width for data and weather sections in smaller views  */
+    .data,
+    .weather {
+        width: 100%;
+    }
+}
