@@ -97,7 +97,14 @@ main {
     display: flex;
     justify-content: space-between;
 }
-
+.data {
+    transform: scale(0.5);
+    transform-origin: top left;
+}
+.weather {
+    transform: scale(0.4);
+    transform-origin: lower left
+}
 /* Content container */
 .content {
     flex: 1; /* Take up remaining space */
