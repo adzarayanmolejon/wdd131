@@ -179,3 +179,37 @@ footer {
 }
 
 
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Ensure body is positioned for absolute elements */
+}
+
+/* Hero Image */
+.hero {
+    background-image: url('path_to_your_hero_image.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+}
+
+/* Data container in the upper left */
+.data {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+/* Weather container in the lower right */
+.weather {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+}
