@@ -121,7 +121,7 @@ main {
 
 /* Position weather in lower right */
 .weather {
-    position: absolute;
+    position: lower left;
     bottom: 0;
     right: 0;
 }
