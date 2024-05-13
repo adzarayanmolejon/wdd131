@@ -13,7 +13,11 @@ header {
     padding: 10px 0;
     margin-bottom: 20px;
 }
-
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 main {
     position: relative;
     display: flex;
