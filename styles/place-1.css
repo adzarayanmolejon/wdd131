@@ -48,7 +48,7 @@ footer {
     padding: 10px 0;
     position: fixed;
     bottom: 0;
-    width: 70%;
+    width: 100%;
 }
 
 .data-weather-container {
@@ -82,10 +82,7 @@ footer {
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    align-self: flex-start; /* Align to the top (upper right corner) */
-    flex-direction: column; /* Display content vertically */
 }
-
 .weather-details {
     display: flex;
     align-items: center;
