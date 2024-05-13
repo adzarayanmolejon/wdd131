@@ -73,8 +73,8 @@ footer {
 /* styles.css */
 .weather {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: 0; /* Position at the top of the footer */
+    right: 0; /* Position at the right of the footer */
     width: 30%; /* Adjust as needed */
     padding: 20px;
     box-sizing: border-box;
@@ -83,6 +83,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .weather-details {
     display: flex;
     align-items: center;
