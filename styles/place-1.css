@@ -62,8 +62,8 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    width: 30%; /* Adjust as needed */
-    padding: 20px;
+    width: 20%; /* Adjust as needed */
+    padding: 100px;
     box-sizing: border-box;
     background-color: #fff;
     margin: 10px;
