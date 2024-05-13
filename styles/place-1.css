@@ -60,9 +60,9 @@ footer {
 
 .data {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    width: calc(20% - 20px); /* Adjust as needed */
+    top: 0;
+    left: 0;
+    width: 20%; /* Adjust as needed */
     padding: 10px;
     box-sizing: border-box;
     background-color: #fff;
@@ -70,7 +70,6 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .weather {
     position: absolute;
     top: 0; /* Position at the top of the footer */
