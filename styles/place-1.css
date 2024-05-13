@@ -52,7 +52,8 @@ footer {
 }
 
 .data {
-    flex: 1 1 30%; /* Adjust the flex value to resize the Data container */
+    flex: 0 1 30%; /* Adjust the flex value to resize the Data container */
+    max-width: 30%; /* Added to limit the width */
     padding: 20px;
     box-sizing: border-box;
     background-color: #fff;
