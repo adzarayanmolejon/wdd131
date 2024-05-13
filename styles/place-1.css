@@ -59,3 +59,27 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* Other CSS styles remain the same */
+
+.data,
+.weather {
+    flex: 1 1 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff; /* Background color for the boxes */
+    margin: 10px; /* Margin for spacing between boxes */
+    border-radius: 10px; /* Rounded corners for the boxes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for the boxes */
+}
+
+.weather-details {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.weather img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
