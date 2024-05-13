@@ -92,7 +92,7 @@ footer {
         height: 50px; /* Adjust height as needed */
     }
     .weather img[src$=".png"] {
-        display:inline-flex;
+        display:none;
     }
 }
 
@@ -103,6 +103,13 @@ footer {
     --weather-icon-size: 50px;
 }
 
-.wider-view {
-    display: none; /* Hide the emoticon */
+/* Hide the SVG weather icon for wider view */
+.weather img.wider-view[src$=".svg"] {
+    display: none;
 }
+
+/* Hide the JPEG weather icon for mobile view */
+.weather img[src$=".png"] {
+    display: none;
+}
+
