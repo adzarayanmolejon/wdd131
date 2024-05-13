@@ -102,3 +102,6 @@ footer {
     --weather-icon-size: 50px;
 }
 
+.wider-view {
+    display: none; /* Hide the emoticon */
+}
