@@ -92,7 +92,7 @@ footer {
         height: 50px; /* Adjust height as needed */
     }
     .weather img[src$=".png"] {
-        display:none;
+        display:inline-flex;
     }
 }
 
