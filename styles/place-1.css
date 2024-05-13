@@ -61,7 +61,7 @@ footer {
 }
 
 .weather-details {
-    display: flex;
+    display: vertical;
     align-items: center;
     margin-top: 20px;
 }
