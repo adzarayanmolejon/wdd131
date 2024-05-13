@@ -72,10 +72,10 @@ footer {
 }
 .weather {
     position: absolute;
-    top: 0; /* Position at the top of the footer */
-    right: 0; /* Position at the right of the footer */
-    width: 30px; /* Set a fixed width */
-    padding: 10px;
+    bottom: 0;
+    right: 0;
+    width: 30%; /* Adjust as needed */
+    padding: 20px;
     box-sizing: border-box;
     background-color: #fff;
     margin: 10px;
