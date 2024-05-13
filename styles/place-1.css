@@ -81,16 +81,18 @@ footer {
     position: relative; /* Add relative positioning to the container */
 }
 
+/* Other CSS styles remain the same */
+
 .data {
-    flex: 1 1 40%;
+    flex: 1 1 60%; /* Adjust the flex value to resize the Data container */
     padding: 20px;
     box-sizing: border-box;
     background-color: #fff;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-self: flex-start; /* Align the Data container to the top */
 }
-
 .weather {
     position: absolute; /* Position the Weather box absolutely */
     bottom: 0; /* Align to the bottom */
