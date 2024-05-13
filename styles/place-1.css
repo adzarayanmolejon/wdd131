@@ -5,6 +5,6 @@ body {
     background-image: url('../images/philippine-eagle-centre.jpg');
     background-position: center; /* Center the image */
     text-align: center;
-    background-size: contain;
+    background-size: cover;
     /* Add other styles as necessary */
 }
