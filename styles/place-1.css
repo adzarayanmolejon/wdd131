@@ -103,13 +103,3 @@ footer {
     --weather-icon-size: 50px;
 }
 
-/* Hide the SVG weather icon for wider view */
-.weather img.wider-view[src$=".svg"] {
-    display: none;
-}
-
-/* Hide the JPEG weather icon for mobile view */
-.weather img[src$=".png"] {
-    display: none;
-}
-
