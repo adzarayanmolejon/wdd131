@@ -52,15 +52,16 @@ footer {
 }
 
 .data {
-    flex: 1 1 40%;
+    flex: 1 1 30%; /* Adjust the flex value to resize the Data container */
     padding: 20px;
     box-sizing: border-box;
     background-color: #fff;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    align-self: flex-start;
+    align-self: flex-start; /* Align the Data container to the top */
 }
+
 
 .weather-details {
     display: flex;
