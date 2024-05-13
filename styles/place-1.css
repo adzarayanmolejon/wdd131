@@ -18,36 +18,27 @@ main {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    min-height: 100vh; /* Ensure main takes at least the height of the viewport */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-image: url('../images/philippine-eagle-centre.webp');
     background-size: cover;
     background-position: center;
-    padding: 20px; /* Add padding to create space between content and background */
-    box-sizing: border-box;
-}
-
-.content {
-    flex: 1 1 100%;
-}
-
-.weather {
-    flex: 1 1 50%;
     padding: 20px;
     box-sizing: border-box;
 }
 
-.weather-details {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.weather img {
-    max-width: 50px;
-    height: auto;
-    margin-right: 10px;
+.weather {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -60,8 +51,19 @@ footer {
     width: 100%;
 }
 
+.data {
+    flex: 1 1 40%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-self: flex-start;
+}
+
 .weather-details {
-    display: vertical;
+    display: flex;
     align-items: center;
     margin-top: 20px;
 }
@@ -70,38 +72,4 @@ footer {
     max-width: 50px;
     height: auto;
     margin-right: 10px;
-}
-/* Other CSS styles remain the same */
-
-.data-weather-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin: 20px;
-    position: relative; /* Add relative positioning to the container */
-}
-
-/* Other CSS styles remain the same */
-
-.data {
-    flex: 1 1 60%; /* Adjust the flex value to resize the Data container */
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #fff;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    align-self: flex-start; /* Align the Data container to the top */
-}
-.weather {
-    position: absolute; /* Position the Weather box absolutely */
-    bottom: 0; /* Align to the bottom */
-    right: 0; /* Align to the right */
-    width: 40%; /* Set the width */
-    background-color: #fff;
-    padding: 20px;
-    box-sizing: border-box;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
