@@ -51,27 +51,17 @@ footer {
     width: 100%;
 }
 
-.data-weather-container {
+.main-content {
     display: flex;
-    justify-content: flex-start; /* Align items to the start (left) of the flex container */
-    align-items: flex-start; /* Align items to the start (top) of the flex container */
+    justify-content: space-between; /* Space items evenly along the main axis */
+    align-items: flex-start; /* Align items at the start of the cross axis */
     margin: 20px;
 }
 
-.data {
-    flex: 0 0 30%; /* Adjust the flex value to resize the Data container */
-    max-width: 30%; /* Added to limit the width */
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #fff;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
+.data,
+.large-image,
 .weather {
-    flex: 0 0 40%; /* Adjust the flex value to resize the Weather container */
-    max-width: 40%; /* Added to limit the width */
+    flex: 1; /* Each section takes up equal space */
     padding: 20px;
     box-sizing: border-box;
     background-color: #fff;
