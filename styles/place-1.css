@@ -11,169 +11,71 @@ header, footer {
     display: none; /* Hide header and footer */
 }
 
-/* Global styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
     text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    justify-self: center; /* Center horizontally */
-    align-self: center; /* Center vertically */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .content {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.data {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.weather {
-    background-color: #f9f9f9;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-/* Media query for hiding SVG image in mobile view */
-@media (max-width: 768px) {
-    .weather img[src$=".svg"] {
-        display: none;
-    }
-}
-
-/* Media query for displaying JPEG image in wider view */
-@media (min-width: 769px) {
-    .weather img[src$=".svg"] {
-        display: none;
-    }
-    .weather img[src$=".png"] {
-        display: inline-block;
-        width: 50px; /* Adjust width as needed */
-        height: 50px; /* Adjust height as needed */
-    }
-}
-
-/* Define global variables in :root */
-:root {
-    --primary-color: gray;
-    --weather-icon-size: 50px;
-}
-
-/* Base styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Header */
-header {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-/* Main content */
-main {
-    display: flex;
-    justify-content: space-between;
-}
-.data {
-    width: 20%;
-    position: static;
-    top: 0;
-    right: 0;
+    flex: 1 1 100%;
     padding: 20px;
     box-sizing: border-box;
 }
 
-/* Media query for responsive design */
-@media (max-width: 768px) {
-    /* Adjust styles for smaller screens */
-    .weather::after {
-        font-size: 30px; /* Adjust the font size as needed */
-    }
-    /* Hide weather icon in mobile view */
-    .weather img[src$=".svg"] {
-        display: none;
-    }
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/philippine-eagle-centre.webp');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.7;
 }
 
-/* Footer */
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-/* Media query for hiding SVG image in wider view */
-@media (min-width: 769px) {
-    .weather img[src$=".svg"] {
-      display: none;
-    }
-    .weather img.wider-view {
-      display: inline-block;
-    }
-  }
-  
-/* Select the maple leaf icon by its class or ID */
-.icon-class {
-    /* Change the color to a lighter shade of red */
-    color: #ff9999; /* Example color, adjust as needed */
-}
-@media (max-width: 768px) {
-    /* Stack data and weather sections on top of each other in smaller screens */
-    .content-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-    }
-
-    /* Adjust width for data and weather sections in smaller views  */
-    .data,
-    .weather {
-        width: 100%;
-    }
-}
-.content-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;  /* Two columns for data and weather */
-    gap: 20px;
+.weather {
+    flex: 1 1 50%;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.weather-details {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.weather img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

@@ -16,61 +16,49 @@
         <h1>Davao City, Philippines</h1>
     </header>
     
-    <picture>
-        <source srcset="images/philippine-eagle-centre.webp" type="image/webp">
-    </picture>
-    <div class="bg"></div>
-
-    <div class="content">
-        <h2>Data</h2>
-        <div class="data">
-            <!-- Data content here -->
+    <main>
+        <div class="bg"></div>
+        <div class="content">
+            <h2>Data</h2>
+            <div class="data">
+                <p>Area: 2,443.61 km²</p>
+                <p>Population: 1,800,000</p>
+                <p>Capital: Davao City</p>
+                <p>Languages: Cebuano, Tagalog, English</p>
+                <p>Time Zone: GMT+8</p>
+                <p>Calling Code: +63-82</p>
+            </div>
         </div>
-    </div>
-
-    <div class="weather">
-        <h3>Weather</h3>
-        <!-- Weather content here -->
-    </div>
-    <div class="content">
-        <h2>Data</h2>
-        <div class="data">
-            <p>Area: 2,443.61 km²</p>
-            <p>Population: 1,800,000</p>
-            <p>Capital: Davao City</p>
-            <p>Languages: Cebuano, Tagalog, English</p>
-            <p>Time Zone: GMT+8</p>
-            <p>Calling Code: +63-82</p>
+    
+        <div class="weather">
+            <h3>Weather</h3>
+            <div class="weather-details">
+                <!-- SVG weather icon for mobile view -->
+                <picture>
+                    <source srcset="images/1530391_weather_clouds_sun_sunny_icon.svg" type="image/svg+xml">
+                    <img src="images/1530391_weather_clouds_sun_sunny_icon.png" alt="Weather Icon">
+                </picture>
+                <!-- JPEG weather icon for wider view -->
+                <img src="images/1530391_weather_clouds_sun_sunny_icon.png" alt="Weather Icon" class="wider-view">
+                <p>Temperature: 33°C</p>
+                <p>Conditions: Partly Cloudy</p>
+                <p>Wind: 10-15 km/h</p>
+            </div>
         </div>
-    </div>
-    <div class="weather">
-        <h3>Weather</h3>
-        <!-- SVG weather icon for mobile view -->
-        <picture>
-            <source srcset="images/1530391_weather_clouds_sun_sunny_icon.svg" type="image/svg+xml">
-            <img src="images/1530391_weather_clouds_sun_sunny_icon.png" alt="Weather Icon">
-        </picture>
-        <!-- JPEG weather icon for wider view -->
-        <img src="images/1530391_weather_clouds_sun_sunny_icon.png" alt="Weather Icon" class="wider-view">
-        <p>Temperature: 33°C</p>
-        <p>Conditions: Partly Cloudy</p>
-        <p>Wind: 10-15 km/h</p>
-    </div>
-</main>
+    </main>
 
-<footer>
-    <p>&copy; <span id="currentyear"></span>🍁 Adz A. Molejon 🍁 Davao City, Philippines</p>
-    <p id="lastModified">Document Last Modified: </p>
-</footer>
-<script src="scripts/place.js" defer></script>
-<script>
-    document.getElementById("currentyear").innerHTML = new Date().getFullYear();
+    <footer>
+        <p>&copy; <span id="currentyear"></span>🍁 Adz A. Molejon 🍁 Davao City, Philippines</p>
+        <p id="lastModified">Document Last Modified: </p>
+    </footer>
 
-    var lastModifiedDate = new Date(document.lastModified);
-    var formattedDate = lastModifiedDate.toLocaleDateString();
+    <script>
+        document.getElementById("currentyear").innerHTML = new Date().getFullYear();
 
-    document.getElementById("lastModified").innerHTML += formattedDate ? formattedDate : "Unknown";
-</script>
+        var lastModifiedDate = new Date(document.lastModified);
+        var formattedDate = lastModifiedDate.toLocaleDateString();
 
+        document.getElementById("lastModified").innerHTML += formattedDate ? formattedDate : "Unknown";
+    </script>
 </body>
 </html>
