@@ -59,7 +59,7 @@ main {
 }
 
 footer {
-    background-color: var(--primary-color);
+    background-color: grey;
     color: white;
     text-align: center;
     padding: 1rem 0;
