@@ -89,12 +89,16 @@ footer {
     flex: 1 1 50%;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #fff; /* Background color for the box */
+    background-color: #13d467; /* Background color for the box */
     margin: 10px; /* Margin for spacing between boxes */
     border-radius: 10px; /* Rounded corners for the box */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for the box */
 }
 
-.data-details {
-    /* Additional styling for the data details */
+.data {
+    align-self: flex-start; /* Align the Data box to the top */
+}
+
+.weather {
+    align-self: flex-end; /* Align the Weather box to the top */
 }
