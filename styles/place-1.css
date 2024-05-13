@@ -77,3 +77,28 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+/* Media query for hiding SVG image in mobile view */
+@media (max-width: 768px) {
+    .weather img[src$=".svg"] {
+        display: none;
+    }
+}
+
+/* Media query for displaying JPEG image in wider view */
+@media (min-width: 769px) {
+    .weather img[src$=".svg"] {
+        display: none;
+    }
+    .weather img[src$=".png"] {
+        display: inline-block;
+        width: 50px; /* Adjust width as needed */
+        height: 50px; /* Adjust height as needed */
+    }
+}
+
+/* Define global variables in :root */
+:root {
+    --primary-color: gray;
+    --weather-icon-size: 50px;
+}
+
