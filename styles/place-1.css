@@ -51,12 +51,6 @@ footer {
     width: 100%;
 }
 
-.data-weather-container {
-    display: flex;
-    justify-content: flex-start; /* Align items to the start (left) of the flex container */
-    align-items: flex-start; /* Align items to the start (top) of the flex container */
-    margin: 20px;
-}
 
 .data {
     position: absolute;
