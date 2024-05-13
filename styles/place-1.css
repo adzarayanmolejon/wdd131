@@ -4,6 +4,7 @@ body {
     padding: 0; /* Remove default padding */
     background-image: url('../images/philippine-eagle-centre.jpg');
     background-position: center; /* Center the image */
-    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
     /* Add other styles as necessary */
 }
