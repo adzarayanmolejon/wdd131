@@ -50,19 +50,6 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.weather {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 20%; /* Adjust as needed */
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: #fff;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 .weather-details {
     display: flex;
     flex-direction: column; /* Arrange items vertically */
@@ -75,4 +62,32 @@ footer {
     max-width: 50px;
     height: auto;
     margin-right: 10px;
+}
+.main-content {
+    position: relative;
+    padding-bottom: 60px; /* Add padding to the bottom of the main content */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.weather {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 20%; /* Adjust as needed */
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
