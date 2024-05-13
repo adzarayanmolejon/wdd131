@@ -51,11 +51,10 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .weather {
-    position: absolute;
-    top: 30%;
-    right: 10%;
-    transform: translateY(-30%);
-    width: 10%; /* Adjust as needed */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 20%; /* Adjust as needed */
     padding: 10px;
     box-sizing: border-box;
     background-color: #fff;
