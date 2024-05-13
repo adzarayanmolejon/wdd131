@@ -53,14 +53,13 @@ footer {
 
 .data-weather-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start; /* Align items to the start (left) of the flex container */
+    align-items: flex-start; /* Align items to the start (top) of the flex container */
     margin: 20px;
-    position: relative; /* Add relative positioning to the container */
 }
 
 .data {
-    flex: 0 1 30%; /* Adjust the flex value to resize the Data container */
+    flex: 0 0 30%; /* Adjust the flex value to resize the Data container */
     max-width: 30%; /* Added to limit the width */
     padding: 20px;
     box-sizing: border-box;
@@ -68,17 +67,14 @@ footer {
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    align-self: flex-start; /* Align the Data container to the top */
 }
 
 .weather {
-    position: absolute; /* Position the Weather box absolutely */
-    bottom: 0; /* Align to the bottom */
-    right: 0; /* Align to the right */
-    width: 40%; /* Set the width */
-    background-color: #fff;
+    flex: 0 0 40%; /* Adjust the flex value to resize the Weather container */
+    max-width: 40%; /* Added to limit the width */
     padding: 20px;
     box-sizing: border-box;
+    background-color: #fff;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
