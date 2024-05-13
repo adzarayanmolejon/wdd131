@@ -74,8 +74,8 @@ footer {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 30%; /* Adjust as needed */
-    padding: 20px;
+    width: 25%; /* Adjust as needed */
+    padding: 10px;
     box-sizing: border-box;
     background-color: #fff;
     margin: 10px;
