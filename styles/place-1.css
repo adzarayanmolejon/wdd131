@@ -71,16 +71,18 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .weather {
-    flex: 0 0 40%; /* Adjust the flex value to resize the Weather container */
-    max-width: 40%; /* Added to limit the width */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%; /* Adjust as needed */
     padding: 20px;
     box-sizing: border-box;
     background-color: #fff;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-self: flex-start; /* Align to the top (upper right corner) */
 }
-
 .weather-details {
     display: flex;
     align-items: center;
