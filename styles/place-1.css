@@ -52,32 +52,30 @@ footer {
 }
 
 .main-content {
-    display: flex;
-    justify-content: space-between; /* Space items evenly along the main axis */
-    align-items: flex-start; /* Align items at the start of the cross axis */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns of equal width */
+    grid-gap: 20px; /* Gap between grid items */
     margin: 20px;
 }
 
 .data,
 .large-image,
 .weather {
-    flex: 1; /* Each section takes up equal space */
     padding: 20px;
     box-sizing: border-box;
     background-color: #fff;
-    margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.weather-details {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
+.data {
+    grid-column: 1 / 2; /* Start at column 1 and end at column 2 */
 }
 
-.weather img {
-    max-width: 50px;
-    height: auto;
-    margin-right: 10px;
+.large-image {
+    grid-column: 2 / 3; /* Start at column 2 and end at column 3 */
+}
+
+.weather {
+    grid-column: 3 / 4; /* Start at column 3 and end at column 4 */
 }
