@@ -3,7 +3,7 @@ body {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/09/ca/55/f4/philippine-eagle-centre.jpg');
-    background-size: cover; /* Adjust to cover the entire viewport */
+    background-size: contain; /* Adjust to cover the entire viewport */
     background-position: center; /* Center the image */
     background-repeat: no-repeat;
     /* Add other styles as necessary */
