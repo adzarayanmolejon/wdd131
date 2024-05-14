@@ -1,3 +1,4 @@
+Copy code
 let timerInterval;
 let remainingTime = 0;
 
@@ -52,7 +53,7 @@ function formatTime(seconds) {
 
 function triggerVibration() {
     if (navigator.vibrate) {
-        navigator.vibrate([500, 300, 500]);
+        navigator.vibrate(1000); // Vibrate for 1 second
     } else {
         console.log("Vibration not supported on this device.");
     }
