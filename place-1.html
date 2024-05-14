@@ -32,12 +32,13 @@
         <div class="weather">
             <h3>Weather</h3>
             <div class="weather-details">
-                <!-- WebP and SVG weather icon for mobile view -->
+                <!-- SVG weather icon for mobile view -->
                 <picture>
-                    <source srcset="images/1530391_weather_clouds_sun_sunny_icon.webp" type="image/webp">
-                    <source srcset="images/1530391_weather_clouds_sun_sunny_icon.png" type="image/png">
-                    <img src="images/1530391_weather_clouds_sun_sunny_icon.png" alt="Weather Icon" class="weather-icon">
+                    <source srcset="images/1530391_weather_clouds_sun_sunny_icon.svg" type="image/svg+xml">
+                    <img src="images/1530391_weather_clouds_sun_sunny_icon.png" alt="Weather Icon">
                 </picture>
+                <!-- JPEG weather icon for wider view -->
+                <img src="images/1530391_weather_clouds_sun_sunny_icon.png" alt="Weather Icon" class="wider-view">
                 <p>Temperature: 33°C</p>
                 <p>Conditions: Partly Cloudy</p>
                 <p>Wind: 10-15 km/h</p>
