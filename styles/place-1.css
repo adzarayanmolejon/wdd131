@@ -112,3 +112,8 @@ footer::after {
     color: #ccc;
     margin-top: 10px;
 }
+/* Define global variables in :root */
+:root {
+    --primary-color: gray;
+    --weather-icon-size: 50px;
+}
