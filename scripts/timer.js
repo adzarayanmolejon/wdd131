@@ -1,4 +1,3 @@
-Copy code
 let timerInterval;
 let remainingTime = 0;
 
