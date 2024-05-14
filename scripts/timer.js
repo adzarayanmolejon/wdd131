@@ -52,7 +52,7 @@ function formatTime(seconds) {
 
 function triggerVibration() {
     if (navigator.vibrate) {
-        navigator.vibrate([500, 300, 500, 300, 500]); // Vibrate, pause, vibrate, pause, vibrate
+        navigator.vibrate([500, 300, 500, 300, 500, 300, 500, 300, 500]); // Vibrate, pause, vibrate, pause, vibrate, pause, vibrate, pause, vibrate
     } else {
         console.log("Vibration not supported on this device.");
     }
