@@ -105,9 +105,14 @@ footer {
 
 /* Adding after pseudo-element for footer */
 footer::after {
-    content: " - This is an additional message.";
     display: block;
     font-size: 0.8rem;
     color: #ccc;
     margin-top: 10px;
+}
+:root {
+    --primary-color: grey;
+    --secondary-color: white;
+    --weather-icon-size: 50px;
+    --font-family: 'Roboto', sans-serif;
 }
