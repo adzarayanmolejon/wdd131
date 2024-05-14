@@ -17,6 +17,7 @@ function startTimer() {
 
     if (remainingTime > 0) {
         clearInterval(timerInterval);
+        timerDisplay.classList.remove('expired');
         timerInterval = setInterval(updateTimer, 1000);
     }
 }
@@ -40,7 +41,6 @@ function updateTimer() {
         clearInterval(timerInterval);
         timerDisplay.classList.add('expired');
         triggerVibration();
-        alert("Time's up!");
     }
 }
 
