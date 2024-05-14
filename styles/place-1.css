@@ -1,14 +1,21 @@
+:root {
+    --primary-color: #4a4a4a;  /* Define primary color */
+    --secondary-color: #ffffff; /* Define secondary color */
+    --font-family: 'Roboto', sans-serif; /* Define font family */
+    --weather-icon-size: 50px; /* Define weather icon size */
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     background-color: #f0f0f0;
     overflow-x: hidden;
 }
 
 header {
-    background-color: grey;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 10px 0;
     margin-bottom: 20px;
@@ -35,7 +42,7 @@ main {
     width: 20%; /* Adjust as needed */
     padding: 10px;
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: var(--secondary-color);
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -49,7 +56,7 @@ main {
 }
 
 .weather img {
-    max-width: 50px;
+    max-width: var(--weather-icon-size);
     height: auto;
     margin-right: 10px;
 }
@@ -60,8 +67,8 @@ main {
 }
 
 footer {
-    background-color: grey;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 1rem 0;
 }
@@ -73,7 +80,7 @@ footer {
     width: 20%; /* Adjust as needed */
     padding: 10px;
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: var(--secondary-color);
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -83,7 +90,7 @@ footer {
 @media (max-width: 768px) {
     .weather-icon {
         display: block;
-        width: 50px;
+        width: var(--weather-icon-size);
         height: auto;
     }
 }
@@ -92,27 +99,16 @@ footer {
 @media (min-width: 769px) {
     .weather-icon {
         display: block;
-        width: 50px;
+        width: var(--weather-icon-size);
         height: auto;
     }
 }
 
-/* Define global variables in :root */
-:root {
-    --primary-color: gray;
-    --weather-icon-size: 50px;
-}
-
 /* Adding after pseudo-element for footer */
 footer::after {
+    content: " - This is an additional message.";
     display: block;
     font-size: 0.8rem;
     color: #ccc;
     margin-top: 10px;
-}
-:root {
-    --primary-color: grey;
-    --secondary-color: white;
-    --weather-icon-size: 50px;
-    --font-family: 'Roboto', sans-serif;
 }
