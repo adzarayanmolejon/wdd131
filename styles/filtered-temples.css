@@ -98,8 +98,8 @@ nav ul.show {
     display: flex;
 }
 
-/* styles.css */
-#temple-container {
+/* styles/temples.css */
+.temple-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;

@@ -14,32 +14,24 @@
 </head>
 
 <body>
-        <header>
-            <h1>Temple Album</h1>
-            <button id="menu-toggle">&#9776; Menu</button>
-            <nav>
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Old</a></li>
-                    <li><a href="#">New</a></li>
-                    <li><a href="#">Large</a></li>
-                    <li><a href="#">Small</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu-toggle">&#9776; Menu</button>
+        <nav>
+            <ul>
+                <li><a href="#" class="filter-button" data-filter="all">Home</a></li>
+                <li><a href="#" class="filter-button" data-filter="old">Old</a></li>
+                <li><a href="#" class="filter-button" data-filter="new">New</a></li>
+                <li><a href="#" class="filter-button" data-filter="large">Large</a></li>
+                <li><a href="#" class="filter-button" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <h2>Home</h2>
-        <div class="temple-grid"> 
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-
+        <div id="temple-grid" class="temple-grid">
+            <!-- Temple cards will be generated here -->
+        </div>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span>🍁 Adz A. Molejon 🍁 Davao City, Philippines</p>
