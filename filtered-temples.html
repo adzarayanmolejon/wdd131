@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Adz A. Molejon</title>
+    <meta name="description" content="Adz A. Molejon's BYU Idaho WDD 131 Dynamic Web Fundamentals course homepage">
+    <meta name="author" content="Adz A. Molejon">
+    <link rel="stylesheet" type="text/css" href="styles/temples.css">
+    <link rel="stylesheet" type="text/css" href="styles/temples-large.css">
+    <link rel="stylesheet" type="text/css" href="styles/filtered-temples.css">
+</head>
+
+<body>
+        <header>
+            <h1>Temple Album</h1>
+            <button id="menu-toggle">&#9776; Menu</button>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main>
+        <h2>Home</h2>
+         
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>🍁 Adz A. Molejon 🍁 Davao City, Philippines</p>
+        <p id="lastModified">Document Last Modified: </p>
+    </footer>
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script>
+        document.getElementById("currentyear").innerHTML = new Date().getFullYear();
+    
+        var lastModifiedDate = new Date(document.lastModified);
+        var formattedDate = lastModifiedDate.toLocaleDateString();
+    
+        document.getElementById("lastModified").innerHTML += formattedDate ? formattedDate : "Unknown";
+    </script>
+</body>
+</html>
