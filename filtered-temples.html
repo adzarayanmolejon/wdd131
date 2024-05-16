@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,29 +11,26 @@
     <link rel="stylesheet" type="text/css" href="styles/temples-large.css">
     <link rel="stylesheet" type="text/css" href="styles/filtered-temples.css">
 </head>
-
 <body>
     <header>
         <h1>Temple Album</h1>
         <button id="menu-toggle">&#9776; Menu</button>
         <nav>
             <ul>
-                <li><a href="#" class="filter-button" data-filter="all">Home</a></li>
-                <li><a href="#" class="filter-button" data-filter="old">Old</a></li>
-                <li><a href="#" class="filter-button" data-filter="new">New</a></li>
-                <li><a href="#" class="filter-button" data-filter="large">Large</a></li>
-                <li><a href="#" class="filter-button" data-filter="small">Small</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h2>Home</h2>
-        <div id="temple-grid" class="temple-grid">
-            <!-- Temple cards will be generated here -->
-        </div>
+        <div class="temple-grid"></div>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span>🍁 Adz A. Molejon 🍁 Davao City, Philippines</p>
+        <p>&copy; <span id="currentyear"></span> 🍁 Adz A. Molejon 🍁 Davao City, Philippines</p>
         <p id="lastModified">Document Last Modified: </p>
     </footer>
     <script src="scripts/filtered-temples.js" defer></script>

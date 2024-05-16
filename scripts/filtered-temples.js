@@ -71,7 +71,7 @@ function createTempleCard(temple) {
     location.textContent = `Location: ${temple.location}`;
 
     const dedication = document.createElement('p');
-    dedication.textContent = `Dedicated: ${temple.dedication}`;
+    dedication.textContent = `Dedicated: ${temple.dedication}`; // Ensure this matches the property name in your array
 
     const area = document.createElement('p');
     area.textContent = `Area: ${temple.area} sq ft`;
