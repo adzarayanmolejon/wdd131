@@ -58,7 +58,8 @@ const temples = [
     // Add more temple objects here...
   ];
 
-  // Function to create a temple card
+ 
+// Function to create a temple card
 function createTempleCard(temple) {
     const card = document.createElement('figure');
     card.className = 'temple-card';
@@ -91,44 +92,13 @@ function createTempleCard(temple) {
 
 // Function to display all temple cards
 function displayTempleCards(temples) {
-    const container = document.getElementById('temple-grid');
+    const container = document.querySelector('.temple-grid');
     container.innerHTML = ''; // Clear any existing content
     temples.forEach(temple => {
         const card = createTempleCard(temple);
         container.appendChild(card);
     });
 }
-
-// Filter function
-function filterTemples(criteria) {
-    let filteredTemples = [];
-    switch(criteria) {
-        case 'old':
-            filteredTemples = temples.filter(temple => new Date(temple.dedication) < new Date('1900-01-01'));
-            break;
-        case 'new':
-            filteredTemples = temples.filter(temple => new Date(temple.dedication) > new Date('2000-01-01'));
-            break;
-        case 'large':
-            filteredTemples = temples.filter(temple => temple.area > 90000);
-            break;
-        case 'small':
-            filteredTemples = temples.filter(temple => temple.area < 10000);
-            break;
-        default:
-            filteredTemples = temples;
-    }
-    displayTempleCards(filteredTemples);
-}
-
-// Add event listeners to filter buttons
-document.querySelectorAll('.filter-button').forEach(button => {
-    button.addEventListener('click', (event) => {
-        event.preventDefault();
-        const filter = event.target.getAttribute('data-filter');
-        filterTemples(filter);
-    });
-});
 
 // Initial display of all temples
 displayTempleCards(temples);

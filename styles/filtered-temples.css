@@ -1,7 +1,11 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -15,6 +19,9 @@ nav ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
+    display: none; /* Initially hide the menu items */
+    flex-direction: row;
+    align-items: flex-end;
 }
 
 nav a {
@@ -28,94 +35,57 @@ nav a:hover {
     background-color: #555;
 }
 
+nav ul.show {
+    display: flex; /* Show the menu items when the menu button is clicked */
+}
+
 footer {
     text-align: center;
     background-color: #333;
     color: #fff;
     padding: 10px;
+    margin-top: auto; /* Push footer to the bottom */
 }
-/* Shared styles for both views */
+
+/* Main Content Styles */
 main {
+    flex: 1;
     display: grid;
     grid-gap: 20px;
     max-width: 1500px;
     margin: 0 auto;
+    padding: 20px;
 }
 
-figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-}
-
-figure img {
-    max-width: 100%;
-    max-height: 300px; /* Adjust this value as needed */
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* mobile view */
-@media (max-width: 150px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-}
-/* larger view */
-@media (min-width: 769px) {
-    main {
-        grid-auto-flow: column;
-        grid-template-columns: none;
-    }
-}
-
-/* temple grid */
 .temple-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-}
-
-.temple-grid figure {
-    text-align: center;
-    grid-column: span 1; /* Makes the figure span 1 column */
-}
-.temple-grid img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-/* Initially hide the menu items */
-nav ul {
-    display: none;
-    flex-direction: row;
-    align-items: flex-end;
-}
-
-/* Show the menu items when the menu button is clicked */
-nav ul.show {
-    display: flex;
-}
-
-/* styles/temples.css */
-.temple-grid {
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
     gap: 20px;
-    justify-content: center;
 }
 
+/* Temple Card Styles */
 .temple-card {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
-    max-width: 300px;
     text-align: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .temple-card img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
 }
