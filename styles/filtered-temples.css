@@ -41,8 +41,10 @@ main {
     grid-gap: 20px;
     margin: 0 auto;
     width: 90%; /* Adjust this value as needed */
+    margin-bottom: -50px; /* Adjust the value as needed */
+      }
       
-}
+    
 
 figure {
     display: flex;
