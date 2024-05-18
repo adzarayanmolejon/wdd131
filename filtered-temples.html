@@ -36,10 +36,10 @@
     <script src="scripts/filtered-temples.js" defer></script>
     <script>
         document.getElementById("currentyear").innerHTML = new Date().getFullYear();
-    
+
         var lastModifiedDate = new Date(document.lastModified);
         var formattedDate = lastModifiedDate.toLocaleDateString();
-    
+
         document.getElementById("lastModified").innerHTML += formattedDate ? formattedDate : "Unknown";
     </script>
 </body>
