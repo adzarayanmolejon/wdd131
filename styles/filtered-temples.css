@@ -58,7 +58,7 @@ figure img {
     object-fit: cover;
     border-radius: 10px;
     height: auto; /* Maintain aspect ratio */
-    max-height: 300px; /* Adjust as needed */
+    max-height: 200px; /* Adjust as needed */
       
 }
 
