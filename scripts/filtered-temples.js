@@ -42,16 +42,37 @@ const temples = [
         area: 9600,
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
     },
+    
     {
-        templeName: "Mexico City Mexico",
-        location: "Mexico City, Mexico",
-        dedicated: "1983, December, 2",
-        area: 116642,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-    }
-    // Add more temple objects here...
+        templeName: "Manila Philippines",
+        location: "Quezon City Philippines",
+        dedicated: "1984, September, 25",
+        area: 26683,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manila-philippines/400x250/manila-philippines-temple-lds-129585-wallpaper.jpg"
+    },
+    {
+        templeName: "Cebu City Philippines",
+        location: "Cebu City Philippines",
+        dedicated: "2010, June, 13",
+        area: 29556,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cebu-city-philippines/400x640/cebu-philippines-temple-lds-852643-wallpaper.jpg"
+    },
+   
+    {
+        templeName: "Vernal Utah",
+        location: "Vernal Utah",
+        dedicated: "1997, November, 2",
+        area: 38771,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/vernal-utah/400x250/vernal-temple-lds-1078594-wallpaper.jpg"
+    },
+    {
+        templeName: "Adelaide Australia",
+        location: "Adelaide Australia",
+        dedicated: "2000, June, 15",
+        area: 38771,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/adelaide-australia/400x225/adelaide-australia-temple-lds-866420-wallpaper.jpg"
+    },
 ];
-
 // Function to create a temple card
 function createTempleCard(temple) {
     const card = document.createElement('figure');
