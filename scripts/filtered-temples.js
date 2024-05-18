@@ -69,8 +69,22 @@ const temples = [
         templeName: "Adelaide Australia",
         location: "Adelaide Australia",
         dedicated: "2000, June, 15",
-        area: 38771,
+        area: 10700,
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/adelaide-australia/400x225/adelaide-australia-temple-lds-866420-wallpaper.jpg"
+    },
+    {
+        templeName: "Sapporo Japan",
+        location: "Sapporo Japan",
+        dedicated: "2016, August, 21",
+        area: 48480,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/2018/400x250/Sapporo-Japan-Temple01.jpg"
+    },
+    {
+        templeName: "Johannesburg South Africa",
+        location: "Johannesburg South Africa",
+        dedicated: "1985, August, 24",
+        area: 19184,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
     },
 ];
 // Function to create a temple card
