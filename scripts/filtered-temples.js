@@ -182,3 +182,17 @@ document.getElementById("lastModified").textContent = "Last Modified: " + format
       
       // Initial display of all temples
       displayTempleCards(temples, 'all');  
+
+      const menuItems = document.querySelectorAll('nav ul li a');
+
+menuItems.forEach(menuItem => {
+  menuItem.addEventListener('click', (event) => {
+    // Prevent default link behavior (optional)
+    event.preventDefault();
+
+    const filter = menuItem.textContent.toLowerCase(); // Get filter value from menu item text
+
+    // Call displayTempleCards with the selected filter
+    displayTempleCards(temples, filter);
+  });
+});
