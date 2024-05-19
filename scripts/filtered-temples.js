@@ -1,4 +1,3 @@
-// Sample array of temple objects
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -42,7 +41,6 @@ const temples = [
         area: 9600,
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-lds-83007-wallpaper.jpg"
     },
-    
     {
         templeName: "Manila Philippines",
         location: "Quezon City Philippines",
@@ -57,7 +55,6 @@ const temples = [
         area: 41010,
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/400x250/7-Rome-Temple-2160340.jpg"
     },
-   
     {
         templeName: "Vernal Utah",
         location: "Vernal Utah",
@@ -87,26 +84,26 @@ const temples = [
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
     },
 ];
-// Function to create a temple card
+
 function createTempleCard(temple) {
     const card = document.createElement('figure');
     card.className = 'temple-card';
 
     const name = document.createElement('h2');
-    name.textContent = temple.templeName; // Corrected property name
+    name.textContent = temple.templeName;
 
     const location = document.createElement('p');
     location.textContent = `Location: ${temple.location}`;
 
     const dedication = document.createElement('p');
-    dedication.textContent = `Dedicated: ${temple.dedicated}`; // Corrected property name
+    dedication.textContent = `Dedicated: ${temple.dedicated}`;
 
     const area = document.createElement('p');
     area.textContent = `Area: ${temple.area} sq ft`;
 
     const image = document.createElement('img');
     image.src = temple.imageUrl;
-    image.alt = temple.templeName; // Corrected property name
+    image.alt = temple.templeName;
     image.loading = 'lazy';
 
     card.appendChild(name);
@@ -118,68 +115,38 @@ function createTempleCard(temple) {
     return card;
 }
 
-// Function to display all temple cards
-function displayTempleCards(temples) {
+function displayTempleCards(temples, filter = 'all') {
+    let filteredTemples = temples;
+    
+    if (filter !== 'all') {
+        switch (filter) {
+            case 'new':
+                filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
+                break;
+            case 'old':
+                filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() <= 2000);
+                break;
+            case 'large':
+                filteredTemples = temples.filter(temple => temple.area > 50000);
+                break;
+            case 'small':
+                filteredTemples = temples.filter(temple => temple.area <= 50000);
+                break;
+        }
+    }
+    
     const container = document.querySelector('.temple-grid');
-    container.innerHTML = ''; // Clear any existing content
-    temples.forEach(temple => {
+    container.innerHTML = '';
+    filteredTemples.forEach(temple => {
         const card = createTempleCard(temple);
         container.appendChild(card);
     });
 }
 
-// Initial display of all temples
-displayTempleCards(temples);
-
-const menuToggle = document.getElementById('menu-toggle');
-const navMenu = document.querySelector('nav ul');
-
-menuToggle.addEventListener('click', function() {
-    navMenu.classList.toggle('show');
+document.getElementById('temple-filter').addEventListener('change', (event) => {
+    displayTempleCards(temples, event.target.value);
 });
-//date:modification
-document.getElementById("currentyear").textContent = new Date().getFullYear();
 
-var lastModified = new Date(document.lastModified);
-var formattedDate = lastModified.toLocaleDateString();
-var formattedTime = lastModified.toLocaleTimeString();
-
-document.getElementById("lastModified").textContent = "Last Modified: " + formattedDate + " " + formattedTime;
-
-function displayTempleCards(temples, filter) {
-    let filteredTemples = temples;
-    
-    if (filter !== 'all') {
-      switch (filter) {
-        case 'new':
-          filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
-          break;
-        case 'old':
-          filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() <= 2000);
-          break;
-        case 'large':
-          filteredTemples = temples.filter(temple => temple.area > 50000);
-          break;
-        case 'small':
-          filteredTemples = temples.filter(temple => temple.area <= 50000);
-          break;
-      }
-    }
-    
-    const container = document.querySelector('.temple-grid');
-    container.innerHTML = ''; // Clear any existing content
-    filteredTemples.forEach(temple => {
-      const card = createTempleCard(temple);
-      container.appendChild(card);
-    });
-  }
-  
-  const select = document.getElementById('temple-filter');
-  select.addEventListener('change', () => {
-    const filter = select.value;
-    displayTempleCards(temples, filter);
-  });
-  
-  // Initial display of all temples
-  displayTempleCards(temples, 'all');
+// Initial display
+displayTempleCards(temples, 'all');
   
