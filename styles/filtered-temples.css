@@ -118,3 +118,24 @@ nav ul {
 nav ul.show {
     display: flex;
 }
+.location,
+.dedicated,
+.area {
+  display: inline-block;
+}
+
+.location,
+.dedicated::after {
+  content: ":";
+}
+
+.location span,
+.dedicated span,
+.area span {
+  font-weight: bold;
+}
+
+.dedicated::after,
+.area::after {
+  margin: 0 5px;
+}
