@@ -118,20 +118,30 @@ nav ul {
 nav ul.show {
     display: flex;
 }
-.temple-info {
-    display: flex;
-    align-items: center; /* Aligns items vertically */
-    font-family: Arial, sans-serif; /* Specify font */
-  }
-  
-  .temple-info__label,
-  .temple-info__value {
-    margin-right: 10px; /* Space between labels and values */
-    font-weight: bold;
-  }
-  
-  .temple-info__label:last-child,
-  .temple-info__value:last-child {
-    margin-right: 0; /* Remove margin for last items */
-  }
-  
+.temple-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff; /* Add background color */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+  margin: 10px; /* Add margin for spacing */
+  width: 300px; /* Set a width for the card */
+}
+
+.temple-card h2 {
+  font-size: 1.2em; /* Adjust font size for title */
+  margin-bottom: 5px; /* Add margin for spacing */
+  padding: 10px 15px; /* Add padding for better alignment */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Add a dividing line */
+}
+
+.temple-card p {
+  font-size: 0.9em; /* Adjust font size for content */
+  margin: 0 10px 10px 10px; /* Add margin for spacing */
+  padding: 0; /* Remove default padding */
+}
+
+.temple-card img {
+  width: 100%; /* Stretch image to fit container width */
+  height: auto; /* Maintain image aspect ratio */
+}
