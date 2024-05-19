@@ -74,15 +74,36 @@ const temples = [
         location: "Sapporo Japan",
         dedicated: "2016, August, 21",
         area: 48480,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/2018/400x250/Sapporo-Japan-Temple01.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/400x250/13-11-2017-sapporo-temple-front-view.jpg"
     },
     {
-        templeName: "Johannesburg South Africa",
-        location: "Johannesburg South Africa",
-        dedicated: "1985, August, 24",
-        area: 19184,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
+        templeName: "Kinshasa Democratic Republic of the Congo",
+        location: "Kinshasa Democratic Republic of the Congo",
+        dedicated: "2019, April, 14",
+        area: 12570,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/kinshasa-democratic-republic-of-the-congo/400x250/1-Kinshasa-DR-Congo-Temple-Exteriror.jpg"
     },
+    {
+        templeName: "Papeete Tahiti",
+        location: "Papeete Tahiti",
+        dedicated: "1983, October, 27",
+        area: 10000,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/papeete-tahiti/400x250/papeete_tahiti_temple_exterior_01.jpg"
+    },
+    {
+        templeName: "Porto Alegre Brazil",
+        location: "Porto Alegre Brazil",
+        dedicated: "2000, December, 17",
+        area: 10659,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/porto-alegre-brazil/400x250/porto-alegre-temple-lds-601515-wallpaper.jpg"
+    },
+    {
+        templeName: "Sydney Australia",
+        location: "Sydney Australia",
+        dedicated: "1984, September, 20",
+        area: 30177,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sydney-australia/400x250/sydney_australia_temple_exterior_03.jpg"
+    }
 ];
 
 function createTempleCard(temple) {
