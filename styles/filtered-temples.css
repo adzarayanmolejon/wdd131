@@ -118,16 +118,20 @@ nav ul {
 nav ul.show {
     display: flex;
 }
-.info-container { /* New container class */
-    display: flex; /* Flexbox for inline arrangement */
+.temple-info {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    font-family: Arial, sans-serif; /* Specify font */
   }
   
-  .info-section {
-    margin-right: 10px; /* Spacing between sections */
+  .temple-info__label,
+  .temple-info__value {
+    margin-right: 10px; /* Space between labels and values */
     font-weight: bold;
   }
   
-  .info-section:last-child { /* Remove margin for last section */
-    margin-right: 0;
+  .temple-info__label:last-child,
+  .temple-info__value:last-child {
+    margin-right: 0; /* Remove margin for last items */
   }
   
