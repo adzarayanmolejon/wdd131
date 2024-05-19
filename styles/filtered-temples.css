@@ -144,3 +144,8 @@ figure img {
     width: 100%; /* Example: Set full width */
     height: 50px; /* Example: Set height to 50px */
 }
+
+.hidden {
+    display: none;
+  }
+  
