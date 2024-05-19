@@ -145,3 +145,10 @@ nav ul.show {
   width: 100%; /* Stretch image to fit container width */
   height: auto; /* Maintain image aspect ratio */
 }
+
+.footer {
+    /* Footer styles here */
+    width: 100%; /* Example: Set full width */
+    height: 50px; /* Example: Set height to 50px */
+  }
+  
