@@ -40,7 +40,7 @@ const temples = [
         location: "Lima, Perú",
         dedicated: "1986, January, 10",
         area: 9600,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x640/lima-peru-temple-lds-83007-wallpaper.jpg"
     },
     
     {
@@ -51,11 +51,11 @@ const temples = [
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manila-philippines/400x250/manila-philippines-temple-lds-129585-wallpaper.jpg"
     },
     {
-        templeName: "Cebu City Philippines",
-        location: "Cebu City Philippines",
-        dedicated: "2010, June, 13",
-        area: 29556,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cebu-city-philippines/400x640/cebu-philippines-temple-lds-852643-wallpaper.jpg"
+        templeName: "Rome Italy",
+        location: "Rome Italy",
+        dedicated: "2019, March, 10",
+        area: 41010,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/400x250/7-Rome-Temple-2160340.jpg"
     },
    
     {
