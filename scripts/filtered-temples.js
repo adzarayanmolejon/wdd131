@@ -5,28 +5,28 @@ const temples = [
         location: "Aba, Nigeria",
         dedicated: "2005, August, 7",
         area: 11500,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/500x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
     },
     {
         templeName: "Manti Utah",
         location: "Manti, Utah, United States",
         dedicated: "1888, May, 21",
         area: 74792,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/500x250/manti-temple-768192-wallpaper.jpg"
     },
     {
         templeName: "Payson Utah",
         location: "Payson, Utah, United States",
         dedicated: "2015, June, 7",
         area: 96630,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/500x250/payson-utah-temple-exterior-1416671-wallpaper.jpg"
     },
     {
         templeName: "Yigo Guam",
         location: "Yigo, Guam",
         dedicated: "2020, May, 2",
         area: 6861,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/500x250/yigo_guam_temple_2.jpg"
     },
     {
         templeName: "Washington D.C.",
@@ -48,7 +48,7 @@ const temples = [
         location: "Quezon City Philippines",
         dedicated: "1984, September, 25",
         area: 26683,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manila-philippines/400x250/manila-philippines-temple-lds-129585-wallpaper.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manila-philippines/500x250/manila-philippines-temple-lds-129585-wallpaper.jpg"
     },
     {
         templeName: "Rome Italy",
@@ -63,28 +63,28 @@ const temples = [
         location: "Vernal Utah",
         dedicated: "1997, November, 2",
         area: 38771,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/vernal-utah/400x250/vernal-temple-lds-1078594-wallpaper.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/vernal-utah/500x250/vernal-temple-lds-1078594-wallpaper.jpg"
     },
     {
         templeName: "Adelaide Australia",
         location: "Adelaide Australia",
         dedicated: "2000, June, 15",
         area: 10700,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/adelaide-australia/400x225/adelaide-australia-temple-lds-866420-wallpaper.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/adelaide-australia/500x250/adelaide-australia-temple-lds-866420-wallpaper.jpg"
     },
     {
         templeName: "Sapporo Japan",
         location: "Sapporo Japan",
         dedicated: "2016, August, 21",
         area: 48480,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/2018/400x250/Sapporo-Japan-Temple01.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/2018/500x250/Sapporo-Japan-Temple01.jpg"
     },
     {
         templeName: "Johannesburg South Africa",
         location: "Johannesburg South Africa",
         dedicated: "1985, August, 24",
         area: 19184,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/500x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
     },
 ];
 // Function to create a temple card
