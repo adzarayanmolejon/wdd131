@@ -9,12 +9,31 @@ header {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    position: relative; /* Ensure header remains fixed */
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 nav ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
+    display: none; /* Initially hide the menu items */
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+nav ul.show {
+    display: flex; /* Show the menu items when the menu button is clicked */
 }
 
 nav a {
@@ -35,14 +54,12 @@ footer {
     padding: 10px;
 }
 
-  main {
+main {
     display: grid;
     grid-gap: 20px;
-    /* Removed max-width for responsive layout */
     margin: 0 auto;
     overflow: auto; /* Adds scrollbars if content overflows */
-  }
-        
+}
 
 figure {
     display: flex;
@@ -59,7 +76,6 @@ figure img {
     border-radius: 10px;
     height: auto;
 }
-
 
 /* mobile view */
 @media (max-width: 768px) {
@@ -93,62 +109,38 @@ figure img {
     border-radius: 10px;
 }
 
-
-/* styles/temples.css */
 .temple-card {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-}
-
-.temple-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-/* Initially hide the menu items */
-nav ul {
-    display: none;
-    flex-direction: row;
-    align-items: flex-end;
-}
-
-/* Show the menu items when the menu button is clicked */
-nav ul.show {
     display: flex;
-}
-.temple-card {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff; /* Add background color */
-  border-radius: 8px; /* Add border radius for rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
-  margin: 10px; /* Add margin for spacing */
-  width: 300px; /* Set a width for the card */
+    flex-direction: column;
+    background-color: #fff; /* Add background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+    margin: 10px; /* Add margin for spacing */
+    width: 300px; /* Set a width for the card */
 }
 
 .temple-card h2 {
-  font-size: 1.2em; /* Adjust font size for title */
-  margin-bottom: 5px; /* Add margin for spacing */
-  padding: 10px 15px; /* Add padding for better alignment */
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Add a dividing line */
+    font-size: 1.2em; /* Adjust font size for title */
+    margin-bottom: 5px; /* Add margin for spacing */
+    padding: 10px 15px; /* Add padding for better alignment */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Add a dividing line */
 }
 
 .temple-card p {
-  font-size: 0.9em; /* Adjust font size for content */
-  margin: 0 10px 10px 10px; /* Add margin for spacing */
-  padding: 0; /* Remove default padding */
+    font-size: 0.9em; /* Adjust font size for content */
+    margin: 0 10px 10px 10px; /* Add margin for spacing */
+    padding: 0; /* Remove default padding */
 }
 
 .temple-card img {
-  width: 100%; /* Stretch image to fit container width */
-  height: auto; /* Maintain image aspect ratio */
+    width: 100%; /* Stretch image to fit container width */
+    height: auto; /* Maintain image aspect ratio */
 }
 
 .footer {
-    /* Footer styles here */
     width: 100%; /* Example: Set full width */
     height: 50px; /* Example: Set height to 50px */
-  }
-  
+}
