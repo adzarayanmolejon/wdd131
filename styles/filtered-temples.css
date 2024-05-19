@@ -118,24 +118,16 @@ nav ul {
 nav ul.show {
     display: flex;
 }
-.location,
-.dedicated,
-.area {
-  display: inline-block;
-}
-
-.location,
-.dedicated::after {
-  content: ":";
-}
-
-.location span,
-.dedicated span,
-.area span {
-  font-weight: bold;
-}
-
-.dedicated::after,
-.area::after {
-  margin: 0 5px;
-}
+.info-container { /* New container class */
+    display: flex; /* Flexbox for inline arrangement */
+  }
+  
+  .info-section {
+    margin-right: 10px; /* Spacing between sections */
+    font-weight: bold;
+  }
+  
+  .info-section:last-child { /* Remove margin for last section */
+    margin-right: 0;
+  }
+  
