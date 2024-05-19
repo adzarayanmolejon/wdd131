@@ -145,3 +145,41 @@ var formattedDate = lastModified.toLocaleDateString();
 var formattedTime = lastModified.toLocaleTimeString();
 
 document.getElementById("lastModified").textContent = "Last Modified: " + formattedDate + " " + formattedTime;
+
+function displayTempleCards(temples, filter) {
+    let filteredTemples = temples;
+    
+    if (filter !== 'all') {
+      switch (filter) {
+        case 'new':
+          filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
+          break;
+        case 'old':
+          filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() <= 2000);
+          break;
+        case 'large':
+          filteredTemples = temples.filter(temple => temple.area > 50000);
+          break;
+        case 'small':
+          filteredTemples = temples.filter(temple => temple.area <= 50000);
+          break;
+      }
+    }
+    
+    const container = document.querySelector('.temple-grid');
+    container.innerHTML = ''; // Clear any existing content
+    filteredTemples.forEach(temple => {
+      const card = createTempleCard(temple);
+      container.appendChild(card);
+    });
+  }
+  
+  const select = document.getElementById('temple-filter');
+  select.addEventListener('change', () => {
+    const filter = select.value;
+    displayTempleCards(temples, filter);
+  });
+  
+  // Initial display of all temples
+  displayTempleCards(temples, 'all');
+  
