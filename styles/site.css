@@ -1,0 +1,39 @@
+/* Colors */
+body {
+    background-color: #F5F5F5;
+    color: #333333;
+    font-family: Arial, sans-serif; /* Basic font stack */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Headings */
+  h1, h2, h3 {
+    margin: 1em 0;
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 1.5em; /* Adjust as needed */
+  }
+  
+  h2 {
+    font-size: 1.25em; /* Adjust as needed */
+  }
+  
+  /* Paragraphs */
+  p {
+    margin: 0 0 1em;
+    line-height: 1.5;
+  }
+  
+  /* Links */
+  a {
+    color: #38AECC; /* Accent color for links */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
