@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted!</title>
+</head>
+<body>
+    <h1>Thank you for your review!</h1>
+    <p>Your feedback is valuable to us.</p>
+
+    <script>
+        // Access review count from localStorage (or initialize to 0)
+        let reviewCount = parseInt(localStorage.getItem('reviewCount')) || 0;
+
+        // Increment review count
+        reviewCount++;
+
+        // Update localStorage with the new count
+        localStorage.setItem('reviewCount', reviewCount);
+
+        // Display the review count for informational purposes
+        console.log("Total Reviews Submitted:", reviewCount);
+    </script>
+</body>
+</html>
