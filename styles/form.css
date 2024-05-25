@@ -33,14 +33,6 @@ select, input[type="text"], input[type="date"], textarea {
     border-radius: 3px;
 }
 
-.rating input[type="radio"] {
-    display: none;
-}
-
-.rating label {
-    display: inline-block;
-    margin-right: 10px;
-}
 
 .features input[type="checkbox"] {
     margin-right: 10px;
