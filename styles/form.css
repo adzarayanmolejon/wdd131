@@ -67,3 +67,23 @@ footer {
     color: #f39c12; /* Filled star color */
     margin-right: 5px; /* Spacing between stars */
 }
+
+.rating {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+.rating input[type="radio"] {
+    display: none;
+}
+.rating label.star {
+    font-size: 2em;
+    color: #ddd;
+    cursor: pointer;
+}
+.rating input[type="radio"]:checked ~ label.star {
+    color: #f5b301;
+}
+.rating label.star:hover,
+.rating label.star:hover ~ label.star {
+    color: #f5b301;
+}
