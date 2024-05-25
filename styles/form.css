@@ -51,10 +51,10 @@ footer {
     color: #fff;
     padding: 10px;
 }
+/*styles for rating stars and other form elements */
 .rating {
-    direction: rtl;
-    unicode-bidi: bidi-override;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: flex-start;
 }
 .rating input[type="radio"] {
@@ -68,5 +68,8 @@ footer {
 .rating input[type="radio"]:checked ~ label.star,
 .rating label.star:hover,
 .rating label.star:hover ~ label.star {
+    color: #f5b301;
+}
+.rating label.star.selected {
     color: #f5b301;
 }
