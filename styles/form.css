@@ -35,7 +35,7 @@ input[type="text"], input[type="date"], select, textarea {
 }
 
 .rating .star.selected, .rating .star:hover, .rating .star:hover ~ .star {
-    color: #f5b301; /* Color for selected stars */
+    color: wheat; /* Color for selected stars */
 }
 
 .features label {
