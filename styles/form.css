@@ -6,8 +6,10 @@ body {
 
 h1 {
     font-size: 2em;
-    color: #333; /* Ensure high contrast */
+    color: white; /* Ensure high contrast */
     margin-bottom: 1em;
+    background-color: gray;
+    text-align: center;
 }
 
 label, legend {
@@ -45,6 +47,8 @@ input[type="text"], input[type="date"], select, textarea {
 footer p {
     font-size: 0.8em; /* Small size for footer text */
     color: #666; /* Ensure high contrast */
+    text-align: center;
+    background-color: gray;
 }
 
 form {
