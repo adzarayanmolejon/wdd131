@@ -1,75 +1,83 @@
-/* Add your custom styles here */
-
 body {
-    font-family: sans-serif;
-    margin: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
 h1 {
-    background-color: #333; 
-    padding: 10px;
-    font-family: "Arial", sans-serif;
-    color:white; 
-    text-align: center; 
-    margin: 0; /**design-h1**/
-}
-form {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-select, input[type="text"], input[type="date"], textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-
-.features input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-.btn {
-    display: block;
-    width: 100%;
-    padding: 10px 20px;
-    background:none
-}
-
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-}
-/*styles for rating stars and other form elements */
-.rating {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-}
-.rating input[type="radio"] {
-    display: none;
-}
-.rating label.star {
     font-size: 2em;
-    color: #ddd;
-    cursor: pointer;
+    color: #333; /* Ensure high contrast */
+    margin-bottom: 1em;
 }
-.rating input[type="radio"]:checked ~ label.star,
-.rating label.star:hover,
-.rating label.star:hover ~ label.star {
-    color: #f5b301;
+
+label, legend {
+    font-size: 1.2em; /* Large size for labels and legends */
+    color: #333; /* Ensure high contrast */
 }
-.rating label.star.selected {
-    color: #f5b301;
+
+input[type="text"], input[type="date"], select, textarea {
+    font-size: 1em; /* Medium size for input fields */
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.rating .star {
+    font-size: 2em; /* Large size for stars */
+    color: #ddd; /* Default color */
+}
+
+.rating .star.selected, .rating .star:hover, .rating .star:hover ~ .star {
+    color: #f5b301; /* Color for selected stars */
+}
+
+.features label {
+    display: inline-block;
+    margin-right: 1em;
+    font-size: 1em; /* Medium size for feature labels */
+    color: #333; /* Ensure high contrast */
+}
+
+footer p {
+    font-size: 0.8em; /* Small size for footer text */
+    color: #666; /* Ensure high contrast */
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 0.5em;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+
+    label, legend {
+        font-size: 1em;
+    }
+
+    input[type="text"], input[type="date"], select, textarea {
+        font-size: 0.9em;
+    }
+
+    .rating .star {
+        font-size: 1.5em;
+    }
+
+    footer p {
+        font-size: 0.7em;
+    }
 }
