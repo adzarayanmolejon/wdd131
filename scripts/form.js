@@ -33,4 +33,11 @@ var formattedDate = lastModified.toLocaleDateString();
 var formattedTime = lastModified.toLocaleTimeString();
 
 document.getElementById("lastModified").textContent = "Last Modified: " + formattedDate + " " + formattedTime;
- 
+
+document.querySelectorAll('.star').forEach(star => {
+  star.addEventListener('click', function() {
+      document.getElementById('rating').value = this.getAttribute('data-value');
+      document.querySelectorAll('.star').forEach(s => s.classList.remove('selected'));
+      this.classList.add('selected');
+  });
+});
