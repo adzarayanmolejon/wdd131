@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Affordable Flash Frozen Products</title>
+  <link rel="stylesheet" href="styles/product.css">
+</head>
+<body>
+  <header class="homepage-header">
+    <div class="logo-nav">
+      <div class="logo">
+        <img src="images/logo.jpg" alt="White-water rafting adventure">
+      </div>
+      <nav>
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="homepage">
+    <section class="homepage-hero">
+        <h1>Unleash Your Inner Adventurer: Join us in White-Water Rafting, in the heart of Davao City!</h1>
+        <div class="hero-buttons">
+            <a href="trips.html" class="btn">Explore Trips</a>
+            <a href="trips.html" class="btn">Book Your Adventure</a>
+        </div>
+    </section>
+
+    <div class="hero">
+        <img src="images/team.jpg" alt="White-water rafting team">
+        <div class="features">
+            <section class="feature rapids" style="color: white;">
+                <h3>Thrilling Rapid</h3>
+                <p>Experience exhilarating rapids with our expert guides, guaranteed to get your adrenaline pumping!</p>
+                <img src="images/technical-rapid.jpeg" alt="Image of exciting white-water rapids">
+            </section>
+
+            <section class="feature rivers" style="color: white;">
+                <h3>Majestic River</h3>
+                <p>Explore breathtaking rivers and discover the beauty of nature at its finest.</p>
+                <img src="images/majestic-river.jpg" alt="Image of a scenic river">
+            </section>
+
+            <section class="feature camping" style="color: white;">
+                <h3>Camping Site</h3>
+                <p>Relax and unwind under the starry sky after a day of exhilarating adventure.</p>
+                <img src="images/camping-site.jpg" alt="Image of a campsite">
+            </section>
+        </div>
+    </div>
+</main>
+
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="#"><img src="images/facebook_logo.svg" alt="Facebook" class="social-icon"></a>
+      <a href="#"><img src="images/instagram_logo.svg" alt="Instagram" class="social-icon"></a>
+      <a href="#"><img src="images/tweet_logo_icon.svg" alt="Twitter" class="social-icon"></a>
+    </div>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>🍁 Adz A. Molejon 🍁 Davao City, Philippines</p>
+        <p id="lastModified">Document Last Modified: </p>
+    </footer>
+    <script src="scripts/product.js" defer></script>
+    <script>
+        document.getElementById("currentyear").innerHTML = new Date().getFullYear();
+
+        var lastModifiedDate = new Date(document.lastModified);
+        var formattedDate = lastModifiedDate.toLocaleDateString();
+
+        document.getElementById("lastModified").innerHTML += formattedDate ? formattedDate : "Unknown";
+    </script>
+    <div class="newsletter">
+      <h2>Stay Tuned for Upcoming Adventures</h2>
+      <form action="#">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="email" placeholder="Email Address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="footer-center">
+      <a href="siteplan.html">Site Plan</a> | <a href="contact.html">Contact Us</a>
+    </div>
+  </footer>
+</body>
+</html>
