@@ -59,7 +59,7 @@ body {
   }
   
   .nav-links .active a {
-    color: #007BFF; /* Highlight color for active link */
+    color: black; /* Highlight color for active link */
   }
     .hamburger {
     display: none;
