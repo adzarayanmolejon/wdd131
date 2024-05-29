@@ -57,7 +57,7 @@ body {
   }
   
   .homepage-hero {
-    background: url('images/images.jpg') no-repeat center center/cover;
+    background: url('..images/') no-repeat center center/cover;
     color: white;
     padding: 100px 20px;
     text-align: center;
