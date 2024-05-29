@@ -111,6 +111,19 @@ body {
     max-width: 100%;
     height: auto;
   }
+   .product-section h3 {
+      font-size: 2em; /* Increase heading size by 2 */
+    }
+    
+    .product-section p {
+      font-size: 1.2em; /* Increase paragraph size by 1.2 */
+    }
+    
+    .product-section {
+      text-align: center;
+      margin: 0 auto; /* Optional for additional horizontal centering */
+    }
+    
   
   figcaption {
     margin-top: 10px;
