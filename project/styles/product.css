@@ -14,25 +14,69 @@ body {
     padding: 10px 0;
   }
   
-  .homepage {
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px;
+  .logo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo img {
+    width: 150px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+  }
+  
+  .homepage-hero {
+    background: url('images/images.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
     text-align: center;
   }
   
   .homepage-hero h1 {
     font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .hero img {
-    width: 100%;
-    height: auto;
   }
   
   .features {
-    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
   }
   
   .product-section {
@@ -75,3 +119,24 @@ body {
     }
   }
   
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #f1f1f1;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 20px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+    
