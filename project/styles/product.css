@@ -194,14 +194,14 @@ body {
 .footer-center form button {
   padding: 10px 20px;
   background-color:white;
-  color: white;
+  color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.footer-center form button {
-  background-color: none;
+.footer-center form button:hover {
+  background-color: white;
 }
 
 .footer #lastModified {
