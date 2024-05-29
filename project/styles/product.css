@@ -23,9 +23,9 @@ body {
   }
   
   .logo img {
-    width: 150px; /* Fixed width for the logo */
-    max-width: 100%; /* Ensures the logo is responsive */
-    height: auto; /* Maintains the aspect ratio of the logo */
+    width: 250px; /* Fixed width */
+    max-width: 100%; /* Responsive within container */
+    height: auto; /* Maintain the aspect ratio */
   }
   
   nav {
