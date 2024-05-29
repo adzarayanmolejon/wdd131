@@ -171,7 +171,7 @@ body {
 }
 
 .footer-right a {
-  color: #00f;
+  color:white;
   text-decoration: none;
 }
 
@@ -201,7 +201,7 @@ body {
 }
 
 .footer-center form button:hover {
-  background-color: #0055ff;
+  background-color: white;
 }
 
 .footer #lastModified {
