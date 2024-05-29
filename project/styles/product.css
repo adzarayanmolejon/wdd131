@@ -201,7 +201,7 @@ body {
 }
 
 .footer-center form button:hover {
-  background-color: blue;
+  background-color: orange;
 }
 
 .footer #lastModified {
