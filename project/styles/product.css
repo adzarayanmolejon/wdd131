@@ -134,4 +134,89 @@ body {
       display: flex;
     }
   }
-      
+
+/* Other CSS styles */
+
+.footer {
+  background-color: #555;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right .social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-right a {
+  color: #00f;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+.footer-center form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-center form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.footer-center form button {
+  padding: 10px 20px;
+  background-color:white;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-center form button:hover {
+  background-color: #0055ff;
+}
+
+.footer #lastModified {
+  text-align: center;
+  margin-top: 20px;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    margin-bottom: 20px;
+  }
+}

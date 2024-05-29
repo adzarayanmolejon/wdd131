@@ -82,35 +82,38 @@
   </main>
   
   <footer class="footer">
-    <div class="social-icons">
-      <a href="#"><img src="images/facebook_logo.svg" alt="Facebook" class="social-icon"></a>
-      <a href="#"><img src="images/instagram_logo.svg" alt="Instagram" class="social-icon"></a>
-      <a href="#"><img src="images/tweet_logo_icon.svg" alt="Twitter" class="social-icon"></a>
+    <div class="footer-container">
+      <div class="footer-left">
+        <p>&copy; <span id="currentyear"></span> 🍁 Adz A. Molejon, Affordable Flash Frozen Products in Davao City, Philippines 🍁</p>
+      </div>
+      <div class="footer-center">
+        <h2>Stay Tuned for Upcoming Adventures</h2>
+        <form action="#">
+          <input type="text" name="name" placeholder="Your Name">
+          <input type="email" name="email" placeholder="Email Address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-right">
+        <a href="siteplan.html">Site Plan</a> | <a href="contact.html">Contact Us</a>
+        <div class="social-icons">
+          <a href="#"><img src="images/facebook_logo.svg" alt="Facebook" class="social-icon"></a>
+          <a href="#"><img src="images/instagram_logo.svg" alt="Instagram" class="social-icon"></a>
+          <a href="#"><img src="images/tweet_logo_icon.svg" alt="Twitter" class="social-icon"></a>
+        </div>
+      </div>
     </div>
-    <footer>
-        <p>&copy; <span id="currentyear"></span>🍁 Adz A. Molejon 🍁 Davao City, Philippines</p>
-        <p id="lastModified">Document Last Modified: </p>
-    </footer>
-    <script src="scripts/product.js" defer></script>
-    <script>
-        document.getElementById("currentyear").innerHTML = new Date().getFullYear();
-
-        var lastModifiedDate = new Date(document.lastModified);
-        var formattedDate = lastModifiedDate.toLocaleDateString();
-
-        document.getElementById("lastModified").innerHTML += formattedDate ? formattedDate : "Unknown";
-    </script>
-    <div class="newsletter">
-      <h2>Stay Tuned for New Variety of Flash-Frozen Products</h2>
-      <form action="#">
-        <input type="text" name="name" placeholder="Your Name">
-        <input type="email" name="email" placeholder="Email Address">
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
-    <div class="footer-left">
-      <a href="siteplan.html">Site Plan</a> | <a href="contact.html">Contact Us</a>
-    </div>
+    <p id="lastModified">Document Last Modified: </p>
   </footer>
+
+  <script src="scripts/product.js" defer></script>
+  <script>
+    document.getElementById("currentyear").innerHTML = new Date().getFullYear();
+
+    var lastModifiedDate = new Date(document.lastModified);
+    var formattedDate = lastModifiedDate.toLocaleDateString();
+
+    document.getElementById("lastModified").innerHTML += formattedDate ? formattedDate : "Unknown";
+  </script>
 </body>
 </html>
