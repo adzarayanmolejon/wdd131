@@ -201,7 +201,7 @@ body {
 }
 
 .footer-center form button {
-  background-color: orange;
+  background-color: none;
 }
 
 .footer #lastModified {
