@@ -201,7 +201,7 @@ body {
 }
 
 .footer-center form button:hover {
-  background-color: white;
+  background-color: blue;
 }
 
 .footer #lastModified {
@@ -219,4 +219,11 @@ body {
   .footer-left, .footer-center, .footer-right {
     margin-bottom: 20px;
   }
+}
+.site-footer {
+  background-color: white;
+  /* Additional styling for your footer */
+  padding: 20px;
+  text-align: center;
+  color: black; /* Optional: to ensure text is readable on white background */
 }
