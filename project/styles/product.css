@@ -200,7 +200,7 @@ body {
   cursor: pointer;
 }
 
-.footer-center form button:hover {
+.footer-center form button {
   background-color: orange;
 }
 
