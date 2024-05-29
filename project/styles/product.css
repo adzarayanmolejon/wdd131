@@ -124,6 +124,7 @@ body {
     margin-bottom: 5px;
     color: #333;
   }
+  
     @media (min-width: 600px) {
     .product-list {
       grid-template-columns: 1fr 1fr;
