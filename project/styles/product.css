@@ -207,7 +207,7 @@ body {
 .footer #lastModified {
   text-align: center;
   margin-top: 20px;
-  color: #ccc;
+  color:black;
 }
 
 @media (max-width: 768px) {
