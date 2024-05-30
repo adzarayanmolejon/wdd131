@@ -86,8 +86,8 @@ nav {
 }
 
 /* Hero Section */
-.homepage-hero {
-  background: url('../images/happy client.jpg') no-repeat center center/cover;
+.hero {
+  background: url('../images/happy-client.jpg') no-repeat center center/cover;
   color: #fff;
   text-align: center;
   padding: 100px 20px;
@@ -101,6 +101,7 @@ nav {
 .hero-content {
   max-width: 1500px;
   margin: 0 auto;
+  text-align: center; /* Center the text */
 }
 
 .hero-content p {
@@ -108,15 +109,21 @@ nav {
   margin: 20px 0;
 }
 
+.hero-content img {
+  max-width: 500px; /* Increase the maximum width to enlarge the image */
+  width: 100%;
+  height: auto;
+}
+
 /* About Us Page */
 .history-section {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center; /* Center the text */
 }
 
 .history-section h2 {
-  text-align: center;
   font-size: 2em;
   margin-bottom: 20px; /* Added margin for spacing */
 }
@@ -125,10 +132,12 @@ nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center; /* Center the content */
 }
 
 .history-content img {
-  max-width: 100%;
+  max-width: 500px; /* Increase the maximum width to enlarge the image */
+  width: 100%;
   height: auto;
   margin: 10px;
   border-radius: 10px;
@@ -153,6 +162,10 @@ nav {
   justify-content: space-between; /* Distributes elements evenly with space in-between */
 }
 
+.social-icons {
+  display: flex; /* Makes icons sit side-by-side */
+}
+
 .footer-left {
   flex: 1;
 }
@@ -172,7 +185,6 @@ nav {
   margin-top: 10px;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
   .logo-nav {
     flex-direction: column;
@@ -208,12 +220,14 @@ nav {
   }
 
   .footer-container {
-    flex-direction: column;
-    text-align: center;
+    display: flex;
+    justify-content: space-between; /* Distributes elements with space in-between */
   }
-
-  .footer-left, .footer-center, .footer-right {
-    margin-bottom: 20px;
-  }
+}
+.social-icons {
+  float: right;
+}
+.social-icons-container {
+  float: left; /* Move the container to the left side */
 }
 
