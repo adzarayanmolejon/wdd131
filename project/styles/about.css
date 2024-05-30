@@ -211,11 +211,10 @@ nav {
   }
 
   .footer-container {
-    flex-direction: column;
-    text-align: center;
+    display: flex;
+    justify-content: space-between; /* Distributes elements with space in-between */
   }
-
-  .footer-left, .footer-center, .footer-right {
-    margin-bottom: 20px;
-  }
+}
+.social-icons {
+  float: right;
 }
