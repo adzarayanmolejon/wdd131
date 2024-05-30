@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   display: flex;
   flex-direction: column;
@@ -6,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .homepage-header {
   width: 100%;
   background-color: #f8f8f8; /* Or any background color you prefer */
@@ -61,7 +63,8 @@ nav {
 .nav-links .active a {
   color: black; /* Highlight color for active link */
 }
-  .hamburger {
+
+.hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
@@ -74,75 +77,12 @@ nav {
   background-color: black;
 }
 
-  .nav-links.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-
-/* Other CSS styles */
-
-.footer {
-background-color: white;
-color: black;
-padding: 20px 0;
+.nav-links.active {
+  display: flex;
 }
 
-.footer-container {
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 100%;
-margin: 0 auto;
-}
-
-.footer-left, .footer-center, .footer-right {
-flex: 1;
-text-align: center;
-}
-
-.footer-left {
-text-align: left;
-}
-
-.footer-right {
-text-align: right;
-}
-
-.footer-right .social-icons {
-display: flex;
-gap: 10px;
-margin-top: 10px;
-}
-
-.footer-right a {
-color:black;
-text-decoration: none;
-}
-
-.footer-right a:hover {
-text-decoration: underline;
-}
-
-
-.footer #lastModified {
-text-align: center;
-margin-top: 20px;
-color:black;
-}
-
-@media (max-width: 768px) {
-.footer-container {
-  flex-direction: column;
-  text-align: center;
-}
-
-.footer-left, .footer-center, .footer-right {
-  margin-bottom: 20px;
-}
+.hamburger {
+  display: flex;
 }
 
 /* Hero Section */
@@ -178,6 +118,7 @@ color:black;
 .history-section h2 {
   text-align: center;
   font-size: 2em;
+  margin-bottom: 20px; /* Added margin for spacing */
 }
 
 .history-content {
@@ -237,35 +178,44 @@ color:black;
 
 @media (max-width: 768px) {
   .logo-nav {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .nav-links {
-      display: none;
-      flex-direction: column;
+    display: none;
+    flex-direction: column;
   }
 
   .nav-links li {
-      margin: 5px 0;
+    margin: 5px 0;
   }
 
   .hamburger {
-      display: flex;
+    display: flex;
   }
 
   .nav-active .nav-links {
-      display: flex;
+    display: flex;
   }
 
   .hero {
-      padding: 50px 20px;
+    padding: 50px 20px;
   }
 
   .hero h1 {
-      font-size: 2em;
+    font-size: 2em;
   }
 
   .hero-content {
-      max-width: 90%;
+    max-width: 90%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    margin-bottom: 20px;
   }
 }
