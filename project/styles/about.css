@@ -219,7 +219,5 @@ nav {
   float: right;
 }
 .social-icons-container {
-  /* Style the container here */
-  float: right; /* Or use flexbox for more control */
-  margin: 10px; /* Add some margin for spacing */
+  float: left; /* Move the container to the left side */
 }
