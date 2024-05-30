@@ -206,12 +206,6 @@ body {
   gap: 10px;
   margin-top: 10px;
 }
-.footer .social-icons {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 10px;
-}
 
 .footer-right a {
   color:black;
@@ -261,5 +255,164 @@ body {
 
   .footer-left, .footer-center, .footer-right {
     margin-bottom: 20px;
+  }
+}
+
+/* styles/about.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background: #555;
+  border-radius: 5px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+.hero {
+  background: url('images/hero.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.history-section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.history-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.history-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+}
+
+#lastModified {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .logo-nav {
+      flex-direction: column;
+  }
+
+  .nav-links {
+      display: none;
+      flex-direction: column;
+  }
+
+  .nav-links li {
+      margin: 5px 0;
+  }
+
+  .hamburger {
+      display: flex;
+  }
+
+  .nav-active .nav-links {
+      display: flex;
   }
 }

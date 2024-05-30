@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Adz A. Molejon's BYU Idaho WDD 131 Dynamic Web Fundamentals course homepage">
+  <meta name="description" content="About Us - Affordable Flash Frozen Products">
   <meta name="author" content="Adz A. Molejon">
-  <title>Affordable Flash Frozen Products</title>
-  <link rel="stylesheet" href="styles/product.css">
+  <title>About Us - Affordable Flash Frozen Products</title>
+  <link rel="stylesheet" href="styles/about.css">
 </head>
 <body>
   <header class="homepage-header">
@@ -16,8 +16,8 @@
       </div>
       <nav>
         <ul class="nav-links">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <div class="hamburger">
@@ -29,9 +29,8 @@
     </div>
   </header>
     <main>
-        <a href="contact.html">Contact Us</a>
         <div class="hero">
-            <h1>Affordable Flash Frozen Products</h1>
+            <h1>About Us</h1>
             <div class="hero-content">
                 <p>Making healthy eating accessible to everyone. Reducing food waste, one delicious meal at a time. Bringing the convenience of frozen to the quality of fresh, without breaking the bank. Unlocking the goodness of frozen food. Saving you money, not flavor.</p>
                 <img src="images/happy client.jpg" alt="Happy Client">
@@ -42,31 +41,6 @@
             <div class="history-content">
                 <img src="images/man-holding-basket-organic-vegetables-healthy-76739247.webp" alt="History Image">
                 <p>It all started in 2020 in a Pandemic time, when finding fresh produce foods is hard to find, especially to an area with limited access to market. This experience sparked a passion to find a better solution. We knew flash-freezing offered a way to lock in freshness, reduce waste, and make healthy eating more accessible. That's when Molejon's Affordable Flash Frozen Products was born. We started by buying fresh fruits and vegetables, driven by the belief that everyone deserves delicious, nutritious meals without breaking the bank. Since then, we've grown to offer a wider variety of flash-frozen products, partner with specific stores. Our journey continues, and we're constantly looking for ways to expand product offerings, reduce environmental impact. We're proud to be a part of making healthy eating convenient and affordable for everyone.</p>
-            </div>
-        </section>
-        <section class="adventures-section">
-            <h2 class="adventures-heading">Adventure Awaits You!</h2>
-            <div class="adventures-grid">
-            <figure>
-            <img src="images/davao-river.jpg" alt="Davao River">
-            <figcaption>Davao River</figcaption>
-            </figure>
-            <figure>
-            <img src="images/cordillera-river.jpg" alt="Cordillera River">
-            <figcaption>Cordillera River</figcaption>
-            </figure>
-            <figure>
-            <img src="images/cotabato-river.jpg" alt="Cotabato River">
-            <figcaption>Cotabato River</figcaption>
-            </figure>
-            <figure>
-            <img src="images/agusan-river.jpg" alt="Agusan River">
-            <figcaption>Agusan River</figcaption>
-            </figure>
-            <figure>
-            <img src="images/cagayan-river.jpg" alt="Cagayan River">
-            <figcaption>Cagayan River</figcaption>
-            </figure>
             </div>
         </section>
     </main>
@@ -85,14 +59,6 @@
       <p id="lastModified">Document Last Modified: </p>
     </footer>
   
-    <script src="scripts/product.js" defer></script>
-    <script>
-      document.getElementById("currentyear").innerHTML = new Date().getFullYear();
-  
-      var lastModifiedDate = new Date(document.lastModified);
-      var formattedDate = lastModifiedDate.toLocaleDateString();
-  
-      document.getElementById("lastModified").innerHTML += formattedDate ? formattedDate : "Unknown";
-    </script>
+    <script src="scripts/about.js" defer></script>
   </body>
-  </html>
+</html>
