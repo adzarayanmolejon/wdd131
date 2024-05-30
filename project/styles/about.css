@@ -86,7 +86,7 @@ nav {
 }
 
 /* Hero Section */
-.hero {
+.homepage-hero{
   background: url('../images/happy\ client.jpg') no-repeat center center/cover;
   color: #fff;
   text-align: center;
