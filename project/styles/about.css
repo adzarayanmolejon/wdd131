@@ -88,15 +88,31 @@ nav {
 /* Hero Section */
 .hero {
   background: url('../images/happy-client.jpg') no-repeat center center/cover;
-  color: black;
+  color: #fff;
   text-align: center;
   padding: 100px 20px;
+  position: relative; /* Enable absolute positioning for child elements */
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place image behind text */
 }
 
 .hero h1 {
-  margin: 0;
-  font-size: 3em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Adjust vertical position if needed */
+  color: white; /* Assuming you want white text */
+  font-size: 3em; /* Adjust font size as desired */
+  text-align: center;
+  z-index: 1; /* Place text above the image */
 }
+
 
 .hero-content {
   max-width: 1500px;
