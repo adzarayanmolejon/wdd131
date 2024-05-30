@@ -86,8 +86,8 @@ nav {
 }
 
 /* Hero Section */
-.homepage-hero{
-  background: url('../images/happy\ client.jpg') no-repeat center center/cover;
+.homepage-hero {
+  background: url('../images/happy client.jpg') no-repeat center center/cover;
   color: #fff;
   text-align: center;
   padding: 100px 20px;
@@ -153,10 +153,6 @@ nav {
   justify-content: space-between; /* Distributes elements evenly with space in-between */
 }
 
-.social-icons {
-  display: flex; /* Makes icons sit side-by-side */
-}
-
 .footer-left {
   flex: 1;
 }
@@ -176,6 +172,7 @@ nav {
   margin-top: 10px;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
   .logo-nav {
     flex-direction: column;
@@ -211,13 +208,12 @@ nav {
   }
 
   .footer-container {
-    display: flex;
-    justify-content: space-between; /* Distributes elements with space in-between */
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    margin-bottom: 20px;
   }
 }
-.social-icons {
-  float: right;
-}
-.social-icons-container {
-  float: left; /* Move the container to the left side */
-}
+
