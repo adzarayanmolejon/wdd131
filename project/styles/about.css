@@ -149,12 +149,12 @@ nav {
 }
 
 .footer-container {
-  display: right;
-  justify-content: space-evenly;
-  align-items: center;
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 0 20px;
+  display: flex;
+  justify-content: space-between; /* Distributes elements evenly with space in-between */
+}
+
+.social-icons {
+  display: flex; /* Makes icons sit side-by-side */
 }
 
 .footer-left {
