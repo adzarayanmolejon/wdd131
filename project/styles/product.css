@@ -260,16 +260,38 @@ body {
 
 /* styles/about.css */
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+/* Style the History Section */
+.history-section {
+  text-align: center;
+  margin-top: 40px;
 }
 
-header {
-  background: #333;
-  color: #fff;
-  padding: 10px 0;
+.history-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.history-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.history-content img {
+  flex: 0 0 auto; 
+  max-width: 50%;
+  height: auto;
+  margin-right: 20px; 
+}
+
+.history-content p {
+  flex: 1; 
+  text-align: justify;
+  line-height: 1.6;
+  color: black;
 }
 
 .logo-nav {
@@ -321,13 +343,6 @@ nav ul {
   height: 3px;
   background-color: #fff;
   margin: 3px 0;
-}
-
-.hero {
-  background: url('images/hero.jpg') no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 100px 20px;
 }
 
 .hero h1 {
