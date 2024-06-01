@@ -8,8 +8,6 @@ hamburger.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', init);
 
-document.addEventListener('DOMContentLoaded', init);
-
 function init() {
     // Displaying new delicacies
     displayNewDelicacies();
@@ -33,7 +31,7 @@ const bestSellers = [
 
 // Function to display new delicacies
 function displayNewDelicacies() {
-    const container = document.getElementById('delicacies-container');
+    const container = document.getElementById('new-delicacies');
     delicacies.forEach(item => {
         const figure = document.createElement('figure');
         
@@ -52,7 +50,7 @@ function displayNewDelicacies() {
 
 // Function to display best sellers
 function displayBestSellers() {
-    const container = document.getElementById('best-sellers-container');
+    const container = document.getElementById('best-sellers');
     bestSellers.forEach(item => {
         const figure = document.createElement('figure');
         
