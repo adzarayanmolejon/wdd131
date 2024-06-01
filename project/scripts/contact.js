@@ -8,9 +8,65 @@ hamburger.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', init);
 
+document.addEventListener('DOMContentLoaded', init);
+
 function init() {
+    // Displaying new delicacies
+    displayNewDelicacies();
+    
+    // Displaying best sellers
+    displayBestSellers();
+    
     // Event listener for the form submission
     document.getElementById('contactForm').addEventListener('submit', handleFormSubmit);
+}
+
+const delicacies = [
+    { src: 'images/pastelitos.jpeg', alt: 'Delicacies 1', caption: 'Pastelitos' },
+    { src: 'images/greenery.jpeg', alt: 'Delicacies 2', caption: 'Greenery' },
+    { src: 'images/salvadorian.jpg', alt: 'Delicacies 3', caption: 'Salvadorian Delights' }
+];
+
+const bestSellers = [
+    { src: 'images/GKBicolExpress.webp', alt: 'Best Seller 1', caption: 'Bicol Express' }
+];
+
+// Function to display new delicacies
+function displayNewDelicacies() {
+    const container = document.getElementById('delicacies-container');
+    delicacies.forEach(item => {
+        const figure = document.createElement('figure');
+        
+        const img = document.createElement('img');
+        img.src = item.src;
+        img.alt = item.alt;
+        
+        const figcaption = document.createElement('figcaption');
+        figcaption.textContent = item.caption;
+        
+        figure.appendChild(img);
+        figure.appendChild(figcaption);
+        container.appendChild(figure);
+    });
+}
+
+// Function to display best sellers
+function displayBestSellers() {
+    const container = document.getElementById('best-sellers-container');
+    bestSellers.forEach(item => {
+        const figure = document.createElement('figure');
+        
+        const img = document.createElement('img');
+        img.src = item.src;
+        img.alt = item.alt;
+        
+        const figcaption = document.createElement('figcaption');
+        figcaption.textContent = item.caption;
+        
+        figure.appendChild(img);
+        figure.appendChild(figcaption);
+        container.appendChild(figure);
+    });
 }
 
 // Function to handle form submission
@@ -50,24 +106,12 @@ function handleFormSubmit(event) {
 
 // Function to save form data to localStorage
 function saveFormData(data) {
-    const submissions = JSON.parse(localStorage.getItem('submissions')) || [];
-    submissions.push(data);
-    localStorage.setItem('submissions', JSON.stringify(submissions));
+    let inquiries = JSON.parse(localStorage.getItem('inquiries')) || [];
+    inquiries.push(data);
+    localStorage.setItem('inquiries', JSON.stringify(inquiries));
 }
 
 // Function to display confirmation message
 function displayConfirmation(data) {
-    const confirmationMessage = `
-        <h3>Thank you for your message, ${data.name}!</h3>
-        <p>We have received your ${data.purpose} and will get back to you at ${data.email} soon.</p>
-        ${data.subscribe ? '<p>You have been subscribed to our newsletter.</p>' : ''}
-    `;
-
-    const mainContent = document.querySelector('main');
-    const confirmationDiv = document.createElement('div');
-    confirmationDiv.classList.add('confirmation');
-    confirmationDiv.innerHTML = confirmationMessage;
-
-    mainContent.innerHTML = '';
-    mainContent.appendChild(confirmationDiv);
+    alert(`Thank you, ${data.name}, for your ${data.purpose}. We will get back to you soon!`);
 }
