@@ -124,24 +124,21 @@ body {
     }
   
     .delicacies-container {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap; /* Allow items to wrap to the next line */
+      display: flex;  /* Enable Flexbox for the container */
+      /* Add optional styles for image size here */
     }
     
+    /* You can set width and height here if needed */
+    .delicacies-container img {
+      width: 200px;
+      height: 200px;
+    }
+     
     .delicacies-container figure {
       flex: 0 0 calc(30% - 20px); /* Adjust width as needed */
       margin-bottom: 20px; /* Add margin between items */
       text-align: center;
     }
-    
-    .delicacies-container img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-    
     
     .profile img {
       max-width: 100%;
@@ -151,9 +148,4 @@ body {
     }
   }    
 
-  .employee-profiles .profile {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-  }
-
+  
