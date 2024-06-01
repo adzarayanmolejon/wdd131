@@ -122,30 +122,5 @@ body {
     .hero-content {
       max-width: 90%;
     }
-  
-    .delicacies-container {
-      display: flex;  /* Enable Flexbox for the container */
-      /* Add optional styles for image size here */
-    }
-    
-    /* You can set width and height here if needed */
-    .delicacies-container img {
-      width: 200px;
-      height: 200px;
-    }
-     
-    .delicacies-container figure {
-      flex: 0 0 calc(30% - 20px); /* Adjust width as needed */
-      margin-bottom: 20px; /* Add margin between items */
-      text-align: center;
-    }
-    
-    .profile img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-  }    
-
-  
+  }  
+ 
