@@ -123,29 +123,35 @@ body {
       max-width: 90%;
     }
   
-    #new-delicacies, #best-sellers {
-      display: flex;
-      flex-wrap: nowrap;
-      gap: 20px; /* Adjust spacing as needed */
-      overflow-x: auto;
-  }
-  
-  #new-delicacies figure, #best-sellers figure {
-      margin: 0;
-      flex: 1 1 auto;
+    .new-delicacies {
+      margin-top: 20px; /* Adjust as needed */
+    }
+    
+    .new-delicacies h3 {
       text-align: center;
-  }
-  
-  #new-delicacies img, #best-sellers img {
+      margin-bottom: 10px; /* Adjust as needed */
+    }
+    
+    .delicacies-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .delicacies-container figure {
+      flex: 0 0 30%; /* Adjust width as needed */
+      text-align: center;
+    }
+    
+    .delicacies-container img {
       max-width: 100%;
       height: auto;
       display: block;
       margin: 0 auto;
-  }
-  
-  figcaption {
-      margin-top: 8px; /* Adjust as needed */
+    }
+    
+    .delicacies-container figcaption {
+      margin-top: 5px; /* Adjust as needed */
+      font-style: italic;
       font-size: 14px; /* Adjust as needed */
-      color: #333; /* Adjust as needed */
-  }
-  }
+    }
+  }    
