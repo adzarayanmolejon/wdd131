@@ -142,17 +142,6 @@ body {
       margin: 0 auto;
     }
     
-    .employee-profiles {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap; /* Allow items to wrap to the next line */
-    }
-    
-    .profile {
-      flex: 0 0 calc(30% - 20px); /* Adjust width as needed */
-      margin-bottom: 20px; /* Add margin between items */
-      text-align: center;
-    }
     
     .profile img {
       max-width: 100%;
@@ -161,3 +150,10 @@ body {
       margin: 0 auto;
     }
   }    
+
+  .employee-profiles .profile {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
