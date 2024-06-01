@@ -136,22 +136,23 @@ body {
       display: flex;
       justify-content: space-between;
     }
-    
-    .delicacies-container figure {
-      flex: 0 0 30%; /* Adjust width as needed */
-      text-align: center;
-    }
-    
-    .delicacies-container img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-    
+     
     .delicacies-container figcaption {
       margin-top: 5px; /* Adjust as needed */
       font-style: italic;
       font-size: 14px; /* Adjust as needed */
     }
-  }    
+  }
+  .delicacies-container figure {
+    flex: 0 0 30%; /* Adjust width as needed */
+    text-align: center;
+    overflow: hidden; /* Prevent images from overflowing */
+  }
+  
+  .delicacies-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+      
